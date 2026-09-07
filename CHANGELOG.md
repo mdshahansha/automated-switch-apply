@@ -13,6 +13,21 @@ per-file diff commands.
 
 ## [Unreleased]
 
+### Added
+
+- **`/expand` project and portfolio expansion** (`.claude/commands/expand.md`,
+  `tests/test_expand_command.py`) - expands candidate discovery
+  to technical projects from public GitHub repositories, extracting structured summaries
+  (problem domain, tech stack, key technical challenges, and verifiable outcomes) to
+  populate the `## Independent Projects` section of `01-candidate-profile.md`.
+
+- **Stale sweep branch in `/outcome`** (`.claude/commands/outcome.md`,
+  `tests/test_outcome_stale.py`) - introduces `/outcome stale [N]` (and `/outcome sweep [N]`)
+  to batch-resolve open applications quiet for 60+ (or N) days. Displays a numbered summary
+  of qualifying applications, requires explicit user confirmation (`all`, `select`, or `skip`),
+  resolves confirmed rows to `no_response`, logs dated entries to `notes`, updates archive
+  `outcome.md` files, and hands off to calibration when 3+ applications are resolved.
+
 ### Fixed
 
 - **`jobnet-search detail` no longer reports an externally hosted ad as not found** (#432) -
@@ -40,19 +55,6 @@ per-file diff commands.
 ## [1.7.1] - 2026-09-06
 
 ### Added
-
-- **`/expand` project and portfolio expansion** (`.claude/commands/expand.md`,
-  `tests/test_expand_command.py`) - expands candidate discovery
-  to technical projects from public GitHub repositories, extracting structured summaries
-  (problem domain, tech stack, key technical challenges, and verifiable outcomes) to
-  populate the `## Independent Projects` section of `01-candidate-profile.md`.
-
-- **Stale sweep branch in `/outcome`** (`.claude/commands/outcome.md`,
-  `tests/test_outcome_stale.py`) - introduces `/outcome stale [N]` (and `/outcome sweep [N]`)
-  to batch-resolve open applications quiet for 60+ (or N) days. Displays a numbered summary
-  of qualifying applications, requires explicit user confirmation (`all`, `select`, or `skip`),
-  resolves confirmed rows to `no_response`, logs dated entries to `notes`, updates archive
-  `outcome.md` files, and hands off to calibration when 3+ applications are resolved.
 
 - **CHANGELOG structure guard** (`tests/test_changelog_structure.py`) - every PR edits this one
   shared file by hand near the same line, and nothing checked the result: a second `### Fixed`
