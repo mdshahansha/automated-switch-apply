@@ -47,7 +47,7 @@ per-file diff commands.
 
 ### Fixed
 
-- **The template-placeholder guard in `test_setup_command.py` now skips on forks** -
+- **The template-placeholder guard in `test_setup_command.py` now skips on forks** (#463) -
   `TemplatesStillCarryThePlaceholders` asserts that `05-cv-templates.md` and
   `06-cover-letter-templates.md` still contain `[FIRST_NAME]`, `[LAST_NAME]`, `[YOUR_EMAIL]`,
   `[YOUR_PHONE]`, `[YOUR_NAME]`, and `[YOUR_LINKEDIN_URL]`. Running `/setup` - the documented
@@ -77,7 +77,9 @@ per-file diff commands.
   `\ifpdftex\usepackage[T1]{fontenc}\fi`, a no-op on the lualatex path. Pinned by
   ten new `test_verify_pdf.py` cases (the fold-through ones fail on the whitespace-only
   code) and a `test_latex_guidance.py` guard that the line exists and stays
-  pdflatex-only. Reported and diagnosed by 9scorp4.
+  pdflatex-only. Reported and diagnosed by 9scorp4. Fork users: your
+  personalized `cv/main_example.tex` gains the one guarded preamble line on rebase (a clean
+  3-way merge unless you edited the preamble); tailored CVs compiled with lualatex need nothing.
 - **`jobdanmark-search detail` now backs off on 429/5xx like every other portal's detail
   command** - the handler called `fetch()` directly instead of going through the CLI's own
   request wrappers, so it carried none of the three things `apiFetch`/`apiPost` guarantee:
