@@ -1,5 +1,5 @@
 ---
-framework_version: 1.4.8
+framework_version: 1.4.9
 ---
 
 # CV Templates and Tailoring Guide
@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Mohammad Shahansha - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Mohammad}{Shahansha}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{India}{}{}
+\phone[mobile]{+91 8228820500}
+\email{mdshahansha44411@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/mohammad-shahansha-042226193/}{LinkedIn}, \href{https://github.com/mdshahansha}{GitHub}, \href{https://mohammad-shahansha.web.app/}{Portfolio}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,16 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For full-stack software engineering roles:**
+> Full Stack Engineer building production web and mobile applications with React, TypeScript, Node.js, Java/Spring Boot, and React Native. Experience spans energy-sector platforms, REST APIs, authentication, database workflows, CI/CD, and production support.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For backend engineering roles:**
+> Software engineer with experience building Node.js/TypeScript and Java/Spring Boot services for production platforms. Brings hands-on work with REST APIs, SQL databases, Redis caching, authentication, integrations, and production troubleshooting.
+
+**For React / React Native engineering roles:**
+> Full Stack Engineer with hands-on React, Next.js, TypeScript, and React Native experience. Builds web and mobile interfaces, shared state and authentication flows, and REST API integrations backed by production engineering experience.
+
+**Candidate-specific accuracy:** Use Osbee June 2025-present and CodingNinjas June 2023-April 2025. English and Hindi are declared working languages without a proficiency rating; never print native/fluent or a CEFR level without confirmation. Do not claim a numeric experience total or years per tool without calculating it from confirmed history. Home city is not separately confirmed, so use India in the contact block.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
