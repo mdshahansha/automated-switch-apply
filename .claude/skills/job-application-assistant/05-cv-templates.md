@@ -14,6 +14,8 @@ All CVs use the moderncv LaTeX package with the "banking" style and "blue" color
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
 **Master reference:** `cv/main_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
 
+**Shared/uploaded PDF:** Follow the resume naming preference in `01-candidate-profile.md`. Export a verified copy with that neutral filename; do not expose the internal company-based build filename or put the target employer in the PDF title or displayed heading. Keep each application's copy in its own folder.
+
 ### Compile command
 
 ```bash
