@@ -1,5 +1,5 @@
 ---
-framework_version: 1.1.2
+framework_version: 1.1.3
 ---
 
 # Candidate Profile
@@ -11,7 +11,7 @@ framework_version: 1.1.2
 - **Name:** Mohammad Shahansha
 - **Location:** India; current role based in Kolkata. Home city and street address not separately confirmed.
 - **Phone:** +91 8228820500
-- **Email:** mdshahansha44411@gmail.com
+- **Email:** mshahansha.2001@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/mohammad-shahansha-042226193/
 - **GitHub:** https://github.com/mdshahansha
 - **Portfolio:** https://mohammad-shahansha.web.app/
@@ -23,6 +23,7 @@ framework_version: 1.1.2
 - **Target roles:** Full-stack, software, backend, Java/Spring Boot, React, and React Native engineering are suggested search directions based on confirmed stacks. No exclusive title or seniority requirement supplied.
 
 ### Source and reconciliation notes
+- The candidate updated the application email to `mshahansha.2001@gmail.com` on 2026-10-23. This address supersedes the email in the original resume PDFs.
 - Seven supplied resume variants were read: `md_shahansha_JFS.pdf`, `mohammad_shahansha_.pdf`, `mohammad_SHAHANSHA_rn.pdf`, `mohammadshahansha_be.pdf`, `mohammadshahansha_fse.pdf`, `mohammadshahansha_RJ.pdf`, and `mohammadshahansha_se.pdf`.
 - The candidate explicitly corrected employment dates: Osbee June 2025-present; CodingNinjas June 2023-April 2025. Never reuse the November 2024 Osbee start or July 2023/October 2024 CodingNinjas dates from older variants.
 - The candidate confirmed Osbee Solution Private Limited and the Full Stack Engineer title, plus working experience across Node.js/React, Java/Spring Boot, and React Native.

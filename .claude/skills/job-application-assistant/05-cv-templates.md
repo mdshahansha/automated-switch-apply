@@ -1,5 +1,5 @@
 ---
-framework_version: 1.4.9
+framework_version: 1.4.10
 ---
 
 # CV Templates and Tailoring Guide
@@ -74,7 +74,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 % with "There's no line here to end" on every moderncv version.
 \address{India}{}{}
 \phone[mobile]{+91 8228820500}
-\email{mdshahansha44411@gmail.com}
+\email{mshahansha.2001@gmail.com}
 \extrainfo{\href{https://www.linkedin.com/in/mohammad-shahansha-042226193/}{LinkedIn}, \href{https://github.com/mdshahansha}{GitHub}, \href{https://mohammad-shahansha.web.app/}{Portfolio}}
 
 \begin{document}
