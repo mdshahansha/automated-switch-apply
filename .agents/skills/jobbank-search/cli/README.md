@@ -6,7 +6,7 @@ CLI for [Akademikernes Jobbank](https://jobbank.dk) — Denmark's job portal for
 - **RSS feed**: `https://jobbank.dk/job/rss?{params}` — 100 items max, all search filters work
 - **Job detail**: `https://jobbank.dk/job/{id}/` — JSON-LD (`Schema.org JobPosting`) embedded in page HTML
 
-**Authentication**: None required. A browser User-Agent header is sent, but Jobbank may still block automated requests with Cloudflare bot protection. In that case the CLI exits with a clear error and callers should use a WebSearch fallback rather than retrying.
+**Authentication**: None required. The CLI identifies itself in its User-Agent header, but Jobbank may still block automated requests with Cloudflare bot protection. In that case the CLI exits with a clear error and callers should use a WebSearch fallback rather than retrying.
 **Format**: RSS XML (search), HTML with embedded JSON-LD (detail).
 
 ---
@@ -355,13 +355,13 @@ All errors are written to **stderr** in JSON format and exit with code `1`:
 
 ### User-Agent
 
-All HTTP requests include a browser User-Agent header:
+All HTTP requests include a tool-identifying User-Agent header:
 
 ```
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+mdshahansha/automated-switch-apply/1.0 (jobbank-search-cli)
 ```
 
-This is not guaranteed to bypass Cloudflare bot protection. If Jobbank returns a Cloudflare challenge page, the CLI reports that condition and callers should skip the portal or use a WebSearch fallback.
+This names the repository and CLI rather than impersonating a browser. If Jobbank returns a Cloudflare challenge page, the CLI reports that condition and callers should skip the portal or use a WebSearch fallback.
 
 ### RSS description parsing
 

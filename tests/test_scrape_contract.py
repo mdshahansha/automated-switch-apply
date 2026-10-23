@@ -26,7 +26,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRAPER_SKILL = REPO_ROOT / ".claude" / "skills" / "job-scraper" / "SKILL.md"
-PORTAL_CLIS = sorted((REPO_ROOT / ".agents" / "skills").glob("*-search"))
+PORTAL_SKILLS = sorted((REPO_ROOT / ".agents" / "skills").glob("*-search"))
+PORTAL_CLIS = [portal for portal in PORTAL_SKILLS if (portal / "cli").is_dir()]
 
 # Derived, never copied: a hardcoded field list drifts in lockstep with
 # nothing - if Step 2's prose drops or adds a field, the known-good portals
@@ -59,6 +60,7 @@ class ScrapeSearchOutputContractTests(unittest.TestCase):
         self.assertGreaterEqual(fields, {"title", "company", "location", "date", "url"})
 
     def test_every_portal_cli_emits_the_step2_contract_fields(self):
+        self.assertTrue(PORTAL_CLIS, "no portal CLIs discovered")
         contract = derive_contract_fields()
         failures: list[str] = []
         for portal in PORTAL_CLIS:
@@ -72,6 +74,15 @@ class ScrapeSearchOutputContractTests(unittest.TestCase):
             if missing:
                 failures.append(f"{portal.name}: missing {missing} in search output")
         self.assertEqual([], failures, "; ".join(failures) or "no portal CLIs checked")
+
+    def test_instruction_only_portals_cannot_enable_cli_dispatch(self):
+        for portal in PORTAL_SKILLS:
+            if portal in PORTAL_CLIS:
+                continue
+            with self.subTest(portal=portal.name):
+                text = (portal / "SKILL.md").read_text(encoding="utf-8")
+                frontmatter = text.split("---", 2)[1]
+                self.assertRegex(frontmatter, r"(?m)^enabled:\s*false\s*$")
 
 
 

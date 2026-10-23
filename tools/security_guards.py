@@ -65,6 +65,9 @@ ALLOWED_PERMISSIONS = {
     "Bash(bun run .agents/skills/jobnet-search/cli/src/cli.ts:*)",
     "Bash(bun run .agents/skills/linkedin-search/cli/src/cli.ts:*)",
     "Bash(bun run .agents/skills/freehire-search/cli/src/cli.ts:*)",
+    "Bash(bun run .agents/skills/himalayas-search/cli/src/cli.ts:*)",
+    "Bash(bun run .agents/skills/remoteok-search/cli/src/cli.ts:*)",
+    "Bash(bun run .agents/skills/weworkremotely-search/cli/src/cli.ts:*)",
     "Bash(python salary_lookup.py:*)",
     "Bash(python3 salary_lookup.py:*)",
     "Bash(python tools/rank_state.py:*)",
@@ -78,7 +81,7 @@ ALLOWED_PERMISSIONS = {
     "Bash(python tools/verify_layout.py:*)",
     "Bash(python3 tools/verify_layout.py:*)",
     "Bash(pdftotext:*)",
-    # The browser-header retry in 09-web-research.md. fetch_page.py is GET-only
+    # The identifying GET helper in 09-web-research.md. fetch_page.py is GET-only
     # with a fixed argv and refuses to write inside the repo, which is why the
     # grant names the script and not `curl`.
     "Bash(python tools/robots_check.py:*)",

@@ -12,7 +12,7 @@ export function writeError(error: string, code: string): void {
   process.stderr.write(JSON.stringify({ error, code }) + "\n")
 }
 
-const UA = "Mozilla/5.0 (compatible; linkedin-search-cli/1.0)"
+const UA = "mdshahansha/automated-switch-apply/1.0 (linkedin-search-cli)"
 
 /** Fetch HTML with exponential backoff on 429/5xx. Returns "" on a 404. */
 export async function htmlFetch(url: string): Promise<string> {

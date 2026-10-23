@@ -208,11 +208,11 @@ ai-job-search/
 │   ├── check_framework_version.py     # CI check: framework_version bumped when skill files change
 │   ├── check_upstream_updates.py      # Preview which personalized files an upstream update touches
 │   ├── convert_salary_excel.py        # Convert salary Excel to JSON
-│   ├── fetch_page.py                  # GET-only browser-header retry for 403s (robots.txt enforced)
+│   ├── fetch_page.py                  # GET-only identifying fetch helper (robots.txt enforced)
 │   ├── install_portal_clis.py         # Install every discovered portal CLI (bun install)
 │   ├── lint_skills.py                 # CI lint for skills, commands, settings.json
 │   ├── posting_guard.py               # Integrity gate: strip hidden text, flag injection-shaped lines
-│   ├── robots_check.py                # Gate the browser-header retry against robots.txt
+│   ├── robots_check.py                # Gate public GET requests against robots.txt
 │   ├── security_guards.py             # CI guards: permission allow/ask/deny, skill grants, gitignore, manifests
 │   ├── upstream_triage.py             # Sort upstream commits into worth-reviewing vs probably-skip
 │   ├── verify_layout.py               # Measure a compiled PDF's page layout (holes, orphans, footer collisions)
@@ -293,6 +293,10 @@ Point it at your source file (a `.tex` file plus any `.cls`/`.sty` files or bund
 If you prefer doing it by hand, the manual route still works: update the guidance in `05-cv-templates.md` and `06-cover-letter-templates.md`.
 
 ### Job search tools
+
+This fork adds an India and remote-board [portal catalogue](.agents/skills/README.md). Himalayas, Remote OK, and We Work Remotely use verified public APIs or feeds. Apna, Hirist, IIMJobs, Instahyre, Indeed India, Randstad India, Cutshort, AIJobs, Foundit, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle have explicit browser workflows where anonymous CLI search is restricted, blocked, ambiguous, or unverified. Browser workflows are disabled for `/scrape` CLI dispatch rather than represented as working scrapers.
+
+All portal CLIs identify this repository and their tool name in the HTTP User-Agent. They do not impersonate Chrome or Safari. Source attribution, country restrictions, feed coverage, and current access evidence are recorded in each skill; a remote label alone does not prove India eligibility.
 
 The four Danish CLI tools in `.agents/skills/` (Jobbank, Jobdanmark, Jobindex, Jobnet) demonstrate the pattern for building a job-portal integration for a specific market. If you're in a different country, run:
 

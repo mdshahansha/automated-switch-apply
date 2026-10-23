@@ -1,0 +1,19 @@
+import { join } from "path"
+
+const CLI_PATH = join(import.meta.dir, "../src/cli.ts")
+export interface CLIResult { stdout: string; stderr: string; exitCode: number }
+
+export async function runCLI(args: string[]): Promise<CLIResult> {
+  // process.execPath works with both installed Bun and the workspace runtime.
+  const proc = Bun.spawn([process.execPath, "run", CLI_PATH, ...args], { stdout: "pipe", stderr: "pipe" })
+  const [stdout, stderr, exitCode] = await Promise.all([
+    new Response(proc.stdout).text(), new Response(proc.stderr).text(), proc.exited,
+  ])
+  return { stdout: stdout.trim(), stderr: stderr.trim(), exitCode }
+}
+
+export function parseJSON<T = unknown>(result: CLIResult): T {
+  if (result.exitCode !== 0) throw new Error(`CLI exited ${result.exitCode}: ${result.stderr}`)
+  try { return JSON.parse(result.stdout) as T }
+  catch { throw new Error(`Invalid JSON stdout: ${result.stdout}`) }
+}

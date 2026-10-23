@@ -15,8 +15,12 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 Primary:
 - **linkedin.com/jobs** - installed `linkedin-search` CLI, with India supplied explicitly as the location. Search remote-from-India roles separately.
 - **freehire.me** - installed `freehire-search` CLI for technical roles; use its documented India and remote filters, then verify each employer's location eligibility.
+- **himalayas.app** - `himalayas-search` public API for remote roles. Preserve country and timezone restrictions; verify description conflicts before treating a job as India-eligible.
+- **remoteok.com** and **weworkremotely.com** - public-feed CLIs, `remoteok-search` and `weworkremotely-search`. Their search filters are local to the returned feed; missing entries are not proof of expiry.
 - **naukri.com** - India-focused WebSearch fallback; no local CLI is installed.
 - **Employer career pages** - WebSearch fallback and role verification for direct postings.
+
+For Apna, Hirist, IIMJobs, Instahyre, Indeed India, Randstad India, Cutshort, AIJobs, Foundit, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle, follow the corresponding browser skill in `.agents/skills/`. These carry `enabled: false` and no verified search CLI; do not invent commands, call private APIs, or reinterpret login/access blocks as permission to scrape. AIJobs needs an exact destination URL first. Current capabilities and access evidence are listed in [the portal catalogue](../../../.agents/skills/README.md).
 
 The candidate accepts any Indian city and any work mode, with a 30-day notice period. Salary is flexible with no numeric filter. Do not infer sponsorship or foreign work authorization from willingness to work remotely.
 

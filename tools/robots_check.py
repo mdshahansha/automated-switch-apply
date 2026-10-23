@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-"""Decide whether the browser-header curl retry in 09-web-research.md may run.
+"""Decide whether the identifying GET retry in 09-web-research.md may run.
 
-The retry exists to get past bot-filtering firewalls on sites whose robots.txt
-permits access. It is never used to override a site that has said no.
+The retry reads public pages only when robots.txt permits access. It uses the
+repository's honest tool User-Agent, never a browser identity or a policy bypass.
 
-WebFetch identifies itself as Claude-User and honors robots.txt, so a 403 has
-two very different causes: a WAF default on a site whose published policy
-allows access, or a site that has actually declined. This tells them apart.
+Claude-User exclusions are retained for the WebFetch workflow as well as wildcard
+and actual-tool exclusions. A policy that cannot be read with the identifying
+User-Agent leaves permission unconfirmed; no alternate identity is tried.
 
 Rules implemented (RFC 9309), deliberately on the cautious side:
   * longest-match wins; on equal specificity Disallow wins
-  * a Disallow for either "*" or "Claude-User" blocks the retry
+  * a Disallow for "*", "Claude-User" or "automated-switch-apply" blocks the retry
   * blank lines inside a record do not end it (Python's robotparser drops
     rules in that case, which fails open - see tests)
   * one leading UTF-8 byte-order mark is skipped (left in, it hides a first
     "User-agent" line and drops that whole group, which fails open)
-  * 404 means no published policy, which is permission
+  * 404 means no published robots policy; other access rules still apply
   * any other failure to read robots.txt leaves permission unconfirmed,
     and the retry does not happen - including a User-agent, Allow or
     Disallow line holding U+FFFD, i.e. a byte that is not valid UTF-8
@@ -27,8 +27,7 @@ Exit 0 = the retry may proceed. Exit 1 = do not retry; go to escalation step 3.
 import re, subprocess, sys
 from urllib.parse import urlsplit, unquote
 
-BROWSER = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-           '(KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36')
+USER_AGENT = 'mdshahansha/automated-switch-apply/1.0 (web-research)'
 
 def _fetch(url, ua):
     """curl, not urllib: some hosts (jobup.ch) hang urllib indefinitely while
@@ -149,27 +148,20 @@ def gate(url):
     if parts.query:
         path += '?' + unquote(parts.query)
     robots = f'{parts.scheme}://{parts.netloc}/robots.txt'
-    body, last = None, 'no attempt'
-    for ua in ('Claude-User', BROWSER):
-        try:
-            text, code = _fetch(robots, ua)
-        except Exception as e:
-            last = type(e).__name__; continue
-        if code == 404:
-            return 0, 'ALLOWED - no robots.txt published'
-        if code == 200:
-            if not is_robots_body(text):
-                last = 'HTTP 200 but the body is not a robots.txt'
-                continue
-            if has_undecodable_rule(text):
-                last = 'HTTP 200 but a User-agent/Allow/Disallow line is not valid UTF-8'
-                continue
-            body = text; break
-        last = 'HTTP %d' % code
-    if body is None:
-        return 1, 'UNCONFIRMED (%s) - do not retry, go to step 3' % last
-    for a in ('Claude-User', '*'):
-        if not allowed(body, a, path):
+    try:
+        text, code = _fetch(robots, USER_AGENT)
+    except Exception as e:
+        return 1, 'UNCONFIRMED (%s) - do not retry, go to step 3' % type(e).__name__
+    if code == 404:
+        return 0, 'ALLOWED - no robots.txt published'
+    if code != 200:
+        return 1, 'UNCONFIRMED (HTTP %d) - do not retry, go to step 3' % code
+    if not is_robots_body(text):
+        return 1, 'UNCONFIRMED (HTTP 200 but the body is not a robots.txt) - do not retry, go to step 3'
+    if has_undecodable_rule(text):
+        return 1, 'UNCONFIRMED (HTTP 200 but a User-agent/Allow/Disallow line is not valid UTF-8) - do not retry, go to step 3'
+    for a in ('Claude-User', '*', 'automated-switch-apply'):
+        if not allowed(text, a, path):
             return 1, f'DISALLOWED for {a} - do not retry, go to step 3'
     return 0, 'ALLOWED - robots.txt permits this path'
 
