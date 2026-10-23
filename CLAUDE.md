@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Mohammad Shahansha
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Mohammad Shahansha, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,76 +16,86 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Mohammad Shahansha
+- **Location:** India; current role based in Kolkata. Home city not separately confirmed.
+- **Phone:** +91 8228820500
+- **Email:** mdshahansha44411@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/mohammad-shahansha-042226193/
+- **GitHub:** https://github.com/mdshahansha
+- **Portfolio:** https://mohammad-shahansha.web.app/
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
+  | English | Working language; proficiency not specified |
+  | Hindi | Working language; proficiency not specified |
   <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
   working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
   undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English (default) <!-- English unless your market expects otherwise; /setup asks -->
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed as a Full Stack Engineer at Osbee Solution Private Limited.
+- **Notice period:** 30 days.
+- **Work authorization:** India. Other countries' work authorization is not declared.
+- **Work preferences:** Any Indian city; remote, hybrid, or onsite. International roles must permit remote work from India.
+- **Salary expectations:** Flexible; no minimum, current CTC, or numeric expectation supplied. Ask if a form requires a number.
+- **LinkedIn headline:** Not supplied; do not infer the current headline from a resume title.
 
 ### Education
 <!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **B.Tech in Computer Science**, graduated 2023 - Heritage Institute of Technology, Kolkata, India.
+  - Start date, thesis, grades, and coursework were not supplied.
 
 ### Professional Experience
 <!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Full Stack Engineer** (June 2025-present) - **Osbee Solution Private Limited** (Kolkata, India).
+  - Production energy-sector platform with web/mobile clients, backend services, authentication, database workflows, and deployment.
+  - Working stacks confirmed by the candidate: Node.js/React, Java/Spring Boot, and React Native.
+- **Software Engineer (Full Stack)** (June 2023-April 2025) - **CodingNinjas** (Gurgaon, India).
+  - Delivered React interfaces and REST APIs; supported production debugging and engineering mentoring.
+- Employment dates above were corrected by the candidate and supersede the conflicting resume variants. See `01-candidate-profile.md` for source notes and detailed experience.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, Java, Spring Boot, React Native, REST APIs.
+- **Secondary:** SQL, MySQL, PostgreSQL, MongoDB, Redis, authentication, testing, AWS, Docker, CI/CD.
+- **Domain:** Energy-sector CRM, education platforms, healthcare commerce and booking (project).
+- **Software:** Git, GitHub Actions, Postman, AWS CodePipeline, CloudWatch; further resume-reported tools are recorded in `01-candidate-profile.md`.
 
 ### Certifications
 <!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- None supplied.
 
 ### Publications
 <!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None supplied.
 
 ### Awards
 <!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- No formal awards supplied. Mentoring achievements are recorded in the candidate profile.
 
 ### Behavioral Profile
 <!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Self-reported interest:** Passion for learning new languages; whether spoken or programming languages was not specified.
+- **Assessment:** No formal behavioral assessment supplied.
+- **Strengths:** Resume-reported end-to-end engineering and mentoring; do not infer scored personality traits.
+- **Growth areas:** Not specified.
+- **Thrives in:** Not specified; any work mode is acceptable.
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Learning new languages.
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- No sector or company restrictions supplied. Search software engineering roles across sectors.
+- Suggested search titles, based on confirmed stacks: Full Stack Engineer, Software Engineer, Backend Engineer, Java Full Stack Developer, React Developer, React Native Developer.
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- International roles must explicitly support working remotely from India; a generic "remote" label is insufficient.
+- Do not claim overseas work authorization or immediate availability. Notice period is 30 days.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

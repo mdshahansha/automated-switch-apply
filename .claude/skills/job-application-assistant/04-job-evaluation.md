@@ -1,5 +1,5 @@
 ---
-framework_version: 1.2.7
+framework_version: 1.2.8
 ---
 
 # Job Evaluation Framework
@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Full-stack development with JavaScript/TypeScript, React.js/Next.js, Node.js/Express.js, Java/Spring Boot, React Native, REST APIs, SQL, databases, Redis, and authentication. Candidate confirmed working across all three main stacks; confirm any posting-specific depth requirement.
+**Moderate match areas:** AWS, Docker, CI/CD, testing, observability, and real-time features supported by resume examples. LLM APIs, messaging infrastructure, and Kubernetes require project-specific confirmation before specialized screening answers.
+**Weak match areas:** No blanket list supplied. Treat unsupported requirements as gaps; do not invent experience or assume expert proficiency from a skills list.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,11 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-stack, backend/API, frontend, and React Native delivery; energy-sector CRM and education-platform experience.
+**Moderate:** Healthcare commerce/booking through an independent project; adjacent product-engineering roles using the confirmed stacks.
+**Entry-level:** Assess specialist roles against actual projects, not title keywords. No staff/principal, people-management, or specialist AI research history is established.
+
+**Experience dates:** Osbee June 2025-present; CodingNinjas June 2023-April 2025. Compute total experience at application time. Do not reuse the conflicting dates from older resume variants or count the May 2025 interval as employment.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,9 +93,10 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- India, any city, onsite/hybrid/remote: PASS; the candidate has no city restriction.
+- International remote role explicitly permitting work from India: PASS; otherwise flag India hiring eligibility as unverified before drafting.
+- Every role's start-date requirement: compare with the candidate's 30-day notice; do not promise immediate availability.
+- Requires overseas relocation or foreign work authorization: FLAG and ask; neither is confirmed. Do not treat a generic remote label as worldwide eligibility.
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -107,19 +110,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Find software engineering work using confirmed full-stack, Java/Spring Boot, Node.js/React, or React Native experience.
+- Include opportunities across Indian cities and work modes, plus international remote-from-India roles.
+- Longer-term career goals and exclusive sector preferences are not specified; do not invent them.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Learning new languages is self-reported; whether spoken or programming languages was not specified. Ask about role-specific motivations when needed.
+- Tasks that drain: Not specified.
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Financial situation and current CTC not supplied. Salary expectation is flexible with no numeric minimum; never invent a mandatory salary answer.
+- **Flexibility**: Any work mode and Indian city; 30-day notice. Shift and timezone preferences are not specified.
+- **Professional development**: Self-reported interest in learning new languages; no additional language ability or proficiency implied.
 
 ### 6. Salary Benchmark (Optional)
 

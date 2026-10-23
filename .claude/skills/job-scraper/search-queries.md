@@ -12,11 +12,13 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **linkedin.com/jobs** - installed `linkedin-search` CLI, with India supplied explicitly as the location. Search remote-from-India roles separately.
+- **freehire.me** - installed `freehire-search` CLI for technical roles; use its documented India and remote filters, then verify each employer's location eligibility.
+- **naukri.com** - India-focused WebSearch fallback; no local CLI is installed.
+- **Employer career pages** - WebSearch fallback and role verification for direct postings.
+
+The candidate accepts any Indian city and any work mode, with a 30-day notice period. Salary is flexible with no numeric filter. Do not infer sponsorship or foreign work authorization from willingness to work remotely.
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -27,54 +29,82 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Full-stack product engineering
 
 These match your strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "Full Stack Engineer" React TypeScript India
+site:linkedin.com/jobs "Full Stack Developer" Node.js India
+site:naukri.com "Full Stack Developer" React India
+"Software Engineer" React Node.js "remote India"
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+Hindi query variants (keep technology names and employer job titles intact):
+```
+"फुल स्टैक डेवलपर" React भारत नौकरी
+"सॉफ्टवेयर इंजीनियर" Node.js भारत
+```
+
+### Priority 2: Backend APIs and Java/Spring Boot delivery
 
 These match your domain expertise.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Backend Engineer" Node.js India
+site:linkedin.com/jobs "Java Developer" "Spring Boot" India
+site:naukri.com "Java Full Stack Developer" India
+"Backend Developer" TypeScript Redis "remote India"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
-
+Hindi query variants:
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+"बैकएंड डेवलपर" Node.js भारत नौकरी
+"जावा डेवलपर" "Spring Boot" भारत
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: React web and React Native mobile engineering
 
-Wider net for general technical roles.
+Additional search directions supported by the candidate's confirmed working stacks.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "React Native Developer" India
+site:linkedin.com/jobs "Frontend Engineer" React TypeScript India
+site:naukri.com "React Developer" India
+"Mobile Engineer" "React Native" "remote India"
+```
+
+Hindi query variants:
+```
+"फ्रंटएंड डेवलपर" React भारत नौकरी
+"मोबाइल ऐप डेवलपर" "React Native" भारत
+```
+
+### Priority 4: Broader software and international remote engineering
+
+Wider net for software engineering roles and international employers that explicitly support remote work from India. Specialist AI, infrastructure, and lead/management roles need evidence of the required depth rather than a title-only match.
+
+```
+"Software Engineer" TypeScript "remote from India"
+"Full Stack Engineer" "India" "worldwide"
+site:boards.greenhouse.io "software engineer" "India" "remote"
+site:jobs.lever.co "full stack" "India" "remote"
+```
+
+Hindi query variants:
+```
+"सॉफ्टवेयर इंजीनियर" "भारत से रिमोट"
+"फुल स्टैक" "वर्क फ्रॉम होम" भारत
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, use the confirmed geographic scope:
+- **Accept:** Any Indian city, remote/hybrid/onsite. The current role is in Kolkata, but the home city is not separately confirmed and must not limit searches.
+- **Accept after verification:** International employers explicitly permitting remote work from India. Check country restrictions, hiring arrangement, and required time-zone overlap against the actual posting.
+- **Flag:** A generic remote/worldwide label without clear India eligibility; jobs requiring a start sooner than the 30-day notice; unspecified shift/travel requirements that matter to the role.
+- **Ask before including as a relocation target:** Onsite/hybrid work outside India. Overseas work authorization and relocation are not confirmed.
+- **Salary:** No numeric minimum or currency amount supplied. Do not filter all jobs out for missing salary, or treat flexible expectations as authorization to answer a mandatory numeric field.
 
 ## Language Filter
 

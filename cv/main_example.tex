@@ -1,10 +1,11 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Mohammad Shahansha
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
 %% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%% Personalized source; PDF compilation is unverified after a compiler timeout.
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
@@ -40,7 +41,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Mohammad Shahansha - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -48,15 +49,16 @@
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Mohammad}{Shahansha}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{India}{}{}
+\phone[mobile]{+91 8228820500}
+\email{mdshahansha44411@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/mohammad-shahansha-042226193/}{LinkedIn}, \href{https://github.com/mdshahansha}{GitHub}, \href{https://mohammad-shahansha.web.app/}{Portfolio}}
 
 \begin{document}
 
@@ -67,7 +69,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Full Stack Engineer building production web and mobile applications with React, TypeScript, Node.js, Java/Spring Boot, and React Native. Experience includes energy-sector platforms, REST APIs, authentication, database workflows, CI/CD, production support, and engineering mentoring.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +79,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Web and mobile}: React.js, Next.js, TypeScript, JavaScript, React Native, Redux Toolkit.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend and APIs}: Node.js, Express.js, Java, Spring Boot, REST APIs, Hibernate/JPA.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Data and security}: SQL, MySQL, PostgreSQL, MongoDB, Redis, JWT, OAuth 2.0, RBAC.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Delivery and testing}: AWS, Docker, GitHub Actions, CodePipeline, Jest, JUnit, Mockito, Postman.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Production engineering}: CloudWatch, Datadog, Grafana, Prometheus, debugging, root cause analysis.
 
 \end{itemize}
 
@@ -98,32 +100,30 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Jun 2025-present}{Full Stack Engineer}{Osbee Solution Private Limited}{Kolkata, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Built web/mobile interfaces and backend services for an energy-sector platform covering leads, payments, and document workflows.}
+    \item {Implemented authentication, role-based access controls, REST API integrations, and Redis-backed caching.}
+    \item {Built Docker-based delivery pipelines with GitHub Actions and AWS CodePipeline; supported deployment and production troubleshooting.}
+    \item {Integrated DocuSign and Zoho APIs for document signing and CRM synchronization.}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Jun 2023-Apr 2025}{Software Engineer (Full Stack)}{CodingNinjas}{Gurgaon, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Delivered React interfaces and REST APIs across web applications for an education and BI dashboard platform.}
+    \item {Investigated production incidents using log correlation, reproduction, and root cause analysis.}
+    \item {Mentored engineering students through live coding sessions and code reviews; collaborated with QA, Product, and UX.}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-\end{itemize}}}
+% No earlier employment supplied.
 
 \end{itemize}
 
@@ -131,19 +131,17 @@
 %     EDUCATION
 % ============================================================
 
+\newpage
 \section{Education}
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{Graduated 2023}{B.Tech in Computer Science}{Heritage Institute of Technology}{Kolkata, India}{}{\vspace{1pt}
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+% No additional degree supplied.
 
 \end{itemize}
 
@@ -154,37 +152,35 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {English and Hindi. Proficiency levels not specified.}
 \end{itemize}
 
 % ============================================================
 %     PUBLICATIONS (optional)
 % ============================================================
 
-\section{Publications}
+\section{Selected Project}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
+\item {\textbf{Aesthetic Care Platform}: Healthcare commerce and booking platform built with Next.js, Node.js, MongoDB, Redux Toolkit, Redis, and Stripe. Implemented subscription payments, access controls, and session/query caching. \href{https://shahinahoja.com/}{Project link}}
 \end{itemize}
 
 % ============================================================
 %     HONORS AND AWARDS (optional)
 % ============================================================
 
-\section{Honors and Awards}
+\section{Additional Engineering Experience}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {React Native client development, shared state management, authentication flows, and REST API integration.}
+\item {Real-time communication features using WebRTC and Socket.io with PostgreSQL-backed message history.}
+\item {Python scripts for operational data workflows and recurring engineering tasks.}
 \end{itemize}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
 
-\section{References}
-\vspace{1pt}
-\begin{itemize}
-\item{Available upon request.}
-\end{itemize}
+% No reference contacts or availability confirmed; omit this optional section.
 
 \end{document}

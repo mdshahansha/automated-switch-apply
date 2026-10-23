@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.0.1
 ---
 
 # Interview Preparation Guide
@@ -12,30 +12,43 @@ Structure answers as: **Situation** (context), **Task** (your responsibility), *
 
 Keep answers to 1-2 minutes. Be specific. End with what you learned or would do differently.
 
-## Ready-Made STAR Examples
+## STAR Candidates (Complete Manually)
 
 <!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+These are source-grounded preparation stubs, not complete interview stories. The candidate must supply missing context and confirm measurements before using them as detailed answers.
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Production platform delivery (full-stack ownership)
+**Source:** React Native / full-stack resumes, Osbee, June 2025-present.
+**S:** Energy-sector platform covering leads, payments, and document workflows.
+**T:** Full Stack Engineer contributing web/mobile clients, backend services, deployment, and production support.
+**A:** Resume describes React/TypeScript, React Native, backend APIs, authentication, databases, and CI/CD. Complete with one specific delivery and personal decisions.
+**R:** Production delivery is resume-reported; supply the specific release, adoption, and outcome. Do not invent a timeline or team size.
+**Use for:** "Describe an end-to-end delivery", "How do you make architecture decisions?"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Redis caching (performance and tradeoffs)
+**Source:** Osbee resume bullets.
+**S:** Repeated authorization/database queries on production request paths.
+**T:** Improve response time while maintaining correct access controls.
+**A:** Resume describes Redis caching with TTL-based invalidation. Complete with actual cache keys, invalidation design, failure behavior, and measurement method.
+**R:** Resume reports authorization checks falling from 80 ms to under 1 ms. Approximately 60% lower average API latency is a separate metric; confirm its baseline rather than conflating the two.
+**Use for:** "Describe a performance improvement", "What caching tradeoffs did you make?"
+
+### 3. Engineering mentoring (communication)
+**Source:** CodingNinjas resume bullets, June 2023-April 2025.
+**S:** Engineering students learning through live coding and code review.
+**T:** Help learners understand engineering concepts and improve implementation quality.
+**A:** Resume describes coding sessions and code reviews. Complete with a concrete learner problem and the teaching approach used.
+**R:** Resume reports mentoring 200 or more learners and assessment scores improving 25% in four weeks. Confirm cohort, baseline, and attribution before quoting the result in detail.
+**Use for:** "How do you explain technical concepts?", "Describe helping someone improve"
+
+### 4. Real-time communication (technical problem solving)
+**Source:** Full-stack resume, Osbee.
+**S:** Audio/video and messaging features within a production platform.
+**T:** Build communication features integrated with existing application workflows.
+**A:** Resume reports WebRTC, Socket.io signaling, connection lifecycle handling, and PostgreSQL-backed message history. Complete with the actual challenge, alternatives considered, and your contribution.
+**R:** No adoption or reliability metric supplied. State the implemented behavior without inventing a performance result.
+**Use for:** "Describe a difficult integration", "How do you debug real-time systems?"
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

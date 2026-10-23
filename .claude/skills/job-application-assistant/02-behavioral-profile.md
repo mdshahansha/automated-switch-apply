@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.0.1
 ---
 
 # Behavioral Profile
@@ -8,47 +8,40 @@ framework_version: 1.0.0
 <!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Mohammad Shahansha has not supplied a formal behavioral assessment. The only explicit personal learning preference is a passion for learning new languages; whether spoken or programming languages was not specified.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Not assessed | Not specified | Do not infer scored drives from resume wording. |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Learning interest (self-reported):** Passion for learning new languages.
+- **Engineering ownership (resume-reported):** End-to-end platform delivery and production support; this is experience evidence, not a personality assessment.
+- **Mentoring (resume-reported):** Live coding sessions and code reviews for engineering students; do not infer a preferred management style.
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Remote, hybrid, and onsite work are all acceptable.
+- Any Indian city is acceptable; international roles must support working remotely from India.
+- Team size, autonomy, schedule, and management preferences were not specified.
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- No personal growth areas supplied. Do not invent weaknesses or imply that interest in learning establishes an existing skill gap.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- Learning and professional development are possible alignment signals for the stated learning interest; other culture preferences remain unknown.
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- No candidate-specific culture friction established; ask about material concerns rather than inventing deal-breakers.
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Not specified.
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Mention learning interest only when relevant; support ownership and mentoring with actual experience.
+- **CV:** Use factual engineering examples, not unsupported personality labels.
+- **Interviews:** Complete source-grounded STAR candidates in `07-interview-prep.md` with the candidate.
+- **Don't overstate:** No formal assessment, native/fluent language level, leadership preference, or additional language ability is established.
