@@ -14,6 +14,7 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
@@ -114,6 +115,53 @@ def select_portals(portals, selectors):
     return [p for p in portals if p["id"] in selected]
 
 
+def resolve_words(portals, words):
+    """Split /scrape arguments into portal selectors and leftover focus words.
+
+    A word only becomes a selector when it, or a run of up to four consecutive
+    words, exactly names a registered portal, alias or group. Anything else
+    stays a focus word, so "/scrape data science" keeps its old meaning.
+    """
+    names = {"all"}
+    for portal in portals:
+        names.update(token(x) for x in [portal["id"], portal["name"], *portal.get("aliases", []), *portal.get("groups", [])])
+    names.discard("")
+    selectors, focus, index = [], [], 0
+    while index < len(words):
+        for width in range(min(4, len(words) - index), 0, -1):
+            phrase = " ".join(words[index:index + width])
+            if token(phrase) in names:
+                selectors.append(phrase)
+                index += width
+                break
+        else:
+            focus.append(words[index])
+            index += 1
+    return selectors, " ".join(focus)
+
+
+def classify_host(portals, url):
+    """Match a posting URL's host to a registered portal; never fetch it."""
+    try:
+        parts = urlsplit(url.strip())
+        host = (parts.hostname or "").lower().rstrip(".")
+    except (AttributeError, ValueError):
+        raise ValueError("a http(s) URL is required") from None
+    if parts.scheme not in ("http", "https") or not host:
+        raise ValueError("a http(s) URL is required")
+    if parts.username or parts.password:
+        # Userinfo is the classic look-alike trick (https://hirist.tech@evil.example/).
+        return {"host": host, "classification": "unverified", "portal": None,
+                "reason": "URL carries userinfo; the real host is not a registered portal."}
+    for portal in portals:
+        for known in portal.get("hosts", []):
+            if host == known or host.endswith("." + known):
+                return {"host": host, "classification": "portal", "portal": {key: portal.get(key) for key in
+                        ("id", "name", "mode", "automatic", "apply_method", "url", "reason")}}
+    return {"host": host, "classification": "unverified", "portal": None,
+            "reason": "Host is not a registered portal. Check the ATS rules in /apply before treating it as official."}
+
+
 def country_code(value):
     if re.fullmatch(r"[A-Za-z]{2}", value):
         return value.upper()
@@ -165,7 +213,7 @@ def build_arguments(portal, args):
 
 
 def portal_view(portal, previous=None):
-    view = {key: portal.get(key) for key in ("id", "name", "mode", "automatic", "installed", "cli_installed", "skill_enabled", "url", "reason", "filters")}
+    view = {key: portal.get(key) for key in ("id", "name", "mode", "automatic", "installed", "cli_installed", "skill_enabled", "url", "hosts", "apply_method", "reason", "filters")}
     view.update(last_success=None, last_search=None, jobs_discovered=0, duplicates_removed=0, shortlisted=0)
     view.update({key: value for key, value in (previous or {}).items() if key in {
         "status", "last_checked", "last_search", "last_success", "jobs_discovered", "error", "unsupported_filters",
@@ -324,6 +372,12 @@ class Parser(argparse.ArgumentParser):
 def make_parser():
     parser = Parser(description=__doc__.splitlines()[0])
     commands = parser.add_subparsers(dest="command", required=True, parser_class=Parser)
+    for command in ("resolve", "host"):
+        sub = commands.add_parser(command)
+        if command == "resolve":
+            sub.add_argument("words", nargs="*", help="raw /scrape arguments")
+        else:
+            sub.add_argument("url")
     for command in ("search", "status", "links", "import"):
         sub = commands.add_parser(command)
         sub.add_argument("--state", type=Path, default=STATE)
@@ -363,6 +417,16 @@ def main(argv=None):
             output = execute_import(args)
         elif args.command == "status":
             output = execute_status(args)
+        elif args.command == "resolve":
+            portals = discover()
+            selectors, focus = resolve_words(portals, args.words)
+            chosen = select_portals(portals, selectors) if selectors else []
+            output = {"command": "resolve", "selectors": selectors, "focus": focus,
+                      "portals": [p["id"] for p in chosen],
+                      "automatic": [p["id"] for p in chosen if p["automatic"]],
+                      "manual": [p["id"] for p in chosen if not p["automatic"]]}
+        elif args.command == "host":
+            output = {"command": "host", **classify_host(discover(), args.url)}
         else:
             portals = select_portals(discover(), args.selectors or ["all"])
             output = {"command": "links", "portals": [portal_view(p) for p in portals],

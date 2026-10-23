@@ -249,6 +249,10 @@ ALLOWED_SKILL_TOOLS = {
     "Bash(python3 tools/job_key.py:*)",
     "Bash(python tools/scrape_state.py:*)",
     "Bash(python3 tools/scrape_state.py:*)",
+    # The registry runner: fixed-argv, no-shell dispatch of registered public
+    # CLIs only, plus state writes the same as scrape_state.py.
+    "Bash(python tools/portal_search.py:*)",
+    "Bash(python3 tools/portal_search.py:*)",
 }
 
 # The tools a shipped .claude/agents/*.md may list. These agents read untrusted

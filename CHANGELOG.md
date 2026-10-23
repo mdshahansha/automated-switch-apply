@@ -15,6 +15,18 @@ per-file diff commands.
 
 ### Added
 
+- **`/scrape` selects portals by name or group** (`.claude/skills/job-scraper/SKILL.md` Step 0.5,
+  `tools/portal_search.py resolve`) - `/scrape India remote`, `/scrape Hirist Instahyre Cutshort` and
+  `/scrape Himalayas RemoteOK` run the registry runner, which fetches only verified automatic portals
+  and gives manual portals a search link and import path. `/scrape status` and `/scrape links` print
+  the integration report and official search pages. With no portal or group name, `/scrape` is unchanged.
+- **`/apply` recognizes registry portals and prepares the application destination**
+  (`.claude/commands/apply.md` Step 6c, `tools/portal_search.py host`, `hosts` and `apply_method` in
+  `tools/portal_registry.json`) - browser-only boards such as Hirist and Instahyre are no longer
+  "unverified". The new step names the official destination, lists the stated steps and drafts
+  screening answers from verified profile data. It never submits; the row stays `drafted` until the
+  user reports a confirmation through `/outcome`.
+
 - **CI runs the Python suite on Windows** (`.github/workflows/ci.yml` `python-tests-windows`) - every
   job ran on Ubuntu, so a Windows-only failure reached master with all checks green: #480's test
   (an atomic rename that Windows file locking refuses) and #486's (a tool printing non-ASCII JSON
@@ -24,6 +36,10 @@ per-file diff commands.
   CI. The five Linux legs keep their names, so required checks are unchanged.
 
 ### Changed
+
+- **`scrape_state.py` deduplicates on the same canonical URL as the portal runner** - a job the
+  registry runner stored no longer reappears from a legacy `/scrape` run because its URL carries
+  tracking parameters, a trailing slash or different host case.
 
 - **`freehire-search` documents the `OR` and `title:` query operators** (#674,
   `.agents/skills/freehire-search/SKILL.md`, `url-reference.md`, `cli/README.md`, `--help`) -

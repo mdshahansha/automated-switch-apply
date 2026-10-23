@@ -296,6 +296,27 @@ If you prefer doing it by hand, the manual route still works: update the guidanc
 
 This fork adds an India and remote-board [portal catalogue](.agents/skills/README.md). Himalayas, Remote OK, and We Work Remotely use verified public APIs or feeds. Apna, Hirist, IIMJobs, Instahyre, Indeed India, Randstad India, Cutshort, AIJobs, Foundit, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle have explicit browser workflows where anonymous CLI search is restricted, blocked, ambiguous, or unverified. Browser workflows are disabled for `/scrape` CLI dispatch rather than represented as working scrapers.
 
+Choose portals by name or group with `/scrape`. Names and groups come from [`tools/portal_registry.json`](tools/portal_registry.json):
+
+```text
+/scrape India remote              # every India and remote portal
+/scrape Hirist Instahyre Cutshort # manual portals: search links + import, no fetching
+/scrape Himalayas RemoteOK react  # two automatic boards, "react" as the query
+/scrape status                    # integration status report, no network request
+/scrape links india               # official search pages for manual portals
+```
+
+With no portal or group name, `/scrape` runs exactly as before. The same runner works outside Claude Code:
+
+```bash
+python3 tools/portal_search.py search remote --query "full stack" --jobage 14 --dry-run
+python3 tools/portal_search.py status
+python3 tools/portal_search.py import --portal hirist-search --file my_hirist_jobs.json
+python3 tools/portal_search.py host "https://www.hirist.tech/j/some-job"
+```
+
+Only the automatic portals (Himalayas, Remote OK, We Work Remotely, freehire) are fetched. The runner normalizes results, removes duplicates by canonical URL and stable job ID, and records each portal's status in `job_scraper/seen_jobs.json`. `/apply` uses `host` to recognize registry portals, then tells you where and how to apply. It never submits: you sign in, fill and submit the form yourself, and `/outcome` records `applied` only after you report a confirmation.
+
 All portal CLIs identify this repository and their tool name in the HTTP User-Agent. They do not impersonate Chrome or Safari. Source attribution, country restrictions, feed coverage, and current access evidence are recorded in each skill; a remote label alone does not prove India eligibility.
 
 The four Danish CLI tools in `.agents/skills/` (Jobbank, Jobdanmark, Jobindex, Jobnet) demonstrate the pattern for building a job-portal integration for a specific market. If you're in a different country, run:

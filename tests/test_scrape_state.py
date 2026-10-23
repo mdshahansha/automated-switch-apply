@@ -48,6 +48,18 @@ class ScrapeStateTests(unittest.TestCase):
         self.assertEqual((out["already_seen"], out["already_applied"], out["repeated_in_batch"]), (1, 1, 1))
         self.assertNotIn("Old 999", json.dumps(out))
 
+    def test_candidates_dedupe_on_the_same_canonical_url_as_the_portal_runner(self):
+        # A job the registry runner stored must not come back from a legacy
+        # /scrape run just because the URL carries tracking or a trailing slash.
+        self.state.parent.mkdir()
+        self.state.write_text(json.dumps({"seen": {"stored": {"title": "React Engineer", "company": "Example",
+            "url": "https://remoteok.com/remote-jobs/react-1"}}}), encoding="utf-8")
+        jobs = [{"title": "Frontend Dev", "company": "Other", "url": "https://REMOTEOK.com/remote-jobs/react-1/?utm_source=x#top"},
+                {"title": "Backend Dev", "company": "Other", "url": "https://remoteok.com/remote-jobs/backend-2"}]
+        result = self.run_tool("candidates", jobs)
+        self.assertEqual([job["title"] for job in result["selected"]], ["Backend Dev"])
+        self.assertEqual(result["already_seen"], 1)
+
     def test_one_malformed_portal_hit_does_not_stop_other_candidates(self):
         valid = {"title": "Builder", "company": "Fresh", "url": "https://jobs.test/fresh"}
         out = self.run_tool("candidates", [valid, {"title": "Unknown", "company": None, "url": "https://jobs.test/bad"}, None])

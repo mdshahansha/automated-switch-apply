@@ -13,6 +13,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from job_key import make_key
+from portal_jobs import canonical_url
 from rank_state import STATE, TRACKER, load_state, norm, save_state, tracker_pairs
 
 
@@ -28,6 +29,18 @@ def read_jobs(path: Path) -> list:
     return data
 
 
+def comparable_url(url: str) -> str:
+    """The URL form both /scrape and tools/portal_search.py dedupe on.
+
+    Tracking parameters, query order, fragments and host case do not make a
+    new posting. A URL canonical_url rejects falls back to the old trimmed form.
+    """
+    try:
+        return canonical_url(url)
+    except ValueError:
+        return url.strip().rstrip("/")
+
+
 def identity(job: dict) -> tuple[str, tuple[str, str]]:
     for field in ("title", "company", "url"):
         if not isinstance(job.get(field), str) or not job[field].strip():
@@ -36,7 +49,7 @@ def identity(job: dict) -> tuple[str, tuple[str, str]]:
     parsed = urlsplit(url)
     if parsed.scheme not in ("http", "https") or not parsed.netloc:
         raise ValueError(f"job has an invalid posting URL: {url}")
-    return url.rstrip("/"), (norm(job["company"]), norm(job["title"]))
+    return comparable_url(url), (norm(job["company"]), norm(job["title"]))
 
 
 def select(jobs: list, seen: dict, tracker: set, *, strict: bool = False) -> tuple[list[dict], dict]:
@@ -45,7 +58,7 @@ def select(jobs: list, seen: dict, tracker: set, *, strict: bool = False) -> tup
         if not isinstance(entry, dict):
             raise ValueError("job_scraper/seen_jobs.json contains a non-object entry")
         if isinstance(entry.get("url"), str):
-            urls.add(entry["url"].rstrip("/"))
+            urls.add(comparable_url(entry["url"]))
         pairs.add((norm(entry.get("company")), norm(entry.get("title"))))
 
     selected = []

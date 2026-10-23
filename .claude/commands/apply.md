@@ -56,7 +56,11 @@ If the posting specifies a city, add `--city "<City>"` to narrow results. Parse 
 
 Before proceeding to drafting, inspect the posting URL's hostname to verify provenance (#431). Classify the host into one of three categories:
 
-1. **Installed portal board:** the host matches any configured job portal in `.agents/skills/` (e.g. `jobindex.dk`, `linkedin.com`, `jobnet.dk`, `jobbank.dk`, `jobdanmark.dk`, `freehire.me`, or any portal added by `/add-portal`).
+1. **Installed portal board:** the host matches any configured job portal in `.agents/skills/` (e.g. `jobindex.dk`, `linkedin.com`, `jobnet.dk`, `jobbank.dk`, `jobdanmark.dk`, `freehire.me`, or any portal added by `/add-portal`). Registry portals count too, including browser-only ones with no CLI (e.g. `hirist.tech`, `instahyre.com`, `cutshort.io`, `workatastartup.com`). Check them with the read-only helper, which never fetches the URL:
+   ```bash
+   python3 tools/portal_search.py host "<posting URL>"
+   ```
+   `classification: portal` means an installed portal board; keep the returned `portal` object for Step 6c. `unverified` from this helper only means "not a registered portal": still apply rule 2 before calling the host unverified.
 2. **Known official ATS apex:** the host matches or is a valid subdomain of one of the six standard ATS domains:
    - `greenhouse.io`
    - `lever.co`
@@ -410,6 +414,20 @@ Do this before the optional offer below, and before ending the turn for any othe
 7. **Archive the posting now.** Write the posting text you are holding from Step 0 - the text as `tools/posting_guard.py` cleaned it, verbatim from there and never a summary, never a fresh fetch - to `documents/applications/<company>_<role>/job_posting.md`, creating the folder if absent. Append a `## posting_guard` section holding the verdict line and the finding **counts** only (hidden blocks, instruction-like lines, hidden URLs, invisible characters, mixed-script words); never the excerpts, so content the gate removed is never re-read by `/interview`, `/outcome` or `/setup` later. Derive `<company>_<role>` from the `company` and `role` values this tracker row ends up holding, by the same rule `/outcome` Step 1.4 uses. **If the file already exists, leave it** - the archived copy is what was actually submitted (a re-application to the same company and role collides here and keeps the older posting, as it does in `/outcome` today). **If you no longer hold the posting text, write nothing** - say so in the report and never reconstruct it from memory; `/outcome` Step 3.2 archives it later.
 
 Name the tracker row in the "Files Created" report above, and the archived posting - saying explicitly when an existing `job_posting.md` was left in place rather than written.
+
+### Step 6c: Application Destination (prepare, never submit)
+
+Tell the user where and how to apply. This step reads and links; it never submits.
+
+1. **Find the official destination.** Use the posting's own apply link from Step 0 (`application_url`, an ATS link, or the portal job page). If the Step 1 host check returned a registry `portal`, read its `apply_method` and the matching text in `apply_methods` of `tools/portal_registry.json`:
+   - `employer_link`: the board links to the employer's own page or ATS. Give that link. Run the Step 1 host rules on it as well; a link to an unverified host is named as such.
+   - `portal_account`: the candidate applies inside the portal while signed in. Give the official job page.
+   - `unknown`, or no registry portal: give the URL the user supplied and say the path is unconfirmed.
+2. **List the steps** the posting or portal states: account, upload fields, screening questions, deadline. Do not guess steps it does not state.
+3. **Prepare answers** to screening questions only from `CLAUDE.md`, `01-candidate-profile.md` and the master CV. Use `08-application-forms.md` for free-text fields. Mark an answer the sources do not support as `needs your input`. Never invent one. Salary: say the profile is flexible and ask the user for a number when a form requires it. Notice period: 30 days.
+4. **Submission is the candidate's.** No registry portal has a verified, authorized submission API for candidates, so none is used. Open the official page for the candidate (in the built-in browser if they want), and let them sign in, fill and submit. Do not type passwords, solve a CAPTCHA, or press a submit button. Do not automate a portal that prohibits it.
+5. **Duplicate check.** Step 6b already found any tracker row with the same company and role. If that row's status is `applied` or later, say so and stop before step 4.
+6. **Record honestly.** The tracker row stays `drafted`. Append an undated `platform: <portal name>` marker to its `notes` when a registry portal matched. The row becomes `applied` only through `/outcome`, and only after the user reports a confirmation: a portal receipt, a confirmation email or an on-screen success message. Record that evidence in the `/outcome` note.
 
 ### Application-Form Fields (Optional Third Artifact)
 
