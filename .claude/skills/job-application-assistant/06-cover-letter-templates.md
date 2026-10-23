@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.3
+framework_version: 1.0.4
 ---
 
 # Cover Letter Templates and Tailoring Guide
@@ -76,7 +76,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{}{\Huge{Mohammad Shahansha}}{  \href{mailto:mdshahansha44411@gmail.com}{mdshahansha44411@gmail.com} | +91 8228820500 |  \urlstyle{same}\href{https://www.linkedin.com/in/mohammad-shahansha-042226193/}{LinkedIn}
+\namesection{}{\Huge{Mohammad Shahansha}}{  \href{mailto:mshahansha.2001@gmail.com}{mshahansha.2001@gmail.com} | +91 8228820500 |  \urlstyle{same}\href{https://www.linkedin.com/in/mohammad-shahansha-042226193/}{LinkedIn}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -19,7 +19,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Name:** Mohammad Shahansha
 - **Location:** India; current role based in Kolkata. Home city not separately confirmed.
 - **Phone:** +91 8228820500
-- **Email:** mdshahansha44411@gmail.com
+- **Email:** mshahansha.2001@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/mohammad-shahansha-042226193/
 - **GitHub:** https://github.com/mdshahansha
 - **Portfolio:** https://mohammad-shahansha.web.app/
