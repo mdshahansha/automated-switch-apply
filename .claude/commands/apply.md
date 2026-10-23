@@ -373,8 +373,10 @@ Summarize 3-5 key decisions made to tailor the application:
 - Any gaps that were acknowledged or reframed
 
 ### Files Created
+After PDF verification, export the resume with the neutral filename specified in `01-candidate-profile.md` to `output/pdf/<company>_<role>/`. Preserve separate application copies and verify that the exported PDF matches the checked build. Share and upload this neutral PDF, never an internal company-based filename. Its PDF title and displayed heading must also follow the profile's naming preference. Record this exact delivery path in the application's attachment/recovery state.
+
 List the files written:
-- `cv/main_<company>_<role><CV_EXT>`
+- The verified resume PDF under `output/pdf/<company>_<role>/`, using the profile's neutral filename (use this path for `cv_file` and attachments)
 - `cover_letters/cover_<company>_<role><COVER_EXT>`
 
 Tell the user: "Both files are ready for your review. Open them to check the final output before compiling."

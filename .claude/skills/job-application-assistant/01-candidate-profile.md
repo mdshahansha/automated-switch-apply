@@ -21,6 +21,7 @@ framework_version: 1.1.3
 - **Work authorization:** India. Authorization in other countries and overseas relocation are not declared.
 - **Salary:** Flexible; no current CTC, minimum, or numeric expectation supplied. Do not invent a numeric screening answer.
 - **Target roles:** Full-stack, software, backend, Java/Spring Boot, React, and React Native engineering are suggested search directions based on confirmed stacks. No exclusive title or seniority requirement supplied.
+- **Resume naming:** Use `Mohammad_Shahansha_Resume.pdf` for shared and uploaded resumes. Never put the target employer's name in a resume filename, PDF title, or displayed heading. Keep tailored versions in separate application folders to avoid overwriting them.
 
 ### Source and reconciliation notes
 - The candidate updated the application email to `mshahansha.2001@gmail.com` on 2026-10-23. This address supersedes the email in the original resume PDFs.
