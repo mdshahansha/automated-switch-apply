@@ -6,6 +6,7 @@ export interface SearchOpts {
   jobage?: number
   page: number
   limit?: number
+  includeDescription?: boolean
 }
 
 export function searchJobs(jobs: Job[], opts: SearchOpts, now = Date.now()) {
@@ -27,5 +28,5 @@ export function searchJobs(jobs: Job[], opts: SearchOpts, now = Date.now()) {
   const results = filtered.slice(start, start + Math.min(opts.limit ?? PAGE_SIZE, PAGE_SIZE))
   return { meta: { count: results.length, page: opts.page, pageSize: PAGE_SIZE, total: filtered.length,
     source: "We Work Remotely", sourceUrl: "https://weworkremotely.com/remote-jobs.rss", filters: "client-side" },
-    results: results.map(({ description: _description, ...job }) => job) }
+    results: results.map(({ description, ...job }) => opts.includeDescription ? { ...job, description } : job) }
 }

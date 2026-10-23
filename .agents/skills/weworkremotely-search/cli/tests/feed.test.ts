@@ -137,6 +137,15 @@ describe("CLI", () => {
     expect((await invoke(["search", "--format", "table"])).stdout).toContain("We Work Remotely link")
     expect(JSON.parse((await invoke(["detail", jobs[0].id])).stdout).description).toContain("Build React")
   })
+  test("optional search descriptions come from one feed load and preserve the default contract", async () => {
+    const ordinary = await invoke(["search", "-q", "React"])
+    expect(JSON.parse(ordinary.stdout).results[0]).not.toHaveProperty("description")
+    const expanded = await invoke(["search", "-q", "React", "--include-description"])
+    expect(expanded.exitCode).toBe(0); expect(expanded.loads).toBe(1)
+    expect(JSON.parse(expanded.stdout).results[0].description).toBe(jobs[0].description)
+    const repeated = await invoke(["search", "--include-description", "--include-description"])
+    expect(repeated.exitCode).toBe(1); expect(repeated.loads).toBe(0)
+  })
   test("bad input errors go to stderr before loading", async () => {
     for (const args of [[], ["oops"], ["detail"], ["search", "extra"], ["detail", "slug", "extra"],
       ["search", "--wat", "x"], ["search", "--query"], ["search", "-q", ""], ["search", "--location", " "],

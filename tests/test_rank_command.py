@@ -44,6 +44,22 @@ def _sections(text: str) -> dict[str, str]:
 
 
 class RankCommandSpec(unittest.TestCase):
+    def test_custom_weights_and_evidence_flow_through_command(self):
+        text = COMMAND.read_text(encoding="utf-8")
+        sections = _sections(text)
+        for heading in ("Step 0: Parse Input", "Step 1: Load State", "Step 4: Update State"):
+            self.assertIn("--weights", sections[heading], heading)
+        step2 = sections["Step 2: Batch-Fetch and Score"]
+        for field in ("score_notes", "preference_gate", "preference_note"):
+            self.assertIn(f'"{field}"', step2)
+            self.assertIn(f'"{field}"', sections["Step 4: Update State"])
+        framework = EVALUATION.read_text(encoding="utf-8")
+        for dimension in ("salary", "role", "freshness", "employment"):
+            self.assertIn(f"`{dimension}`", framework)
+        self.assertIn("unavailable", text)
+        self.assertIn("renormaliz", text)
+        self.assertIn("regardless of weights", text)
+
     def test_step2_dispatches_posting_scorer_and_returns_guard(self):
         """Scoring agents read untrusted postings, so they run as the shipped
         least-privilege `posting-scorer` definition (no Edit/Write), gate every

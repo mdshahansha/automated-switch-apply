@@ -149,6 +149,19 @@ Interpret results relative to the baseline defined in the data file's metadata. 
 
 If the salary tool is not configured, skip this section.
 
+### Optional ranking dimensions
+
+`/rank --weights <JSON file>` can add the dimensions below while preserving the default rubric. Use the existing profile from `/setup`; this configuration changes weights only, never candidate qualifications or preferences. Each score needs a plain-text `score_notes` explanation grounded in the fetched posting and profile. Missing information is unavailable, not a zero or an assumed average.
+
+| Key | Evidence and scoring |
+|---|---|
+| `salary` | Compare a disclosed range with an explicitly configured expectation in a comparable currency and pay period. Full overlap or meeting the minimum supports 80-100, partial overlap 40-79, a disclosed shortfall 0-39. If either the range or expectation is absent, incomparable, or flexible without a numeric target, use `null`; a market benchmark does not invent a personal expectation. |
+| `role` | Compare the actual responsibilities with target roles and skills from the profile: directly relevant engineering tasks support 80-100, adjacent responsibilities 60-79, partial relevance 40-59, unrelated work 0-39. A title alone is insufficient. |
+| `freshness` | Use only the verified `posted_date`, never `first_seen`: 0-7 days old = 100, 8-14 = 80, 15-30 = 60, 31-60 = 40, over 60 = 20. Missing, malformed or future dates are `null`. This signal never proves a posting open or closed and never overrides a real deadline. |
+| `employment` | Compare the disclosed employment type and working arrangements with explicit configured preferences: an explicit match supports 80-100, an allowed alternative 60-79, a stated soft conflict 0-59. Missing job terms or candidate preferences are `null`; willingness to work any mode does not imply a contract-type preference. |
+
+`technical` continues to measure skills/technology, `experience` includes seniority and domain, and `career` measures stated goals. Check location, remote-country eligibility, language, work authorization and other hard constraints before weighing scores. A verified hard mismatch against an explicit constraint sets a veto (`location_verdict`, `language_gate`, or `preference_gate`), regardless of weights. Quote the requirement and constraint; unknown evidence or a soft preference is a visible FLAG. No numeric salary floor, foreign authorization or contract preference may be invented. Gates are unweighted and cannot be disabled by setting a dimension's weight to zero.
+
 ## Output Format
 
 Present the evaluation as:
@@ -244,6 +257,16 @@ consumer benefits.
 - Career Alignment: 30%
 
 (Location is pass/fail, not weighted)
+
+These remain the defaults. A custom weight file is a flat JSON object whose supported keys are `technical`, `experience`, `behavioral`, `career`, `salary`, `role`, `freshness`, and `employment`, for example:
+
+```json
+{"technical": 0.30, "experience": 0.25, "career": 0.15, "role": 0.10, "salary": 0.05, "freshness": 0.10, "employment": 0.05}
+```
+
+Save it as a local JSON file and pass it with `/rank --weights <file>`. The scoring results are committed to state with `python3 tools/rank_state.py apply --results <scores.json> --weights <file>` (Windows: `python`). Weights must be finite nonnegative numbers summing exactly to 1 with at least one positive value; booleans, unknown or duplicate keys and invalid totals are errors. The supplied map replaces all defaults, so omitted keys have no weight. Without a file, all four default scores remain required. With a file, each configured positive-weight core score remains required; zero-weight and omitted core scores are not needed.
+
+Optional dimensions (`salary`, `role`, `freshness`, `employment`) may be missing or `null`. The tool records them as unavailable and renormalizes the remaining positive weights; if nothing can be scored, it returns an error. Never supply a numeric placeholder for absent evidence. The persisted scores, configured/effective weights, unavailable dimensions and agent explanations make every result auditable. The score uses exact decimal arithmetic and rounds half up to the nearest integer. Existing ranked jobs keep their prior scores until explicitly re-ranked with `--all`.
 
 ## Thresholds
 - **Strong Fit** (75+): Definitely apply, tailor everything

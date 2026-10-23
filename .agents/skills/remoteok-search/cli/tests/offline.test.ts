@@ -45,6 +45,16 @@ describe("feed normalization", () => {
     expect(() => parseFeed({ jobs: fixture })).toThrow(CLIError)
   })
 
+  test("retains disclosed salary bounds without inventing currency or period", () => {
+    const base = { id: 42, position: "Engineer", url: "/remote-jobs/remote-engineer-company-42" }
+    expect(parseFeed([{ ...base, salary_min: 90000, salary_max: 120000 }]).jobs[0])
+      .toMatchObject({ salary_min: 90000, salary_max: 120000, salary_currency: null })
+    expect(parseFeed([{ ...base, salary_min: 0, salary_max: "120000", currency: "EUR" }]).jobs[0])
+      .toMatchObject({ salary_min: null, salary_max: null, salary_currency: "EUR" })
+    expect(parseFeed([{ ...base, salary_min: -1, salary_max: Infinity }]).jobs[0])
+      .toMatchObject({ salary_min: null, salary_max: null })
+  })
+
   test("retains paragraphs, lists and decoded entities, removes executable markup", () => {
     expect(htmlToText('<p>A &amp; B</p><p>Next &#x2014; &#8217;</p><ul><li>One</li><li>Two</li></ul><script>bad()</script>'))
       .toBe("A & B\n\nNext — ’\n\n- One\n- Two")

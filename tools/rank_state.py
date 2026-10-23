@@ -31,7 +31,7 @@ this only removes the state file from the conversation.
 Usage:
   python3 tools/rank_state.py candidates [--all] [--focus TEXT] [--limit N]
   python3 tools/rank_state.py sweep [--write] [--exclude KEY,KEY]
-  python3 tools/rank_state.py apply --results results.json [--dry-run] [--now ISO-DATETIME]
+  python3 tools/rank_state.py apply --results results.json [--weights weights.json] [--dry-run] [--now ISO-DATETIME]
 
 Both subcommands print JSON on stdout. Exit 0 on success, 1 on a usage or
 state error, or on `apply` when any result could not be written.
@@ -39,6 +39,7 @@ state error, or on `apply` when any result could not be written.
 
 import argparse
 import json
+import math
 import os
 import re
 import sys
@@ -54,6 +55,8 @@ TRACKER = ROOT / "job_search_tracker.csv"
 
 # 04-job-evaluation.md
 WEIGHTS = {"technical": 0.30, "experience": 0.25, "behavioral": 0.15, "career": 0.30}
+OPTIONAL_DIMENSIONS = ("salary", "role", "freshness", "employment")
+SCORE_DIMENSIONS = (*WEIGHTS, *OPTIONAL_DIMENSIONS)
 BANDS = ((75, "Strong Fit"), (60, "Good Fit"), (45, "Moderate Fit"), (30, "Weak Fit"), (0, "Poor Fit"))
 
 DEFAULT_LIMIT = 10
@@ -65,7 +68,7 @@ ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 # names exactly these, so the spec and the tool cannot drift apart.
 AGENT_STATUSES = ("scored", "expired", "unreachable")
 
-# The values the two veto gates may take (rank.md Step 2). Step 5's veto is an
+# The values the veto gates may take (rank.md Step 2). Step 5's veto is an
 # exact match on "FAIL", so any other spelling would shortlist a deal-breaker.
 GATE_VERDICTS = ("PASS", "FAIL", "FLAG")
 
@@ -284,21 +287,90 @@ def cmd_sweep(args) -> int:
     return 0
 
 
-def overall_score(scores: dict) -> int:
+def validate_weights(weights: dict) -> dict:
+    """Configured fractions total exactly one; no hidden default dimensions."""
+    if not isinstance(weights, dict) or not weights:
+        raise ValueError("weights must be a non-empty object")
+    unknown = set(weights) - set(SCORE_DIMENSIONS)
+    if unknown:
+        raise ValueError(f"unknown weight dimensions: {', '.join(sorted(unknown))}")
+    for dimension, value in weights.items():
+        if isinstance(value, bool) or not isinstance(value, (int, float)):
+            raise ValueError(f"weight '{dimension}' must be a finite nonnegative number")
+        if value < 0 or value > 1 or (isinstance(value, float) and not math.isfinite(value)):
+            raise ValueError(f"weight '{dimension}' must be finite and between 0 and 1")
+    if sum(Fraction(str(value)) for value in weights.values()) != 1:
+        raise ValueError("weights must sum to 1 with at least one positive weight")
+    return dict(weights)
+
+
+def load_weights(path: Path | None) -> dict:
+    if path is None:
+        return dict(WEIGHTS)
+    def unique_keys(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError(f"duplicate weight dimension: {key}")
+            result[key] = value
+        return result
+
+    try:
+        return validate_weights(json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_keys))
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        raise ValueError(f"cannot load weights {path}: {exc}") from exc
+
+
+def score_details(scores: dict, weights: dict | None = None, notes: dict | None = None) -> dict:
     if not isinstance(scores, dict):
         raise ValueError("scores must be an object")
+    weights = validate_weights(WEIGHTS if weights is None else weights)
+    if notes is None:
+        notes = {}
+    if not isinstance(notes, dict):
+        raise ValueError("score_notes must be an object")
+    for dimension, note in notes.items():
+        if dimension not in SCORE_DIMENSIONS or not isinstance(note, str) or not note.strip():
+            raise ValueError("score_notes needs known dimensions and non-empty text evidence")
+        if len(note) > 2000:
+            raise ValueError(f"score_notes '{dimension}' exceeds 2000 characters")
     total = Fraction(0)
-    for dim, weight in WEIGHTS.items():
+    available_weight = Fraction(0)
+    available, unavailable = {}, []
+    for dim, weight in weights.items():
+        if weight == 0:
+            continue
         value = scores.get(dim)
+        if value is None and dim in OPTIONAL_DIMENSIONS:
+            unavailable.append(dim)
+            continue
         if isinstance(value, bool) or not isinstance(value, (int, float)):
             raise ValueError(f"missing or non-numeric score '{dim}'")
         if not 0 <= value <= 100:
             raise ValueError(f"score '{dim}' must be finite and between 0 and 100")
+        available[dim] = value
+        available_weight += Fraction(str(weight))
         # Scores and documented percentage weights are decimal quantities.
         # Binary float summation can turn 59.5 into 59.49999999999999 and drop
         # an otherwise valid result into the lower verdict band.
         total += Fraction(str(value)) * Fraction(str(weight))
-    return int(total + Fraction(1, 2))
+    if not available:
+        raise ValueError("no scored dimensions are available for the configured weights")
+    total /= available_weight
+    return {
+        "score": int(total + Fraction(1, 2)),
+        "scores": {dim: available.get(dim) for dim, weight in weights.items() if weight > 0},
+        "weights": weights,
+        "effective_weights": {
+            dim: float(Fraction(str(weights[dim])) / available_weight) for dim in available
+        },
+        "unavailable": unavailable,
+        "score_notes": {dim: note for dim, note in notes.items() if dim in weights and weights[dim] > 0},
+    }
+
+
+def overall_score(scores: dict, weights: dict | None = None) -> int:
+    return score_details(scores, weights)["score"]
 
 
 def band(score: int) -> str:
@@ -309,6 +381,10 @@ def band(score: int) -> str:
 
 
 def cmd_apply(args) -> int:
+    try:
+        weights = load_weights(getattr(args, "weights", None))
+    except ValueError as exc:
+        sys.exit(str(exc))
     doc, seen = load_state(args.state)
     today = args.today
     now = args.now
@@ -395,19 +471,28 @@ def cmd_apply(args) -> int:
             continue
 
         try:
-            score = overall_score(result.get("scores") or {})
+            details = score_details(result.get("scores") or {}, weights, result.get("score_notes"))
+            score = details["score"]
         except ValueError as exc:
             errors.append({"key": key, "error": str(exc)})
             continue
         bad_gate = next(
-            (f for f in ("location_verdict", "language_gate") if result.get(f) and result[f] not in GATE_VERDICTS),
+            (f for f in ("location_verdict", "language_gate", "preference_gate")
+             if result.get(f) and result[f] not in GATE_VERDICTS),
             None,
         )
+        if "preference_gate" in result and result["preference_gate"] not in GATE_VERDICTS:
+            bad_gate = "preference_gate"
         if bad_gate:
             errors.append(
                 {"key": key, "error": f"unknown {bad_gate} {result[bad_gate]!r}; expected one of {', '.join(GATE_VERDICTS)}"}
             )
             continue
+        if result.get("preference_gate") in ("FAIL", "FLAG"):
+            note = result.get("preference_note")
+            if not isinstance(note, str) or not note.strip() or len(note) > 2000:
+                errors.append({"key": key, "error": "preference_note needs 1-2000 characters explaining the gate"})
+                continue
 
         # A missing deadline from the fresh fetch is not a correction to the
         # stored date. Scored keys are excluded from the later sweep, so apply
@@ -433,8 +518,15 @@ def cmd_apply(args) -> int:
         entry["rank_score"] = score
         entry["rank_verdict"] = band(score)
         entry["rank_date"] = today.isoformat()
+        for field in ("scores", "weights", "effective_weights", "score_notes", "unavailable"):
+            entry[f"rank_{field}"] = details[field]
         entry["location_verdict"] = result.get("location_verdict") or legacy or "PASS"
         entry["language_gate"] = result.get("language_gate") or "PASS"
+        entry["preference_gate"] = result.get("preference_gate") or "PASS"
+        if entry["preference_gate"] == "PASS":
+            entry.pop("preference_note", None)
+        else:
+            entry["preference_note"] = result.get("preference_note")
         if entry["language_gate"] == "PASS":
             entry.pop("language_note", None)
         else:
@@ -476,9 +568,14 @@ def cmd_apply(args) -> int:
                 "url": entry.get("url"),
                 "score": score,
                 "verdict": entry["rank_verdict"],
+                **{field: details[field] for field in (
+                    "scores", "weights", "effective_weights", "score_notes", "unavailable"
+                )},
                 "location_verdict": entry["location_verdict"],
                 "language_gate": entry["language_gate"],
                 "language_note": entry.get("language_note"),
+                "preference_gate": entry["preference_gate"],
+                "preference_note": entry.get("preference_note"),
                 "deadline": entry.get("deadline"),
                 "posted_date": entry.get("posted_date"),
                 "urgent": bool(parsed and today <= parsed <= today + timedelta(days=URGENT_DAYS)),
@@ -492,7 +589,9 @@ def cmd_apply(args) -> int:
         save_state(args.state, doc)
 
     rows.sort(key=lambda r: (r["score"], r["urgent"]), reverse=True)
-    veto = lambda r: r["location_verdict"] == "FAIL" or r["language_gate"] == "FAIL"
+    veto = lambda r: any(r[field] == "FAIL" for field in (
+        "location_verdict", "language_gate", "preference_gate"
+    ))
     vetoed = [r for r in rows if veto(r)]
     ranked = [r for r in rows if not veto(r)]
     print(
@@ -553,6 +652,7 @@ def main() -> int:
 
     app = sub.add_parser("apply", parents=[common], help="write scoring results back and print the ranking")
     app.add_argument("--results", required=True, help="JSON array from the scoring agents")
+    app.add_argument("--weights", type=Path, help="JSON object of dimension weights summing to 1")
     app.add_argument("--dry-run", action="store_true")
     app.set_defaults(func=cmd_apply)
 

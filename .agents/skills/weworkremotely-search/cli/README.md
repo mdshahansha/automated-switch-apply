@@ -13,6 +13,11 @@ Only the official all-jobs RSS is loaded. Query/location/age filtering and
 Detail matches a slug in that same feed; a missing entry returns JSON null and
 does not imply closure. All errors are JSON on stderr, exit 1.
 
+Add `--include-description` to JSON search to retain the full description already
+in that RSS response. This avoids a second feed request for every selected job;
+default search output stays unchanged for existing callers. Explicit `expiresAt`
+values are preserved for the shared discovery pipeline to mark expired listings.
+
 Keep the We Work Remotely attribution and direct posting links. The official
 [RSS page](https://weworkremotely.com/remote-job-rss-feed) permits RSS use with
 linkback; do not infer permission for bulk reuse or redistribution. The channel
