@@ -1,4 +1,4 @@
-"""tools/fetch_page.py is the browser-header retry from 09-web-research.md.
+"""tools/fetch_page.py is the identifying GET retry from 09-web-research.md.
 
 Why this test exists: the retry used to be a documented `curl` invocation plus
 an inline `python3 -c` tag-stripper, which meant the workflow needed a
@@ -40,6 +40,7 @@ CONTENT_TYPES = {"/euc-kr.html": "text/html; charset=euc-kr"}
 class _Handler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):  # noqa: N802 (http.server naming)
         self.server.paths.append(self.path)
+        self.server.user_agents.append((self.path, self.headers.get("User-Agent")))
         if self.path in ("/ok.html", "/ok.html?q=a%20b", "/ok.html?t=%C3%A6%C3%B8%C3%A5") or (
             self.path.startswith("/unicode/") and self.path.endswith("?page=2")
         ):
@@ -116,6 +117,7 @@ class FetchPageFixture(unittest.TestCase):
     def setUpClass(cls):
         cls.server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _Handler)
         cls.server.paths = []
+        cls.server.user_agents = []
         cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
         cls.thread.start()
         cls.base = f"http://127.0.0.1:{cls.server.server_address[1]}"
@@ -245,6 +247,7 @@ class RobotsGate(FetchPageFixture):
     def test_cross_origin_redirect_uses_destination_policy(self):
         destination = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _Handler)
         destination.paths = []
+        destination.user_agents = []
         thread = threading.Thread(target=destination.serve_forever, daemon=True)
         thread.start()
         self.addCleanup(destination.server_close)
@@ -261,6 +264,18 @@ class RobotsGate(FetchPageFixture):
 
 
 class Fetching(FetchPageFixture):
+    def test_curl_and_urllib_send_honest_tool_user_agent(self):
+        transports = [("urllib", fetch_page.fetch_with_urllib)]
+        if shutil.which("curl"):
+            transports.append(("curl", fetch_page.fetch_with_curl))
+        for name, transport in transports:
+            with self.subTest(transport=name):
+                self.server.user_agents.clear()
+                status, redirect = transport(f"{self.base}/ok.html", self.out, 5)
+                self.assertEqual(status, 200)
+                self.assertIsNone(redirect)
+                self.assertEqual(self.server.user_agents, [("/ok.html", "mdshahansha/automated-switch-apply/1.0 (web-research)")])
+
     def test_fetches_and_reports_status(self):
         code, out, err = self.run_main(f"{self.base}/ok.html", "--out", str(self.out))
         self.assertEqual(code, 0, err)
@@ -368,11 +383,11 @@ class CurlArgvShape(unittest.TestCase):
         self.assertEqual(argv[argv.index("--max-redirs") + 1], "0")
         self.assertNotIn("-L", argv)
         self.assertIn("-A", argv)
-        self.assertEqual(argv[argv.index("-A") + 1], fetch_page.BROWSER)
+        self.assertEqual(argv[argv.index("-A") + 1], fetch_page.USER_AGENT)
 
     def test_user_agent_is_the_one_robots_check_uses(self):
         import robots_check
-        self.assertEqual(fetch_page.BROWSER, robots_check.BROWSER)
+        self.assertEqual(fetch_page.USER_AGENT, robots_check.USER_AGENT)
 
 
 if __name__ == "__main__":

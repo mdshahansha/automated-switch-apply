@@ -5,7 +5,7 @@ matching the repo's CI policy of making no live portal requests.
 
 The cases marked FAIL-OPEN REGRESSION are the ones Python's own
 urllib.robotparser gets wrong. They are pinned here because getting them wrong
-means the browser-header retry runs against a site that said no, which is the
+means the identifying GET retry runs against a site that said no, which is the
 exact boundary this tool exists to hold.
 """
 
@@ -13,6 +13,7 @@ import subprocess
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "tools"))
@@ -98,6 +99,33 @@ class TestPathRules(unittest.TestCase):
 
 
 class TestAgentSelection(unittest.TestCase):
+    def test_gate_honors_actual_tool_agent_disallow(self):
+        import robots_check
+
+        body = (
+            "User-agent: *\nAllow: /\n"
+            "User-agent: Claude-User\nAllow: /\n"
+            "User-agent: automated-switch-apply\nDisallow: /jobs\n"
+        )
+        with patch.object(robots_check, "_fetch", return_value=(body, 200)):
+            rc, message = robots_check.gate("https://example.com/jobs/engineer")
+        self.assertEqual(rc, 1, message)
+        self.assertIn("DISALLOWED for automated-switch-apply", message)
+
+    def test_gate_keeps_wildcard_and_claude_disallows_with_actual_agent_allow(self):
+        import robots_check
+
+        for blocked in ("*", "Claude-User"):
+            with self.subTest(blocked=blocked):
+                body = (
+                    "User-agent: automated-switch-apply\nAllow: /\n"
+                    f"User-agent: {blocked}\nDisallow: /jobs\n"
+                )
+                with patch.object(robots_check, "_fetch", return_value=(body, 200)):
+                    rc, message = robots_check.gate("https://example.com/jobs/engineer")
+                self.assertEqual(rc, 1, message)
+                self.assertIn("DISALLOWED", message)
+
     def test_named_claude_user_opt_out_is_honored(self):
         body = "User-agent: Claude-User\nDisallow: /\n\nUser-agent: *\nAllow: /\n"
         self.assertFalse(allowed(body, "Claude-User", "/a"))
@@ -133,7 +161,7 @@ class TestSoftTwoHundred(unittest.TestCase):
 
     Found by adversarial review, not inspection. A misconfigured host answering
     /robots.txt with an HTML error page at status 200 parses to zero rules, and
-    zero rules read as "allowed" - so the browser retry ran on permission that
+    zero rules read as "allowed" - so the GET retry ran on permission that
     was never given. FAIL-OPEN REGRESSION.
     """
 
@@ -155,18 +183,14 @@ class TestSoftTwoHundred(unittest.TestCase):
         self.assertEqual(rc, 1)
         self.assertIn("not a robots.txt", msg)
 
-    def test_gate_reads_policy_as_browser_when_honest_request_is_refused(self):
-        """09-web-research.md's Barclays-class recovery: the policy file itself
-        returns 403 to Claude-User and 200 to a browser, and the checker must
-        then read it as a browser and obey it strictly. This is gate()'s UA
-        fallback loop, previously untested despite the doc's coverage claim
-        (review finding F30, 2026-08-19)."""
+    def test_gate_reads_policy_with_the_identifying_user_agent(self):
+        """A policy readable by the actual tool is checked without spoofing."""
         import robots_check
 
         original = robots_check._fetch
 
         def waf(url, ua):
-            if ua == robots_check.BROWSER:
+            if ua == robots_check.USER_AGENT:
                 return ("User-agent: *\nAllow: /\n", 200)
             return ("<html>403 Forbidden</html>", 403)
 
@@ -178,15 +202,14 @@ class TestSoftTwoHundred(unittest.TestCase):
         self.assertEqual(rc, 0)
         self.assertIn("ALLOWED", msg)
 
-    def test_gate_obeys_a_browser_fetched_policy_strictly(self):
-        """The fallback must not fail open: a policy readable only as a browser
-        still disallows what it disallows."""
+    def test_gate_obeys_an_identifying_agent_fetched_policy_strictly(self):
+        """A policy read with the actual tool still disallows what it disallows."""
         import robots_check
 
         original = robots_check._fetch
 
         def waf(url, ua):
-            if ua == robots_check.BROWSER:
+            if ua == robots_check.USER_AGENT:
                 return ("User-agent: *\nDisallow: /jobs\n", 200)
             return ("<html>403 Forbidden</html>", 403)
 
@@ -373,6 +396,25 @@ class TestArgumentHardening(unittest.TestCase):
 
         src = inspect.getsource(robots_check._fetch)
         self.assertIn("'--', url", src)
+
+    def test_policy_fetch_sends_honest_tool_user_agent(self):
+        import robots_check
+
+        response = subprocess.CompletedProcess([], 0, "User-agent: *\nAllow: /\n\n200", "")
+        with patch.object(robots_check.subprocess, "run", return_value=response) as run:
+            self.assertEqual(robots_check.gate("https://example.com/jobs")[0], 0)
+        argv = run.call_args.args[0]
+        self.assertEqual(argv[argv.index("-A") + 1], "mdshahansha/automated-switch-apply/1.0 (web-research)")
+        self.assertEqual(argv[-2:], ["--", "https://example.com/robots.txt"])
+
+    def test_refused_policy_never_switches_identity(self):
+        import robots_check
+
+        with patch.object(robots_check, "_fetch", return_value=("Forbidden", 403)) as fetch:
+            rc, message = robots_check.gate("https://example.com/jobs")
+        self.assertEqual(rc, 1)
+        self.assertIn("UNCONFIRMED", message)
+        fetch.assert_called_once_with("https://example.com/robots.txt", "mdshahansha/automated-switch-apply/1.0 (web-research)")
 
     def test_a_dash_leading_argument_fails_closed(self):
         script = REPO_ROOT / "tools" / "robots_check.py"

@@ -1,0 +1,16 @@
+{
+  "name": "weworkremotely-cli",
+  "version": "1.0.0",
+  "description": "Public We Work Remotely RSS search and feed-based detail lookup",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "1.3.14"
+  }
+}

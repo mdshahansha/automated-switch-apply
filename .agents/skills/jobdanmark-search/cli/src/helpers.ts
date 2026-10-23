@@ -1,5 +1,5 @@
 export const BASE_URL = "https://jobdanmark.dk"
-export const USER_AGENT = "Mozilla/5.0 (compatible; jobdanmark-cli/1.0)"
+export const USER_AGENT = "mdshahansha/automated-switch-apply/1.0 (jobdanmark-search-cli)"
 
 export async function apiFetch<T>(path: string, params?: Record<string, string>): Promise<T> {
   let url = `${BASE_URL}${path}`

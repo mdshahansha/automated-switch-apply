@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Synthetic WWR-shaped test feed</title><ttl>60</ttl>
+<item><title>Example &amp; Co: React Engineer</title><region>Anywhere in the World</region><country>India, Singapore</country><state>California</state><skills>React, TypeScript</skills><category>Programming</category><type>Full-Time</type><description>&lt;p&gt;Build React &amp;amp; TypeScript.&lt;/p&gt;&lt;p&gt;Second paragraph with &amp;lt;literal&amp;gt; and &amp;#x1F680;.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;First point&lt;/li&gt;&lt;li&gt;Second point&lt;/li&gt;&lt;/ul&gt;</description><pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate><expires_at>Sun, 22 Nov 2026 12:00:00 +0000</expires_at><guid>https://weworkremotely.com/remote-jobs/example-react-engineer</guid><link>https://weworkremotely.com/remote-jobs/example-react-engineer</link></item>
+<item><title><![CDATA[Remote Labs: Backend Engineer]]></title><region>Europe</region><description><![CDATA[<p>Use Node.js &amp; databases.</p><p>Keep two paragraphs.<br>And a line.</p>]]></description><pubDate>Thu, 01 Oct 2026 12:00:00 +0000</pubDate><link>https://weworkremotely.com/remote-jobs/remote-labs-backend-engineer</link></item>
+<item><title>Unknown-date Engineer</title><pubDate>not-a-date</pubDate><guid>https://weworkremotely.com/remote-jobs/unknown-date-engineer</guid></item>
+<item><title>Missing link</title></item>
+<item><title>Malicious: Engineer</title><link>https://evil.example/remote-jobs/stolen-role</link></item>
+<item><title>Malformed item without a closing tag</title>
+<item><title>Recovered: Data Engineer</title><country>India</country><pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate><link>https://weworkremotely.com/remote-jobs/recovered-data-engineer</link></item>
+<item><title>Duplicate: Not a new job</title><link>https://weworkremotely.com/remote-jobs/example-react-engineer</link></item>
+<item><title>  </title><link>https://weworkremotely.com/remote-jobs/no-title</link></item>
+</channel></rss>

@@ -62,6 +62,8 @@ Discover all installed portal CLI skills by reading every `SKILL.md` found under
 
 **Honor the `enabled` toggle.** A portal is enabled unless its `SKILL.md` frontmatter sets `enabled: false` (a missing key means enabled — the default). Skip each disabled portal and record it for the Step 5 summary. A fork can thus keep a portal installed but sit out a run without deleting its directory.
 
+Browser-only skills have no `cli/` and remain disabled for dispatch. Never invent a CLI invocation for them. If one is incorrectly enabled, report a configuration error and follow its browser guidance only within the user's requested scope.
+
 For each **enabled** portal skill:
 
 1. Read its `SKILL.md` to find the correct `bun run …` invocation and supported flags.
@@ -113,9 +115,11 @@ ghost report self-triaging. `isActive: true` is only the absence of that banner,
 proof the posting is open; deadlines and dead URLs remain `/rank`'s job.
 
 **From WebSearch results:** Use `WebFetch` on the posting URL and extract the same
-fields manually. If it returns HTTP 403, retry with browser headers via `python3 tools/fetch_page.py` per
-`.claude/skills/job-application-assistant/09-web-research.md` before giving up — most
-bank and corporate sites reject WebFetch's user agent while serving browsers normally.
+fields manually. For permitted public research, the honestly identified GET helper
+`python3 tools/fetch_page.py` follows the robots gate in
+`.claude/skills/job-application-assistant/09-web-research.md`. At an HTTP access
+refusal, login wall, or challenge, follow that file's escalation order and find
+another official posting or use the documented browser workflow.
 
 **Store a URL that actually resolves to the posting.** A listing-page URL with a
 `#fragment` appended (`.../jobs/ciso/#ikerian`) is not a posting: it fetches fine and
@@ -236,6 +240,8 @@ Scraper-based portal CLIs rot silently: when a portal changes its markup, the pa
 **Verdicts.** Healthy portals get silence - no table, no line. Anything else surfaces in the Step 5 summary as a health line.
 
 **Probe-only mode (`/scrape health`).** Skip Steps 1-4 and this step's free pass (there is no fresh run to scan); instead probe every installed portal directly - enabled ones by default, a disabled one only when named explicitly (e.g. `/scrape health jobnet`). Each portal gets the sentinel probe above, the degraded criteria applied to whatever it returns, and - since the user explicitly asked for diagnosis - one `detail` fetch on the first result of each healthy portal (description must be readable decoded text; a failure downgrades to degraded). Report all statuses in this mode, including healthy. Volume stays bounded: one search, at most one retry, at most one detail per portal.
+
+Only skills with an actual documented CLI can be probed. For a named browser-only skill, report `manual workflow; no CLI health probe` and link its guidance; do not create requests or mark it broken because a CLI is absent.
 
 ### Step 5: Present Results
 

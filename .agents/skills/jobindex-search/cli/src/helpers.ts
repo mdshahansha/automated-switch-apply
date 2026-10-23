@@ -1,4 +1,5 @@
 export const BASE_URL = "https://www.jobindex.dk"
+export const USER_AGENT = "mdshahansha/automated-switch-apply/1.0 (jobindex-search-cli)"
 
 export function writeError(error: string, code: string): void {
   process.stderr.write(JSON.stringify({ error, code }) + "\n")
@@ -14,7 +15,10 @@ export async function apiFetch<T>(path: string, params?: Record<string, string>)
   const maxRetries = 6
   let delay = 500
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
-    const response = await fetch(url, { signal: AbortSignal.timeout(15000) })
+    const response = await fetch(url, {
+      headers: { "User-Agent": USER_AGENT },
+      signal: AbortSignal.timeout(15000),
+    })
     if (response.status === 429 || response.status >= 500) {
       if (attempt === maxRetries) {
         throw new Error(`API request failed: ${response.status} ${response.statusText}`)
@@ -38,7 +42,7 @@ export async function htmlFetch(url: string): Promise<string> {
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     const response = await fetch(url, {
       headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; jobindex-cli/1.0)",
+        "User-Agent": USER_AGENT,
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "da,en;q=0.9",
       },

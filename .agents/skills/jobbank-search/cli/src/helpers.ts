@@ -2,7 +2,7 @@ import { parse as parseHtml } from "node-html-parser"
 
 export const BASE_URL = "https://jobbank.dk"
 
-export const USER_AGENT = "Mozilla/5.0 (compatible; jobbank-cli/1.0)"
+export const USER_AGENT = "mdshahansha/automated-switch-apply/1.0 (jobbank-search-cli)"
 
 export function writeError(error: string, code: string): void {
   process.stderr.write(JSON.stringify({ error, code }) + "\n")

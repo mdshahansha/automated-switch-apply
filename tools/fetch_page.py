@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""GET a page with browser headers: the 403 retry from 09-web-research.md.
+"""GET a page with an honest tool User-Agent: the retry from 09-web-research.md.
 
-WebFetch sends a bot-identifying user agent and many corporate, bank and
-recruiter sites answer it with 403 while serving the same page to a browser.
-This script is the retry. It exists as a script, rather than as a documented
-curl command, so that the workflow's pre-approved grant can name
+This script identifies the repository and web-research tool on every request;
+it never switches to a browser identity after refusal. It exists as a script,
+rather than as a documented curl command, so the pre-approved grant can name
 `python tools/fetch_page.py` instead of `curl`: a curl grant with a free tail
 is also an upload channel, this is not.
 
@@ -17,8 +16,8 @@ Properties, each pinned by tests/test_fetch_page.py:
   * http(s) only. Any other scheme exits 2 before anything else happens.
   * robots.txt is enforced, not advised. robots_check.gate() runs before each
     GET, including redirect targets, and a non-zero gate exits 1 with its
-    message; no flag skips it. The retry is for firewalls on sites whose
-    published policy allows access, never for sites that said no.
+    message; no flag skips it. Wildcard, Claude-User and actual-tool exclusions
+    remain binding. An unreadable policy fails closed.
   * Fetched content never lands in the repo. --out defaults to the system temp
     directory and a path that resolves inside the repo root is refused.
   * Bounded: 45 s, 5 redirects, 10 MB - on both the curl and the urllib path,
@@ -58,7 +57,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from page_decode import decode_page  # noqa: E402
-from robots_check import BROWSER, gate  # noqa: E402
+from robots_check import USER_AGENT, gate  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ACCEPT = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
@@ -76,7 +75,7 @@ def build_curl_argv(url: str, out: Path, headers: Path, timeout: float) -> list:
         "--max-time", str(timeout),
         "--max-filesize", str(MAX_BYTES),
         "--compressed",
-        "-A", BROWSER,
+        "-A", USER_AGENT,
         "-H", f"Accept: {ACCEPT}",
         "-H", f"Accept-Language: {ACCEPT_LANGUAGE}",
         "-D", str(headers),
@@ -129,7 +128,7 @@ class _NoRedirects(HTTPRedirectHandler):
 def fetch_with_urllib(url: str, out: Path, timeout: float) -> tuple[int, str | None]:
     """Fallback for machines without curl. One GET, gzip/deflate only."""
     request = Request(url, headers={
-        "User-Agent": BROWSER,
+        "User-Agent": USER_AGENT,
         "Accept": ACCEPT,
         "Accept-Language": ACCEPT_LANGUAGE,
         "Accept-Encoding": "gzip, deflate",
@@ -199,7 +198,7 @@ def main(argv=None) -> int:
     _force_utf8_output()
     parser = argparse.ArgumentParser(
         prog="fetch_page.py",
-        description="GET a page with browser headers (robots.txt enforced); see module docstring.",
+        description="GET a page with an honest tool User-Agent (robots.txt enforced); see module docstring.",
     )
     parser.add_argument("url")
     parser.add_argument("--out", type=Path, default=None,
@@ -234,7 +233,7 @@ def main(argv=None) -> int:
             if rc != 0:
                 print(
                     "fetch_page: refused - robots.txt does not permit this path, so the "
-                    "browser-header retry does not run. Go to escalation step 4: search for "
+                    "identifying GET retry does not run. Go to escalation step 4: search for "
                     "the employer's own posting."
                 )
                 return 1

@@ -1,0 +1,11 @@
+[
+  { "last_updated": 1792713600, "legal": "Synthetic legal notice: credit Remote OK and retain original links." },
+  { "id": "1001", "position": "React Engineer", "company": "Example Labs", "location": "India", "date": "2026-10-22T12:00:00Z", "url": "https://remoteok.com/remote-jobs/remote-react-engineer-example-labs-1001", "tags": ["react", "typescript"], "description": "<p>Build React &amp; TypeScript tools.</p><p>Second paragraph &#8212; collaborate.</p><ul><li>Ship features</li><li>Review code</li></ul>" },
+  { "id": "1002", "position": "Backend Engineer", "company": "Example Systems", "location": "Europe", "date": "2026-10-15T12:00:00Z", "url": "https://remoteok.com/remote-jobs/remote-backend-engineer-example-systems-1002", "tags": ["java", "engineer"], "description": "<p>Backend work.</p>" },
+  { "id": "1003", "position": "Frontend Developer", "company": "Example Global", "location": "Worldwide", "date": "2026-10-20T12:00:00Z", "url": "https://remoteok.com/remote-jobs/remote-frontend-developer-example-global-1003", "tags": ["react"], "description": "<p>Confirm geographic and timezone eligibility with the employer.</p>" },
+  { "id": "1004", "position": "Undated Engineer", "url": "/remote-jobs/remote-undated-engineer-example-1004", "date": "invalid" },
+  { "id": "1005", "position": "External URL", "url": "https://example.invalid/remote-jobs/remote-external-url-1005" },
+  { "id": "1006", "position": "Mismatched ID", "url": "https://remoteok.com/remote-jobs/remote-mismatch-9999" },
+  { "id": "1007", "position": "", "url": "https://remoteok.com/remote-jobs/remote-empty-title-1007" },
+  { "position": "No ID", "url": "https://remoteok.com/remote-jobs/remote-no-id-1008" }
+]
