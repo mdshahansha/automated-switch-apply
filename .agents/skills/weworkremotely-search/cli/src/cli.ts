@@ -7,14 +7,21 @@ const HELP = `weworkremotely-cli — public RSS search (all filters are client-s
 
 USAGE
   bun run src/cli.ts search [--query|-q <text>] [--location|-l <text>]
+<<<<<<< HEAD
       [--jobage <days>] [--page <n>] [--limit <n>] [--include-description] [--format json|table|plain]
+=======
+      [--jobage <days>] [--page <n>] [--limit <n>] [--format json|table|plain]
+>>>>>>> origin/master
   bun run src/cli.ts detail <slug|url> [--format json|table|plain]
 
 Default format: json. Page: 1; fixed page size: 20; limit caps that page.
 Location matches disclosed region/country text, not eligibility or headquarters.
 Unknown dates are excluded when --jobage is set. Feed coverage is not exhaustive.
 Detail searches the current feed only; missing entries return JSON null.
+<<<<<<< HEAD
 --include-description retains full RSS text without an extra detail request.
+=======
+>>>>>>> origin/master
 Source: We Work Remotely (posting links are retained for attribution).
 `
 
@@ -30,7 +37,11 @@ function parseArgs(argv: string[]) {
   if (!command) throw new CLIError("A command is required; use --help", "BAD_CMD")
   if (["--help", "-h"].includes(command) && argv.length === 1) return { help: true } as const
   if (!["search", "detail"].includes(command)) throw new CLIError(`Unknown command: ${command}`, "BAD_CMD")
+<<<<<<< HEAD
   const allowed = new Set(command === "search" ? ["query", "location", "jobage", "page", "limit", "include-description", "format"] : ["format"])
+=======
+  const allowed = new Set(command === "search" ? ["query", "location", "jobage", "page", "limit", "format"] : ["format"])
+>>>>>>> origin/master
   const aliases: Record<string, string> = { q: "query", l: "location" }
   const flags: Record<string, string> = {}
   const positional: string[] = []
@@ -43,7 +54,10 @@ function parseArgs(argv: string[]) {
       const key = aliases[name] ?? name
       if (!allowed.has(key)) throw new CLIError(`Unknown flag: ${token}`, "UNKNOWN_FLAG")
       if (flags[key] !== undefined) throw new CLIError(`Repeated flag: ${token}`, "BAD_ARG")
+<<<<<<< HEAD
       if (key === "include-description") { flags[key] = "true"; continue }
+=======
+>>>>>>> origin/master
       const value = argv[++i]
       if (!value || value.startsWith("-") || !value.trim()) throw new CLIError(`${token} requires a non-empty value`, "BAD_ARG")
       flags[key] = value.trim()
@@ -65,7 +79,11 @@ function parseArgs(argv: string[]) {
     postingSlug(positional[0]) // reject arbitrary destinations before any network access
   }
   const opts: SearchOpts = { query: flags.query, location: flags.location,
+<<<<<<< HEAD
     jobage: integer("jobage"), page: integer("page", 1)!, limit: integer("limit"), includeDescription: flags["include-description"] === "true" }
+=======
+    jobage: integer("jobage"), page: integer("page", 1)!, limit: integer("limit") }
+>>>>>>> origin/master
   return { help: false, command, format: format as Format, input: positional[0], opts } as const
 }
 
@@ -78,7 +96,11 @@ export async function main(argv = process.argv.slice(2), deps: Dependencies = {}
     const jobs = await (deps.load ?? loadJobs)()
     if (args.command === "search") {
       const payload = searchJobs(jobs, args.opts, deps.now)
+<<<<<<< HEAD
       const summaries = payload.results.map((j) => ({ ...j, description: "description" in j ? j.description : null }))
+=======
+      const summaries = payload.results.map((j) => ({ ...j, description: null }))
+>>>>>>> origin/master
       stdout((args.format === "json" ? JSON.stringify(payload, null, 2) : formatJobs(summaries, args.format)) + "\n")
     } else {
       const job = detailJob(jobs, args.input!)

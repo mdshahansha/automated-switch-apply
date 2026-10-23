@@ -43,6 +43,7 @@ describe("toResult — reshape into the portal-skill contract", () => {
     });
   });
 
+<<<<<<< HEAD
   test("retains ATS provenance and disclosed structured salary on search results", () => {
     const result = toResult(job({ enrichment: { salary_min: 300000, salary_max: 500000, salary_currency: "INR", salary_period: "year" } }));
     expect(result).toMatchObject({ upstream_source: "greenhouse", external_id: "acme:1",
@@ -52,6 +53,8 @@ describe("toResult — reshape into the portal-skill contract", () => {
       salary_currency: null, salary_period: null });
   });
 
+=======
+>>>>>>> origin/master
   test("missing values are null, not omitted", () => {
     const r = toResult(job({ company: "", location: "", posted_at: null, work_mode: undefined }));
     expect(r.company).toBeNull();

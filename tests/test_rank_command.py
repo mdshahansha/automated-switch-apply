@@ -44,6 +44,7 @@ def _sections(text: str) -> dict[str, str]:
 
 
 class RankCommandSpec(unittest.TestCase):
+<<<<<<< HEAD
     def test_custom_weights_and_evidence_flow_through_command(self):
         text = COMMAND.read_text(encoding="utf-8")
         sections = _sections(text)
@@ -60,6 +61,8 @@ class RankCommandSpec(unittest.TestCase):
         self.assertIn("renormaliz", text)
         self.assertIn("regardless of weights", text)
 
+=======
+>>>>>>> origin/master
     def test_step2_dispatches_posting_scorer_and_returns_guard(self):
         """Scoring agents read untrusted postings, so they run as the shipped
         least-privilege `posting-scorer` definition (no Edit/Write), gate every

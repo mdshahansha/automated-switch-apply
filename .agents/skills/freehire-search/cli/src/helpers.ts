@@ -162,8 +162,11 @@ export interface FreehireJob {
  */
 export interface JobResult {
   id: string
+<<<<<<< HEAD
   upstream_source: string | null
   external_id: string | null
+=======
+>>>>>>> origin/master
   title: string
   company: string | null
   company_slug: string | null
@@ -175,11 +178,14 @@ export interface JobResult {
   countries: string[]
   skills: string[]
   description: string | null
+<<<<<<< HEAD
   salary: string | null
   salary_min: number | null
   salary_max: number | null
   salary_currency: string | null
   salary_period: string | null
+=======
+>>>>>>> origin/master
 }
 
 /** A job detail: the search result plus the cleaned description and enrichment. */
@@ -212,8 +218,11 @@ export function contractDate(value: string | null | undefined): string | null {
 export function toResult(j: FreehireJob): JobResult {
   return {
     id: j.public_slug,
+<<<<<<< HEAD
     upstream_source: j.source || null,
     external_id: j.external_id || null,
+=======
+>>>>>>> origin/master
     title: decodeHtmlEntities(j.title || "").trim() || "(untitled)",
     company: j.company || null,
     company_slug: j.company_slug || null,
@@ -225,11 +234,14 @@ export function toResult(j: FreehireJob): JobResult {
     countries: j.countries,
     skills: j.skills,
     description: j.description || null,
+<<<<<<< HEAD
     salary: formatSalary(j.enrichment),
     salary_min: j.enrichment.salary_min ?? null,
     salary_max: j.enrichment.salary_max ?? null,
     salary_currency: j.enrichment.salary_currency || null,
     salary_period: j.enrichment.salary_period || null,
+=======
+>>>>>>> origin/master
   }
 }
 
