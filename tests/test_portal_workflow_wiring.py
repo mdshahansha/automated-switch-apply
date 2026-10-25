@@ -37,11 +37,12 @@ class ApplyWiringTests(unittest.TestCase):
     def test_host_check_uses_the_registry_helper(self):
         self.assertIn('python3 tools/portal_search.py host "<posting URL>"', APPLY)
 
-    def test_destination_step_follows_recording_and_never_submits(self):
+    def test_destination_step_follows_recording_and_gates_submission(self):
         self.assertLess(APPLY.index("### Step 6b: Record the Application"),
                         APPLY.index("### Step 6c: Application Destination"))
         step = APPLY[APPLY.index("### Step 6c"):APPLY.index("### Application-Form Fields")]
-        for phrase in ("never submits", "solve a CAPTCHA", "press a submit button", "stays `drafted`",
+        for phrase in ("ask once", "never ask again for the same approval", "solve a CAPTCHA",
+                       "Never type passwords", "create an account", "application_record.py next", "stays `drafted`",
                        "only after the user reports a confirmation", "Never invent one"):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, step)

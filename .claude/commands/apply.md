@@ -415,19 +415,22 @@ Do this before the optional offer below, and before ending the turn for any othe
 
 Name the tracker row in the "Files Created" report above, and the archived posting - saying explicitly when an existing `job_posting.md` was left in place rather than written.
 
-### Step 6c: Application Destination (prepare, never submit)
+### Step 6c: Application Destination, Approval and Submission
 
-Tell the user where and how to apply. This step reads and links; it never submits.
+Tell the user where and how to apply, take one explicit approval, then carry the application as far as the available tools allow. Resume an interrupted run from `python3 tools/application_record.py next --state <state>`: it names the stage reached and the next permitted step, so a run never re-prepares or re-asks for an approval that is still valid.
 
 1. **Find the official destination.** Use the posting's own apply link from Step 0 (`application_url`, an ATS link, or the portal job page). If the Step 1 host check returned a registry `portal`, read its `apply_method` and the matching text in `apply_methods` of `tools/portal_registry.json`:
    - `employer_link`: the board links to the employer's own page or ATS. Give that link. Run the Step 1 host rules on it as well; a link to an unverified host is named as such.
    - `portal_account`: the candidate applies inside the portal while signed in. Give the official job page.
    - `unknown`, or no registry portal: give the URL the user supplied and say the path is unconfirmed.
 2. **List the steps** the posting or portal states: account, upload fields, screening questions, deadline. Do not guess steps it does not state.
-3. **Prepare answers** to screening questions only from `CLAUDE.md`, `01-candidate-profile.md` and the master CV. Use `08-application-forms.md` for free-text fields. Mark an answer the sources do not support as `needs your input`. Never invent one. Salary: say the profile is flexible and ask the user for a number when a form requires it. Notice period: 30 days.
-4. **Submission is the candidate's.** No registry portal has a verified, authorized submission API for candidates, so none is used. Open the official page for the candidate (in the built-in browser if they want), and let them sign in, fill and submit. Do not type passwords, solve a CAPTCHA, or press a submit button. Do not automate a portal that prohibits it.
+3. **Prepare answers** to screening questions only from `CLAUDE.md`, `01-candidate-profile.md` and the master CV. Use `08-application-forms.md` for free-text fields. Mark an answer the sources do not support as `needs your input`. Never invent one. Salary: say the profile is flexible and ask the user for a number when a form requires it. Notice period: as stated in `01-candidate-profile.md`.
+4. **Approve once, then submit through the browser.** No registry portal has a verified, authorized submission API, so none is used; submission goes through the official web form.
+   - **Approval checkpoint.** Run `prepare`, then ask once: "Do you approve submitting these exact PDFs to this destination?" On an explicit yes, run `approve`. Both commands are idempotent: re-running them on an unchanged job and unchanged PDFs keeps the existing approval, so never ask again for the same approval. A changed PDF or destination invalidates it; `next` then says to prepare and ask again.
+   - **After approval** (`next` reports `fill_and_submit`), open the official destination in the built-in browser. If the user is already signed in, fill the form only from the verified answers in item 3, attach only the approved PDFs, and press the final submit.
+   - **User-only steps.** Never type passwords, create an account, enter an email or SMS code, or solve a CAPTCHA. When the flow reaches one of these, stop there, name the exact blocker, and leave the user to complete it. Then continue from `next`. Do not automate a portal that prohibits it.
 5. **Duplicate check.** Step 6b already found any tracker row with the same company and role. If that row's status is `applied` or later, say so and stop before step 4.
-6. **Record honestly.** The tracker row stays `drafted`. Append an undated `platform: <portal name>` marker to its `notes` when a registry portal matched. The row becomes `applied` only through `/outcome`, and only after the user reports a confirmation: a portal receipt, a confirmation email or an on-screen success message. Record that evidence in the `/outcome` note.
+6. **Record honestly.** After a submit click, read the page. Record `submitted` only from an on-screen receipt or confirmation email quoted verbatim; anything ambiguous is `unverified`, and is never retried blindly. Until then the tracker row stays `drafted`. Append an undated `platform: <portal name>` marker to its `notes` when a registry portal matched. The row becomes `applied` only through `/outcome`, and only after the user reports a confirmation: a portal receipt, a confirmation email or an on-screen success message. Record that evidence in the `/outcome` note.
 
 ### Application-Form Fields (Optional Third Artifact)
 
