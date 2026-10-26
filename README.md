@@ -294,7 +294,7 @@ If you prefer doing it by hand, the manual route still works: update the guidanc
 
 ### Job search tools
 
-This fork adds an India and remote-board [portal catalogue](.agents/skills/README.md). Himalayas, Remote OK, and We Work Remotely use verified public APIs or feeds. Apna, Hirist, IIMJobs, Instahyre, Indeed India, Randstad India, Cutshort, AIJobs, Foundit, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle have explicit browser workflows where anonymous CLI search is restricted, blocked, ambiguous, or unverified. Browser workflows are disabled for `/scrape` CLI dispatch rather than represented as working scrapers.
+This fork adds an India and remote-board [portal catalogue](.agents/skills/README.md). Himalayas, Remote OK, and We Work Remotely use verified public APIs or feeds. Apna, Hirist, Indeed India, Randstad India, AIJobs, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle have explicit browser workflows where anonymous CLI search is restricted, blocked, ambiguous, or unverified. Browser workflows are disabled for `/scrape` CLI dispatch rather than represented as working scrapers.
 
 All portal CLIs identify this repository and their tool name in the HTTP User-Agent. They do not impersonate Chrome or Safari. Source attribution, country restrictions, feed coverage, and current access evidence are recorded in each skill; a remote label alone does not prove India eligibility.
 

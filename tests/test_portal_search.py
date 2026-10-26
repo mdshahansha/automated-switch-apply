@@ -82,7 +82,7 @@ class PortalSearchTests(unittest.TestCase):
         self.assertEqual(self.calls, [])
 
     def test_manual_portals_and_ambiguous_aijobs_make_no_subprocess_calls(self):
-        result = self.run_search(self.args(["Hirist", "Instahyre", "Cutshort", "AIJobs", "LinkedIn"]))
+        result = self.run_search(self.args(["Hirist", "Apna", "Indeed India", "AIJobs", "LinkedIn"]))
         self.assertEqual(self.calls, [])
         self.assertTrue(all(p["status"] == "manual" for p in result["portals"]))
         aijobs = next(p for p in result["portals"] if p["id"] == "aijobs-search")

@@ -8,8 +8,7 @@ __pycache__/
 *.pyo
 .venv/
 venv/
-<<<<<<< HEAD
-=======
+ 
 
 # Compiled documents
 *.pdf
@@ -121,4 +120,3 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
->>>>>>> origin/master

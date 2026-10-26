@@ -4,7 +4,7 @@
 
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Only `linkedin-search` is enabled for this candidate; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
 
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
@@ -12,20 +12,18 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary:
-- **linkedin.com/jobs** - installed `linkedin-search` CLI, with India supplied explicitly as the location. Search remote-from-India roles separately.
-- **freehire.me** - installed `freehire-search` CLI for technical roles; use its documented India and remote filters, then verify each employer's location eligibility.
-- **himalayas.app** - `himalayas-search` public API for remote roles. Preserve country and timezone restrictions; verify description conflicts before treating a job as India-eligible.
-- **remoteok.com** and **weworkremotely.com** - public-feed CLIs, `remoteok-search` and `weworkremotely-search`. Their search filters are local to the returned feed; missing entries are not proof of expiry.
-- **naukri.com** - India-focused WebSearch fallback; no local CLI is installed.
-- **Employer career pages** - WebSearch fallback and role verification for direct postings.
+The candidate searches **only LinkedIn, Naukri and Hirist**. All other portal skills are set to `enabled: false`; do not search them unless the user names one.
 
-For Apna, Hirist, IIMJobs, Instahyre, Indeed India, Randstad India, Cutshort, AIJobs, Foundit, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle, follow the corresponding browser skill in `.agents/skills/`. These carry `enabled: false` and no verified search CLI; do not invent commands, call private APIs, or reinterpret login/access blocks as permission to scrape. AIJobs needs an exact destination URL first. Current capabilities and access evidence are listed in [the portal catalogue](../../../.agents/skills/README.md).
+- **linkedin.com/jobs** - installed `linkedin-search` CLI, with India supplied explicitly as the location. Search remote-from-India roles separately.
+- **naukri.com** - no local CLI; use the `site:naukri.com` WebSearch queries below. Index results can be stale, so confirm each posting's date and open status before presenting it.
+- **hirist.tech** - browser-only skill (`hirist-search`, no CLI, stays `enabled: false` for CLI dispatch). Use the `site:hirist.tech` WebSearch queries below, then confirm listings through the public pages per `.agents/skills/hirist-search/SKILL.md`. A 200 shell without job data is an access limitation, not zero vacancies.
+- **Employer career pages** - only to verify a role found on one of the three portals above.
+
+For Apna, Indeed India, Randstad India, AIJobs, ProtocolJobs, Y Combinator, and Otta/Welcome to the Jungle, follow the corresponding browser skill in `.agents/skills/`. These carry `enabled: false` and no verified search CLI; do not invent commands, call private APIs, or reinterpret login/access blocks as permission to scrape. AIJobs needs an exact destination URL first. Current capabilities and access evidence are listed in [the portal catalogue](../../../.agents/skills/README.md).
 
 The candidate accepts any Indian city and any work mode, with a 30-day notice period. Salary is flexible with no numeric filter. Do not infer sponsorship or foreign work authorization from willingness to work remotely.
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+Secondary: none. Company career pages are used only to verify a LinkedIn, Naukri or Hirist posting.
 
 ## Query Categories
 
@@ -41,13 +39,13 @@ These match your strongest and most desired career direction.
 site:linkedin.com/jobs "Full Stack Engineer" React TypeScript India
 site:linkedin.com/jobs "Full Stack Developer" Node.js India
 site:naukri.com "Full Stack Developer" React India
-"Software Engineer" React Node.js "remote India"
+site:hirist.tech "Full Stack Developer" React Node.js
 ```
 
 Hindi query variants (keep technology names and employer job titles intact):
 ```
-"फुल स्टैक डेवलपर" React भारत नौकरी
-"सॉफ्टवेयर इंजीनियर" Node.js भारत
+site:naukri.com "फुल स्टैक डेवलपर" React
+site:naukri.com "सॉफ्टवेयर इंजीनियर" Node.js
 ```
 
 ### Priority 2: Backend APIs and Java/Spring Boot delivery
@@ -58,13 +56,13 @@ These match your domain expertise.
 site:linkedin.com/jobs "Backend Engineer" Node.js India
 site:linkedin.com/jobs "Java Developer" "Spring Boot" India
 site:naukri.com "Java Full Stack Developer" India
-"Backend Developer" TypeScript Redis "remote India"
+site:hirist.tech "Backend Developer" Node.js Java
 ```
 
 Hindi query variants:
 ```
-"बैकएंड डेवलपर" Node.js भारत नौकरी
-"जावा डेवलपर" "Spring Boot" भारत
+site:naukri.com "बैकएंड डेवलपर" Node.js
+site:naukri.com "जावा डेवलपर" "Spring Boot"
 ```
 
 ### Priority 3: React web and React Native mobile engineering
@@ -75,13 +73,13 @@ Additional search directions supported by the candidate's confirmed working stac
 site:linkedin.com/jobs "React Native Developer" India
 site:linkedin.com/jobs "Frontend Engineer" React TypeScript India
 site:naukri.com "React Developer" India
-"Mobile Engineer" "React Native" "remote India"
+site:hirist.tech "React Native" OR "React Developer"
 ```
 
 Hindi query variants:
 ```
-"फ्रंटएंड डेवलपर" React भारत नौकरी
-"मोबाइल ऐप डेवलपर" "React Native" भारत
+site:naukri.com "फ्रंटएंड डेवलपर" React
+site:naukri.com "मोबाइल ऐप डेवलपर" "React Native"
 ```
 
 ### Priority 4: Broader software and international remote engineering
@@ -89,16 +87,16 @@ Hindi query variants:
 Wider net for software engineering roles and international employers that explicitly support remote work from India. Specialist AI, infrastructure, and lead/management roles need evidence of the required depth rather than a title-only match.
 
 ```
-"Software Engineer" TypeScript "remote from India"
-"Full Stack Engineer" "India" "worldwide"
-site:boards.greenhouse.io "software engineer" "India" "remote"
-site:jobs.lever.co "full stack" "India" "remote"
+site:linkedin.com/jobs "Software Engineer" TypeScript "remote" India
+site:naukri.com "Software Engineer" "work from home" Node.js
+site:naukri.com "Software Engineer" React Java
+site:hirist.tech "Software Engineer" TypeScript
 ```
 
 Hindi query variants:
 ```
-"सॉफ्टवेयर इंजीनियर" "भारत से रिमोट"
-"फुल स्टैक" "वर्क फ्रॉम होम" भारत
+site:naukri.com "सॉफ्टवेयर इंजीनियर" "भारत से रिमोट"
+site:naukri.com "फुल स्टैक" "वर्क फ्रॉम होम"
 ```
 
 ## Location Filter

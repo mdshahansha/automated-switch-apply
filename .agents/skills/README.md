@@ -24,13 +24,9 @@ These skills are usable as instructions for normal browser navigation, portal fi
 |---|---|---|
 | [apna-search](apna-search/SKILL.md) | apna.co | Public pages respond, but the user agreement restricts automated collection. |
 | [hirist-search](hirist-search/SKILL.md) | hirist.tech | Honest CLI requests returned empty shells; do not circumvent the portal's controls. |
-| [iimjobs-search](iimjobs-search/SKILL.md) | iimjobs.com | Honest CLI requests returned empty shells; no public search API verified. |
-| [instahyre-search](instahyre-search/SKILL.md) | instahyre.com | Profile-based opportunities; no working anonymous public search verified. |
 | [indeed-india-search](indeed-india-search/SKILL.md) | in.indeed.com | Direct search was blocked; public detail paths and automated collection are restricted. |
 | [randstad-india-search](randstad-india-search/SKILL.md) | randstad.in | Public pages exist, but storage/reuse restrictions prevent assuming scraper permission. |
-| [cutshort-search](cutshort-search/SKILL.md) | cutshort.io | Automated collection restricted; the documented API is for approved employer workspaces. |
 | [aijobs-search](aijobs-search/SKILL.md) | Confirm the exact site first | aijobs.ai, aijobs.com, and the former aijobs.net are distinct destinations. |
-| [foundit-search](foundit-search/SKILL.md) | foundit.in | Direct access was blocked; search/crawler restrictions apply. |
 | [protocoljobs-search](protocoljobs-search/SKILL.md) | protocoljobs.ai | Public detail pages work, but query search is not verified and private `/api/` routes are disallowed. |
 | [ycombinator-search](ycombinator-search/SKILL.md) | ycombinator.com / workatastartup.com | Public jobs exist; no documented search API contract verified. Applications require an account. |
 | [otta-search](otta-search/SKILL.md) | Welcome to the Jungle, formerly Otta | Otta redirects to the current service; matched search requires sign-in. |
