@@ -52,14 +52,11 @@ posting's **full** description (Markdown by default, `--description-format
 text|html` to change it). `detail` remains for looking a single posting up by
 slug — including a closed one, which search does not return.
 
-<<<<<<< HEAD
 JSON search results also retain the original ATS `upstream_source` and
 `external_id`, plus disclosed structured `salary_min`, `salary_max`,
 `salary_currency` and `salary_period`. Missing values remain null; the public
 slug stays `id` so existing detail lookups remain compatible.
 
-=======
->>>>>>> origin/master
 ## Quick examples
 
 ```bash

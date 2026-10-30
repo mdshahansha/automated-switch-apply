@@ -120,3 +120,16 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Private candidate form answers (DOB, CTC, address)
+personal/
+
+# Application pipeline queues (personal job/application status)
+output/job_pipeline/
+
+# Multi-platform discovery runs (large, regenerated daily)
+output/discovery/
+job_scraper/discovery_store.json
+
+# Private reusable application answers
+.cache/

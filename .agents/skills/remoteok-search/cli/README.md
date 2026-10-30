@@ -24,13 +24,9 @@ sites. An ID missing from the current feed returns JSON `null` with exit 0. This
 does not establish that the role is closed. Errors are JSON on stderr with exit 1.
 
 Every listing includes ID, title, company, location, date and URL. Missing optional
-<<<<<<< HEAD
 fields are `null`. Descriptions preserve paragraph/list breaks. Disclosed positive
 `salary_min`/`salary_max` bounds are retained; absent currency and period stay
 unknown, and zero feed placeholders are not reported as a salary. Output includes
-=======
-fields are `null`. Descriptions preserve paragraph/list breaks. Output includes
->>>>>>> origin/master
 Remote OK attribution; preserve the source name, legal notice and original links
 when sharing. See [official API/attribution evidence](../url-reference.md).
 

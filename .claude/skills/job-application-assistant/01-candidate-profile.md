@@ -16,8 +16,8 @@ framework_version: 1.1.3
 - **GitHub:** https://github.com/mdshahansha
 - **Portfolio:** https://mohammad-shahansha.web.app/
 - **Status:** Employed as a Full Stack Engineer at Osbee Solution Private Limited.
-- **Constraints:** Any Indian city; remote, hybrid, or onsite. International roles must allow remote work from India.
-- **Notice period:** 30 days.
+- **Constraints:** Any Indian city; remote, hybrid, or onsite. International roles must allow remote work from India. Exclude .NET / C# roles (candidate instruction 2026-10-26).
+- **Notice period:** 30 days contractual; state 15 days on applications (candidate confirmed 2026-10-26 that Osbee can release early or accept a buyout).
 - **Work authorization:** India. Authorization in other countries and overseas relocation are not declared.
 - **Salary:** Flexible; no current CTC, minimum, or numeric expectation supplied. Do not invent a numeric screening answer.
 - **Target roles:** Full-stack, software, backend, Java/Spring Boot, React, and React Native engineering are suggested search directions based on confirmed stacks. No exclusive title or seniority requirement supplied.
@@ -51,7 +51,7 @@ a hard no, not a gap to smooth over. -->
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| B.Tech in Computer Science | Graduated 2023; start date not supplied | Heritage Institute of Technology, Kolkata, India | Coursework, grades, and thesis not supplied |
+| B.Tech in Computer Science | July 2019-June 2023 (candidate-confirmed 2026-10-26) | Heritage Institute of Technology, Kolkata, India | Coursework, grades, and thesis not supplied |
 
 ## Professional Experience
 
@@ -67,12 +67,21 @@ Kolkata, India
 - The full-stack variant also reports WebRTC audio/video, Socket.io messaging, PostgreSQL-backed message history, and Python operational scripts.
 - Backend-focused variants additionally report LLM API integrations, message queues, and Kubernetes. Confirm the specific system and personal contribution before detailed screening answers about these variant-specific claims.
 
+- Candidate-confirmed 2026-10-26: uses AI tools in day-to-day development (specific tools not named; name Claude Code only if confirmed), and has owned the architecture/design of a backend service end to end (system not named; ask before detailed claims).
+
 ### Software Engineer (Full Stack) - CodingNinjas (June 2023-April 2025)
 Gurgaon, India
 - Delivered React interfaces and REST APIs across five or more web applications for a BI dashboard platform; resumes report a platform audience of 50,000 or more active users/learners.
 - Performed production debugging, root cause analysis, log correlation, and incident triage across release cycles.
 - Collaborated with QA, Product, and UX through sprint ceremonies, grooming, estimation, and design discussions.
 - Mentored 200 or more engineering students through live coding sessions and code reviews; resumes report assessment scores improving 25% within four weeks.
+
+### Instructor / Mentor (part-time) - Monkster (April 2023-September 2023)
+- Candidate-confirmed on 2026-10-26; exact title not supplied.
+- Taught DSA, React (ES6+) and Spring Boot to students preparing for software engineering roles.
+- Ran live classes, doubt-clearing sessions and mock interviews; reviewed resumes and coached students for technical interviews.
+
+Private form answers (DOB, address, CTC, school scores) live in the gitignored `documents/applications/application_form_details.md`; never copy them into tracked files.
 
 <!-- Add more roles as needed -->
 
@@ -113,3 +122,7 @@ No formal awards supplied.
 No referees or reference contacts supplied. Ask before sharing anyone's contact details.
 
 Reference availability has not been confirmed.
+
+### Candidate update (2026-10-28)
+- Candidate confirmed 3 years each of Node.js, React, React Native, MongoDB and Redis, counting open-source contributions alongside employment. Supersedes the "React Native since June 2025" estimate for screening answers.
+- Contributes to open source; specific projects not named - ask before citing them.

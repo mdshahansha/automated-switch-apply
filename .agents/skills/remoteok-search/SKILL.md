@@ -7,7 +7,7 @@ description: >
   India remote jobs, रिमोट ओके पर नौकरी खोजें, or remoteok par naukri. Location is
   an optional client-side text filter; worldwide labels do not prove India eligibility.
 context: fork
-enabled: true
+enabled: false
 allowed-tools: Bash(bun run .agents/skills/remoteok-search/cli/src/cli.ts *)
 ---
 

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-job-search-workspace",
+  "version": "0.1.0",
+  "description": "Complete AI-assisted job-search workspace with portal search skills, candidate profiles, CV and cover-letter workflows, ranking, applications, upskilling, and interview preparation.",
+  "author": { "name": "Workspace owner" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "AI Job Search Workspace",
+        "shortDescription": "AI-assisted job search",
+        "longDescription": "A complete job-search operating system containing canonical workflow instructions, portal search skills, candidate-profile data, CV and cover-letter assets, research, application records, tests, and interview/upskilling workflows.",
+        "developerName": "Workspace owner",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Use this AI job-search workspace to search, evaluate, rank, tailor applications, prepare interviews, and manage supporting job-search artifacts according to its canonical workflow files."
+      }
+    }
+  }
+}

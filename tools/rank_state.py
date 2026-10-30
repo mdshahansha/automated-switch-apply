@@ -31,11 +31,7 @@ this only removes the state file from the conversation.
 Usage:
   python3 tools/rank_state.py candidates [--all] [--focus TEXT] [--limit N]
   python3 tools/rank_state.py sweep [--write] [--exclude KEY,KEY]
-<<<<<<< HEAD
   python3 tools/rank_state.py apply --results results.json [--weights weights.json] [--dry-run] [--now ISO-DATETIME]
-=======
-  python3 tools/rank_state.py apply --results results.json [--dry-run] [--now ISO-DATETIME]
->>>>>>> origin/master
 
 Both subcommands print JSON on stdout. Exit 0 on success, 1 on a usage or
 state error, or on `apply` when any result could not be written.
@@ -43,10 +39,7 @@ state error, or on `apply` when any result could not be written.
 
 import argparse
 import json
-<<<<<<< HEAD
 import math
-=======
->>>>>>> origin/master
 import os
 import re
 import sys
@@ -62,11 +55,8 @@ TRACKER = ROOT / "job_search_tracker.csv"
 
 # 04-job-evaluation.md
 WEIGHTS = {"technical": 0.30, "experience": 0.25, "behavioral": 0.15, "career": 0.30}
-<<<<<<< HEAD
 OPTIONAL_DIMENSIONS = ("salary", "role", "freshness", "employment")
 SCORE_DIMENSIONS = (*WEIGHTS, *OPTIONAL_DIMENSIONS)
-=======
->>>>>>> origin/master
 BANDS = ((75, "Strong Fit"), (60, "Good Fit"), (45, "Moderate Fit"), (30, "Weak Fit"), (0, "Poor Fit"))
 
 DEFAULT_LIMIT = 10
@@ -78,11 +68,7 @@ ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 # names exactly these, so the spec and the tool cannot drift apart.
 AGENT_STATUSES = ("scored", "expired", "unreachable")
 
-<<<<<<< HEAD
 # The values the veto gates may take (rank.md Step 2). Step 5's veto is an
-=======
-# The values the two veto gates may take (rank.md Step 2). Step 5's veto is an
->>>>>>> origin/master
 # exact match on "FAIL", so any other spelling would shortlist a deal-breaker.
 GATE_VERDICTS = ("PASS", "FAIL", "FLAG")
 
@@ -301,7 +287,6 @@ def cmd_sweep(args) -> int:
     return 0
 
 
-<<<<<<< HEAD
 def validate_weights(weights: dict) -> dict:
     """Configured fractions total exactly one; no hidden default dimensions."""
     if not isinstance(weights, dict) or not weights:
@@ -359,28 +344,16 @@ def score_details(scores: dict, weights: dict | None = None, notes: dict | None 
         if value is None and dim in OPTIONAL_DIMENSIONS:
             unavailable.append(dim)
             continue
-=======
-def overall_score(scores: dict) -> int:
-    if not isinstance(scores, dict):
-        raise ValueError("scores must be an object")
-    total = Fraction(0)
-    for dim, weight in WEIGHTS.items():
-        value = scores.get(dim)
->>>>>>> origin/master
         if isinstance(value, bool) or not isinstance(value, (int, float)):
             raise ValueError(f"missing or non-numeric score '{dim}'")
         if not 0 <= value <= 100:
             raise ValueError(f"score '{dim}' must be finite and between 0 and 100")
-<<<<<<< HEAD
         available[dim] = value
         available_weight += Fraction(str(weight))
-=======
->>>>>>> origin/master
         # Scores and documented percentage weights are decimal quantities.
         # Binary float summation can turn 59.5 into 59.49999999999999 and drop
         # an otherwise valid result into the lower verdict band.
         total += Fraction(str(value)) * Fraction(str(weight))
-<<<<<<< HEAD
     if not available:
         raise ValueError("no scored dimensions are available for the configured weights")
     total /= available_weight
@@ -398,9 +371,6 @@ def overall_score(scores: dict) -> int:
 
 def overall_score(scores: dict, weights: dict | None = None) -> int:
     return score_details(scores, weights)["score"]
-=======
-    return int(total + Fraction(1, 2))
->>>>>>> origin/master
 
 
 def band(score: int) -> str:
@@ -411,13 +381,10 @@ def band(score: int) -> str:
 
 
 def cmd_apply(args) -> int:
-<<<<<<< HEAD
     try:
         weights = load_weights(getattr(args, "weights", None))
     except ValueError as exc:
         sys.exit(str(exc))
-=======
->>>>>>> origin/master
     doc, seen = load_state(args.state)
     today = args.today
     now = args.now
@@ -504,41 +471,28 @@ def cmd_apply(args) -> int:
             continue
 
         try:
-<<<<<<< HEAD
             details = score_details(result.get("scores") or {}, weights, result.get("score_notes"))
             score = details["score"]
-=======
-            score = overall_score(result.get("scores") or {})
->>>>>>> origin/master
         except ValueError as exc:
             errors.append({"key": key, "error": str(exc)})
             continue
         bad_gate = next(
-<<<<<<< HEAD
             (f for f in ("location_verdict", "language_gate", "preference_gate")
              if result.get(f) and result[f] not in GATE_VERDICTS),
             None,
         )
         if "preference_gate" in result and result["preference_gate"] not in GATE_VERDICTS:
             bad_gate = "preference_gate"
-=======
-            (f for f in ("location_verdict", "language_gate") if result.get(f) and result[f] not in GATE_VERDICTS),
-            None,
-        )
->>>>>>> origin/master
         if bad_gate:
             errors.append(
                 {"key": key, "error": f"unknown {bad_gate} {result[bad_gate]!r}; expected one of {', '.join(GATE_VERDICTS)}"}
             )
             continue
-<<<<<<< HEAD
         if result.get("preference_gate") in ("FAIL", "FLAG"):
             note = result.get("preference_note")
             if not isinstance(note, str) or not note.strip() or len(note) > 2000:
                 errors.append({"key": key, "error": "preference_note needs 1-2000 characters explaining the gate"})
                 continue
-=======
->>>>>>> origin/master
 
         # A missing deadline from the fresh fetch is not a correction to the
         # stored date. Scored keys are excluded from the later sweep, so apply
@@ -564,7 +518,6 @@ def cmd_apply(args) -> int:
         entry["rank_score"] = score
         entry["rank_verdict"] = band(score)
         entry["rank_date"] = today.isoformat()
-<<<<<<< HEAD
         for field in ("scores", "weights", "effective_weights", "score_notes", "unavailable"):
             entry[f"rank_{field}"] = details[field]
         entry["location_verdict"] = result.get("location_verdict") or legacy or "PASS"
@@ -574,10 +527,6 @@ def cmd_apply(args) -> int:
             entry.pop("preference_note", None)
         else:
             entry["preference_note"] = result.get("preference_note")
-=======
-        entry["location_verdict"] = result.get("location_verdict") or legacy or "PASS"
-        entry["language_gate"] = result.get("language_gate") or "PASS"
->>>>>>> origin/master
         if entry["language_gate"] == "PASS":
             entry.pop("language_note", None)
         else:
@@ -619,7 +568,6 @@ def cmd_apply(args) -> int:
                 "url": entry.get("url"),
                 "score": score,
                 "verdict": entry["rank_verdict"],
-<<<<<<< HEAD
                 **{field: details[field] for field in (
                     "scores", "weights", "effective_weights", "score_notes", "unavailable"
                 )},
@@ -628,11 +576,6 @@ def cmd_apply(args) -> int:
                 "language_note": entry.get("language_note"),
                 "preference_gate": entry["preference_gate"],
                 "preference_note": entry.get("preference_note"),
-=======
-                "location_verdict": entry["location_verdict"],
-                "language_gate": entry["language_gate"],
-                "language_note": entry.get("language_note"),
->>>>>>> origin/master
                 "deadline": entry.get("deadline"),
                 "posted_date": entry.get("posted_date"),
                 "urgent": bool(parsed and today <= parsed <= today + timedelta(days=URGENT_DAYS)),
@@ -646,13 +589,9 @@ def cmd_apply(args) -> int:
         save_state(args.state, doc)
 
     rows.sort(key=lambda r: (r["score"], r["urgent"]), reverse=True)
-<<<<<<< HEAD
     veto = lambda r: any(r[field] == "FAIL" for field in (
         "location_verdict", "language_gate", "preference_gate"
     ))
-=======
-    veto = lambda r: r["location_verdict"] == "FAIL" or r["language_gate"] == "FAIL"
->>>>>>> origin/master
     vetoed = [r for r in rows if veto(r)]
     ranked = [r for r in rows if not veto(r)]
     print(
@@ -713,10 +652,7 @@ def main() -> int:
 
     app = sub.add_parser("apply", parents=[common], help="write scoring results back and print the ranking")
     app.add_argument("--results", required=True, help="JSON array from the scoring agents")
-<<<<<<< HEAD
     app.add_argument("--weights", type=Path, help="JSON object of dimension weights summing to 1")
-=======
->>>>>>> origin/master
     app.add_argument("--dry-run", action="store_true")
     app.set_defaults(func=cmd_apply)
 

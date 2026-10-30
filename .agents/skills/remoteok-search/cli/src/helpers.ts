@@ -14,12 +14,9 @@ export interface Job {
   date: string | null
   url: string
   description: string | null
-<<<<<<< HEAD
   salary_min: number | null
   salary_max: number | null
   salary_currency: string | null
-=======
->>>>>>> origin/master
   tags: string[]
   source: "Remote OK"
 }
@@ -100,13 +97,10 @@ function nullableText(value: unknown): string | null {
   return raw ? htmlToText(raw) || null : null
 }
 
-<<<<<<< HEAD
 function salaryNumber(value: unknown): number | null {
   return typeof value === "number" && Number.isFinite(value) && value > 0 ? value : null
 }
 
-=======
->>>>>>> origin/master
 export function parseFeed(value: unknown): Feed {
   if (!Array.isArray(value)) throw new CLIError("Remote OK API response must be a JSON array", "BAD_RESPONSE")
   const first = value[0]
@@ -131,13 +125,10 @@ export function parseFeed(value: unknown): Feed {
     jobs.push({
       id, title, company: nullableText(row.company), location: nullableText(row.location), date, url,
       description: nullableText(row.description),
-<<<<<<< HEAD
       salary_min: salaryNumber(row.salary_min), salary_max: salaryNumber(row.salary_max),
       // The feed does not reliably disclose a currency or salary period. Keep
       // those unknown instead of assuming USD or an annual amount.
       salary_currency: nullableText(row.salary_currency ?? row.currency),
-=======
->>>>>>> origin/master
       tags: Array.isArray(row.tags) ? [...new Set((row.tags as unknown[]).map(nullableText).filter((v): v is string => v !== null))] : [],
       source: "Remote OK",
     })

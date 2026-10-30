@@ -7,7 +7,7 @@ description: >
   remote developer jobs on WWR, or WWR par remote naukri. Geography is checked
   from disclosed listing fields; remote does not imply India eligibility.
 context: fork
-enabled: true
+enabled: false
 allowed-tools: Bash(bun run .agents/skills/weworkremotely-search/cli/src/cli.ts *)
 ---
 

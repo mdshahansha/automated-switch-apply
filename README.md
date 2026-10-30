@@ -148,6 +148,39 @@ Postings are treated as untrusted input (the workflow follows no instructions em
 
 `/reset` is also available, see [Starting over](#starting-over) below.
 
+### 24-hour multi-platform discovery
+
+`tools/job_discovery.py` collects postings from LinkedIn, Greenhouse, Ashby, Zoho Recruit, Lever and Apna in one run, scores them 0-100 against the profile, and keeps only verified last-24-hour postings in the confirmed results. It discovers only: it never signs in, creates accounts, applies, or submits forms. It needs Python 3.10+ (standard library only) and `bun` for the LinkedIn CLI.
+
+```bash
+python tools/job_discovery.py run                       # all enabled platforms
+python tools/job_discovery.py run --platforms lever,ashby
+python tools/job_discovery.py run --resume              # continue today's interrupted run
+python tools/job_discovery.py report                    # reprint today's summary
+python -m unittest tests.test_job_discovery
+```
+
+**Configuration** lives in `tools/discovery_config.json`: enabled platforms, freshness window, concurrency, timeouts and retries, output paths, profile terms (target titles, skills, excluded titles, experience range, home locations), score thresholds, LinkedIn queries, and the company boards per ATS. Pass `--config <path>` to use another file. No credentials are needed or read.
+
+**Output** goes to `output/discovery/<YYYY-MM-DD>/` (git-ignored): `confirmed_fresh`, `review_date_unverified` and `all_jobs`, each as JSON and CSV, plus `report.json` (counts per platform, errors, duplicates, closed jobs, duration) and `checkpoint.json` (per-board results for `--resume`). `job_scraper/discovery_store.json` keeps `firstSeenAt`/`lastSeenAt` per job across reruns.
+
+**Freshness.** `collectedAt` is the reference. Only an exact, timezone-aware source timestamp within the window counts as `confirmed_fresh`. A date without a time, a naive timestamp, or a relative label ("1 day ago") is `uncertain`; no date at all is `date_unverified`. Both go to the review dataset, never the confirmed one. The raw source value (`postedAtRaw`) is kept beside the normalized `postedAt`.
+
+**Scoring** (title 30, skills 25, experience 15, location/work mode 15, employment type 5, vacancy quality 10) with hard exclusions for unrelated titles, internships, senior leadership, roles outside India, remote roles that don't state India eligibility, and experience asks of 6+ years. Each job keeps its `scoreBreakdown`, `matchReasons` and `exclusionReasons`.
+
+**Deduplication** merges only on the same platform job ID, the same canonical URL, or identical normalized company + title + location on different platforms; every source URL is kept in `sources`. Same company and title in a different location is flagged in `possibleDuplicateOf`, not merged.
+
+| Platform | Status | Method and limits |
+|---|---|---|
+| Greenhouse | supported | Public Job Board API, `first_published` timestamp. Configured boards only; there is no cross-company search. |
+| Lever | supported | Public Postings API, `createdAt` timestamp. Configured companies only. |
+| Ashby | supported | Public job-board API, `publishedAt` timestamp. Configured boards only. |
+| LinkedIn | partial | Installed `linkedin-search` CLI with LinkedIn's 24-hour filter. Cards carry a date, not a time, so results are `uncertain`, never confirmed. Covers only the configured queries. |
+| Zoho Recruit | partial | Configured public careers pages, robots-gated. The public payload has no publication date, so all results are `date_unverified`. |
+| Apna | blocked | apna.co's User Agreement (7.1(d)-(e)) prohibits automated retrieval. Use the manual `apna-search` skill. |
+
+Coverage is never exhaustive: ATS results come only from the boards listed in the config. Add a company by putting its board token (the slug in `boards.greenhouse.io/<token>`, `jobs.lever.co/<token>`, `jobs.ashbyhq.com/<token>`) in the matching list. A wrong token shows up as an HTTP 404 in the platform errors.
+
 ## File structure
 
 ```

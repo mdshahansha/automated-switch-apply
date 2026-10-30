@@ -1,0 +1,220 @@
+{
+  "enabledPlatforms": [
+    "linkedin",
+    "greenhouse",
+    "ashby",
+    "zoho_recruit",
+    "apna",
+    "lever"
+  ],
+  "freshnessWindowHours": 24,
+  "concurrency": 4,
+  "requestTimeoutSeconds": 20,
+  "retries": 2,
+  "outputDir": "output/discovery",
+  "storePath": "job_scraper/discovery_store.json",
+  "profile": {
+    "experienceYears": 3,
+    "maxRequiredYears": 4,
+    "homeLocations": [
+      "kolkata"
+    ],
+    "country": "india",
+    "workModes": [
+      "remote",
+      "hybrid",
+      "onsite"
+    ],
+    "targetTitles": [
+      "full stack",
+      "fullstack",
+      "full-stack",
+      "mern",
+      "react",
+      "node",
+      "nodejs",
+      "node.js",
+      "backend",
+      "back end",
+      "back-end",
+      "software engineer",
+      "software developer",
+      "sde",
+      "javascript",
+      "typescript",
+      "frontend",
+      "front end",
+      "front-end",
+      "web developer",
+      "java developer",
+      "spring boot",
+      "react native"
+    ],
+    "coreTitles": [
+      "full stack",
+      "fullstack",
+      "full-stack",
+      "mern",
+      "react",
+      "node",
+      "nodejs",
+      "node.js",
+      "software engineer",
+      "software developer",
+      "sde"
+    ],
+    "primarySkills": [
+      "javascript",
+      "typescript",
+      "react",
+      "node",
+      "express",
+      "rest",
+      "mysql",
+      "mongodb",
+      "sql",
+      "git",
+      "next.js",
+      "nextjs",
+      "postgresql"
+    ],
+    "secondarySkills": [
+      "java",
+      "spring boot",
+      "redis",
+      "kafka",
+      "rabbitmq",
+      "docker",
+      "aws",
+      "ci/cd",
+      "react native",
+      "microservices"
+    ],
+    "foreignStacks": [
+      ".net",
+      "c#",
+      "golang",
+      " go ",
+      "python",
+      "ruby",
+      "php",
+      "scala",
+      "rust",
+      "c++",
+      "kotlin",
+      "swift",
+      "salesforce",
+      "sap"
+    ],
+    "excludeTitles": [
+      "intern",
+      "internship",
+      "trainee",
+      "director",
+      "vice president",
+      "vp ",
+      "head of",
+      "chief",
+      "principal",
+      "staff",
+      "distinguished",
+      "architect",
+      "engineering manager",
+      "manager",
+      "data scientist",
+      "data engineer",
+      "analyst",
+      "sales",
+      "recruiter",
+      "accountant",
+      "designer",
+      "qa ",
+      "test engineer",
+      "devops",
+      "sre",
+      "android",
+      "ios",
+      ".net",
+      "dotnet",
+      "c#",
+      "asp.net"
+    ]
+  },
+  "thresholds": {
+    "high": 80,
+    "medium": 60,
+    "minimumScore": 0
+  },
+  "linkedin": {
+    "queries": [
+      "full stack developer",
+      "MERN stack developer",
+      "react developer",
+      "node.js developer",
+      "software engineer javascript"
+    ],
+    "searches": [
+      {
+        "location": "Kolkata, West Bengal, India"
+      },
+      {
+        "location": "India",
+        "remote": "remote"
+      }
+    ],
+    "perQueryLimit": 25,
+    "maxDetails": 30
+  },
+  "greenhouse": {
+    "boards": [
+      "okta",
+      "databricks",
+      "mongodb",
+      "druva",
+      "gitlab",
+      "zenoti",
+      "stripe",
+      "rubrik",
+      "glance",
+      "coinbase",
+      "sigmoid",
+      "newrelic",
+      "inmobi",
+      "twilio",
+      "turing",
+      "elastic",
+      "cloudsek",
+      "datadog",
+      "groww",
+      "razorpaysoftwareprivatelimited",
+      "hackerrank"
+    ]
+  },
+  "lever": {
+    "companies": [
+      "hevodata",
+      "paytm",
+      "fampay",
+      "mindtickle",
+      "meesho",
+      "zeta",
+      "cred",
+      "jobgether"
+    ]
+  },
+  "ashby": {
+    "boards": [
+      "signoz",
+      "sarvam",
+      "atlan",
+      "spotdraft",
+      "notion",
+      "almabase"
+    ]
+  },
+  "zoho_recruit": {
+    "careerPages": [
+      "https://prescienceds.zohorecruit.in/jobs/Careers"
+    ]
+  }
+}

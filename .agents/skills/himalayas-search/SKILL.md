@@ -8,7 +8,7 @@ description: >
   Node.js jobs, or भारत में रिमोट नौकरियां. The portal and CLI use English;
   country filtering is supported, not city matching.
 context: fork
-enabled: true
+enabled: false
 allowed-tools: Bash(bun run .agents/skills/himalayas-search/cli/src/cli.ts *)
 ---
 
