@@ -1,0 +1,34 @@
+{
+  "company": "Enterprise Bot",
+  "role": "Full Stack Engineer",
+  "source_url": "https://www.linkedin.com/jobs/view/4476699604/",
+  "job_id": "4476699604",
+  "platform": "LinkedIn",
+  "checked_date": "2026-10-23",
+  "status": "blocked",
+  "stage": "Resume selection, page 2 of 4",
+  "blocker": "Browser upload permission declined; candidate can upload the prepared CV manually.",
+  "application_submitted": false,
+  "new_resume_uploaded": false,
+  "submission_attempted": false,
+  "preferred_email": "mshahansha.2001@gmail.com",
+  "linkedin_form_email": "mdshahansha822@gmail.com",
+  "email_note": "Candidate instructed to use preferred email wherever possible; LinkedIn only offers verified account email.",
+  "cv_path": "C:\\Users\\mdsha\\Documents\\mohd doc\\automated-switch-apply\\output\\pdf\\Mohammad_Shahansha_Resume.pdf",
+  "cover_letter_path": "C:\\Users\\mdsha\\Documents\\mohd doc\\automated-switch-apply\\output\\pdf\\Enterprise_Bot_Cover_Letter_Mohammad_Shahansha.pdf",
+  "cv_sha256": "20c5b534b132cbe269a570f7342d7b3612deea0d498561edd9ed6710a52832cd",
+  "verification": {
+    "cv_pages": 2,
+    "cover_letter_pages": 1,
+    "pdf_text": "passed",
+    "layout": "passed",
+    "visual_review": "passed",
+    "posting_guard": "clean"
+  },
+  "review_resolution": [
+    "Protected routes, rendering optimization and Context API are supported by the supplied RN/full-stack PDFs.",
+    "Project CloudWatch/Datadog monitoring appears in the original supplied PDF project bullets.",
+    "Hybrid Bengaluru is confirmed on the authenticated LinkedIn job page."
+  ],
+  "next_action": "Candidate uploads Mohammad_Shahansha_Resume.pdf in the open application; then continue required questions and review."
+}
