@@ -17,9 +17,15 @@ framework_version: 1.1.3
 - **Portfolio:** https://mohammad-shahansha.web.app/
 - **Status:** Employed as a Full Stack Engineer at Osbee Solution Private Limited.
 - **Constraints:** Any Indian city; remote, hybrid, or onsite. International roles must allow remote work from India.
-- **Notice period:** 30 days.
+- **Notice period:** 15 days or less (updated by the candidate 2026-10-25; previously 30 days). Not yet resigned, so do not claim immediate joining.
+- **Contract roles:** Open to contract positions if role and pay fit (confirmed by the candidate 2026-10-25).
+- **Experience-requirement tolerance:** Apply to roles asking up to 5+ years even though actual experience is about 3.3 years; a years-of-experience gap alone is not a reason to skip (confirmed by the candidate 2026-10-25). Still state real years truthfully in forms and drafts.
+- **Remote work setup:** Has a development machine with 16 GB+ RAM and an SSD, plus a stable internet connection (confirmed by the candidate 2026-10-26).
+- **Shift flexibility:** Okay with any shift, including US-hours night shifts such as 6:30 PM-2:30 AM IST (confirmed by the candidate 2026-10-26).
+- **Driver's license:** Holds a valid driver's license (confirmed by the candidate 2026-10-26).
+- **Pronouns:** he/him (confirmed by the candidate 2026-10-24).
 - **Work authorization:** India. Authorization in other countries and overseas relocation are not declared.
-- **Salary:** Flexible; no current CTC, minimum, or numeric expectation supplied. Do not invent a numeric screening answer.
+- **Salary:** Flexible; no current CTC or minimum supplied. On 2026-10-24 the candidate set the expected-salary answer for forms that require a number: write exactly "24 LPA", a single figure, never a range. Current CTC (confirmed by the candidate 2026-10-24): 8 LPA fixed annual; in INR fields write 800000.
 - **Target roles:** Full-stack, software, backend, Java/Spring Boot, React, and React Native engineering are suggested search directions based on confirmed stacks. No exclusive title or seniority requirement supplied.
 - **Resume naming:** Use `Mohammad_Shahansha_Resume.pdf` for shared and uploaded resumes. Never put the target employer's name in a resume filename, PDF title, or displayed heading. Keep tailored versions in separate application folders to avoid overwriting them.
 
@@ -79,6 +85,8 @@ Gurgaon, India
 ## Independent Projects
 <!-- Projects outside of employment: freelance, open source, personal -->
 - **Aesthetic Care Platform:** Healthcare commerce and booking platform using Next.js, Node.js, MongoDB, Redux Toolkit, Redis, and Stripe. Resumes describe subscription payments, access controls, session/query caching, and sub-two-second LCP. Project link: https://shahinahoja.com/ (extracted from the supplied PDFs; availability not checked).
+
+- **Job-application automation workspace (personal, 2026):** Built and maintains this repository with Claude Code: custom Claude Code skills and slash commands, Python tooling (portal search registry, scraping state, application records), TypeScript portal CLIs run with Bun, and unit tests. Use as evidence of agentic-coding / AI-assisted development with Claude Code; no external users or metrics.
 
 ## Technical Skills
 
