@@ -1,0 +1,68 @@
+Mohammad Shahansha
+India
+MOBILE-ANDROID-ALT+91 8228820500 • 🖂 mshahansha.2001@gmail.com
+LinkedIn, GitHub, Portfolio
+Full Stack Engineer building production web and mobile applications with React, TypeScript, Node.js, Java/Spring
+Boot, and React Native. Experience includes energy-sector platforms, REST APIs, authentication, database workflows,
+CI/CD, production support, and engineering mentoring.
+Core Competencies
+🟤 Web and mobile : React.js, Next.js, TypeScript, JavaScript, React Native, Redux Toolkit.
+🟤 Backend and APIs : Node.js, Express.js, Java, Spring Boot, REST APIs, Hibernate/JPA.
+🟤 Data and security : SQL, MySQL, PostgreSQL, MongoDB, Redis, JWT, OAuth 2.0, RBAC.
+🟤 Delivery and testing : A WS, Docker, GitHub Actions, CodePipeline, Jest, JUnit, Mockito, Postman.
+🟤 Production engineering : CloudWatch, Datadog, Grafana, Prometheus, debugging, root cause analysis.
+Professional Experience
+Osbee Solution Private Limited Kolkata, India
+Full Stack Engineer Jun 2025-present
+🟤 Built web/mobile interfaces and backend services for an energy-sector platform covering leads, payments, and
+document workflows.
+🟤 Implemented JWT authentication, OAuth 2.0, role-based access controls, token lifecycle handling, and API rate
+limiting.
+🟤 Built Docker-based delivery pipelines with GitHub Actions and A WS CodePipeline; supported deployment and
+production troubleshooting.
+🟤 Integrated DocuSign and Zoho APIs for document signing and CRM synchronization, saving approximately five
+hours per week of operational effort.
+🟤 Used Redis caching and TTL-based invalidation to reduce authorization checks from 80 ms to under 1 ms.
+🟤 Built React Native authentication flows, reusable components, shared state, and REST API integration for the
+platform’s mobile client.
+🟤 Investigated production incidents using root cause analysis and monitoring through CloudWatch, Datadog,
+Prometheus, and Grafana.
+CodingNinjas Gurgaon, India
+Software Engineer (Full Stack) Jun 2023-Apr 2025
+🟤 Delivered React interfaces and REST APIs across five or more web applications for an education and BI dashboard
+platform serving 50,000 or more active learners.
+🟤 Investigated production incidents using log correlation, reproduction, and root cause analysis.
+🟤 Mentored 200 or more engineering students through live coding and code reviews, with assessment scores improving
+25% within four weeks.
+🟤 Collaborated with QA, Product, and UX through sprint ceremonies, story grooming, estimation, and design
+discussions.
+1/2
+Education
+Heritage Institute of Technology Kolkata, India
+B.Tech in Computer Science Graduated 2023
+Languages
+🟤 English and Hindi.
+Selected Project
+Aesthetic Care Platform Project link
+Next.js, Node.js, MongoDB, Redux Toolkit, Redis, Stripe
+🟤 Built a healthcare commerce and service-booking platform spanning customer-facing interfaces and
+backend APIs.
+🟤 Integrated Stripe subscription payments and role-based access controls for application data and protected
+workflows.
+🟤 Centralized application state with Redux Toolkit and used Redis for session lifecycle handling and query
+caching.
+🟤 Achieved a largest contentful paint below two seconds, monitored through CloudWatch and Datadog.
+Additional Engineering Experience
+🟤 Built reusable React Native components, protected-route flows, API integrations, and rendering opti-
+mizations for mobile screens.
+🟤 Applied Redux Toolkit and Context API across web/mobile clients, separating session state, server cache,
+and temporary UI state.
+🟤 Implemented WebRTC audio/video and Socket.io messaging, including signaling, connection lifecycle
+handling, and PostgreSQL-backed message history with cursor-based pagination.
+🟤 Automated data seeding, migration, and recurring operational tasks with Python scripts.
+🟤 Wrote unit and component tests with Jest and maintained code quality through ESLint, Prettier, and
+structured code review.
+Availability
+🟤 30-day notice period. Open to remote, hybrid, and onsite roles across India.
+🟤 Open to international roles that permit working remotely from India.
+2/2

@@ -1,0 +1,71 @@
+Mohammad Shahansha
+India
+MOBILE-ANDROID-ALT +91 8228820500 • 🖂 mshahansha.2001@gmail.com
+LinkedIn, GitHub, Portfolio
+Backend-focused Software Engineer with 3+ years building production API services in Node.js/TypeScript and
+Java/Spring Boot. Designs REST APIs, data models, and caching for scale: Redis caching with TTL-based
+invalidation cut authorization checks from 80 ms to under 1 ms and average API latency by approximately 60%.
+Experienced with secure authentication, third-party integrations, Docker and CI/CD on A WS, and production
+debugging with root cause analysis.
+Core Competencies
+🟤 Backend and APIs : Node.js, Express.js, TypeScript, Java, Spring Boot, Hibernate/JPA, REST APIs,
+API design.
+🟤 Scalability and performance : Redis caching, TTL-based invalidation, rate limiting, performance
+tuning.
+🟤 Data: PostgreSQL, MySQL, MongoDB, SQL, schema design.
+🟤 Security: JWT, OAuth 2.0, role-based access control (RBAC), Spring Security.
+🟤 Delivery and operations : Amazon Web Services (A WS: EC2, S3, CodePipeline, CloudWatch), Docker,
+GitHub Actions, CI/CD, Datadog, Grafana, Prometheus.
+🟤 Frontend: React.js, Next.js, React Native.
+Professional Experience
+Osbee Solution Private Limited Kolkata, India
+Full Stack Engineer Jun 2025-present
+🟤 Built Node.js/TypeScript and Java/Spring Boot backend services and APIs, with React interfaces, for an
+energy-sector platform covering leads, payments, and document workflows.
+🟤 Implemented JWT authentication, OAuth 2.0, role-based access controls, token lifecycle handling, and API rate
+limiting.
+🟤 Integrated DocuSign and Zoho APIs for document signing and CRM synchronization, saving approximately five
+hours per week of operational effort.
+🟤 Used Redis caching and TTL-based invalidation to reduce authorization checks from 80 ms to under 1 ms; average
+API latency fell approximately 60%.
+🟤 Built Docker-based delivery pipelines with GitHub Actions and A WS CodePipeline; deployed and maintained
+services in production.
+🟤 Investigated production incidents using root cause analysis and monitoring through CloudWatch, Datadog,
+Prometheus, and Grafana.
+1/2
+CodingNinjas Gurgaon, India
+Software Engineer (Full Stack) Jun 2023-Apr 2025
+🟤 Delivered React interfaces and REST APIs across five or more web applications for an education and BI dashboard
+platform serving 50,000 or more active learners.
+🟤 Investigated production incidents using log correlation, reproduction, and root cause analysis across release cycles.
+🟤 Collaborated with QA, Product, and UX through sprint ceremonies, story grooming, estimation, and design
+discussions.
+🟤 Mentored 200 or more engineering students through live coding and code reviews, with assessment scores improving
+25% within four weeks.
+Monkster India
+Instructor and Mentor (part-time) Apr 2023-Sep 2023
+🟤 Taught DSA, React (ES6+), and Spring Boot to students preparing for software engineering roles; ran live classes,
+doubt-clearing sessions, and mock interviews.
+Selected Project
+Aesthetic Care Platform shahinahoja.com (live) Next.js, Node.js, Express.js, MongoDB, Redux Toolkit,
+Redis, Stripe
+🟤 Built and launched a healthcare commerce and service-booking platform spanning the customer-facing
+Next.js site and backend APIs.
+🟤 Integrated Stripe subscription payments and role-based access controls for protected workflows and
+application data.
+🟤 Centralized application state with Redux Toolkit and used Redis for session lifecycle handling and query
+caching.
+🟤 Achieved a largest contentful paint below two seconds, monitored through CloudWatch and Datadog.
+Additional Engineering Experience
+🟤 Implemented WebRTC audio/video and Socket.io messaging with PostgreSQL-backed message history
+and cursor-based pagination.
+🟤 Wrote unit and component tests with Jest and maintained code quality through ESLint, Prettier, and
+structured code review.
+Education
+Heritage Institute of Technology Kolkata, India
+B.Tech in Computer Science, CGPA 7.43 2019-2023
+Additional Information
+🟤 Certification: Data Structures in C++, Coding Ninjas.
+🟤 Languages: English and Hindi.
+🟤 Availability: 15-day notice period; open to working in Bengaluru.
+2/2

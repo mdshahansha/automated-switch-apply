@@ -1,0 +1,230 @@
+﻿score,match,platform,title,company,location,posted,freshness,url
+99,high_match,linkedin,Full Stack Developer (MERN),Alpha Male,"Mumbai, Maharashtra, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481426004
+95,high_match,linkedin,Backend developer- Node.Js,Adsparkx,"Gurugram, Haryana, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483540303
+92,high_match,linkedin,Full Stack Developer (MERN Stack),Remotohire,"Pune District, Maharashtra, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481434323
+92,high_match,linkedin,Senior Java Full Stack Developer,Infosys,"Pune Division, Maharashtra, India",2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4473848990
+92,high_match,lever,Senior Software Engineer (Laravel | Next.js | PostgreSQL),jobgether,India,2026-10-21T10:42:02.585000Z,stale,https://jobs.lever.co/jobgether/a634311f-ae33-42db-b537-a090c0eff781
+91,high_match,linkedin,Senior Software Engineer I - Node & React [T500-30415],Marriott Tech Accelerator,"Hyderabad, Telangana, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483561129
+91,high_match,linkedin,Software Engineer,Copart,Greater Hyderabad Area,2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4380329378
+91,high_match,linkedin,Software Engineer- Frontend (React),Edstem Technologies,"Thiruvananthapuram, Kerala, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4482919371
+91,high_match,linkedin,Senior Node.JS Developer,AIS Technolabs Pvt Ltd,"Ahmedabad, Gujarat, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483552708
+90,high_match,greenhouse,Full Stack Software Development Engineer II,Sigmoid,"Bengaluru, Karnataka, India",2026-08-24T13:52:57Z,stale,https://job-boards.greenhouse.io/sigmoid/jobs/8741978002
+89,high_match,lever,Senior Full Stack Developer,jobgether,India,2026-10-23T12:03:45.481000Z,stale,https://jobs.lever.co/jobgether/3d015dfb-4097-42b6-9ffa-33823a94b95b
+89,high_match,lever,Senior Level Full Stack Engineer,jobgether,India,2026-10-21T04:44:05.037000Z,stale,https://jobs.lever.co/jobgether/465308ca-53a8-4325-8c4b-c4d144ceba75
+89,high_match,lever,Senior FullStack Engineer,jobgether,India,2026-10-20T07:19:39.853000Z,stale,https://jobs.lever.co/jobgether/26729255-1d6f-421e-916c-2763103c2771
+87,high_match,greenhouse,Software Engineer 3,MongoDB,Gurugram,2026-09-29T23:54:16Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8239047
+86,high_match,linkedin,Software Engineer II,Chegg India,"Delhi, Delhi, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4482955166
+85,high_match,linkedin,Java Full-Stack Developer,Tata Consultancy Services,"Thiruvananthapuram, Kerala, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483534585
+84,high_match,linkedin,Full Stack Engineer,Talentgigs,"Coimbatore, Tamil Nadu, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4482924634
+84,high_match,greenhouse,Software Engineer 3 - Enterprise Architecture,MongoDB,Gurugram,2026-09-28T05:07:13Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8221290
+84,high_match,greenhouse,SDE II - AI,InMobi ,Bangalore,2026-07-20T07:12:12Z,stale,https://job-boards.greenhouse.io/inmobi/jobs/8073988
+82,high_match,linkedin,"Fullstack - Node.js, PostgreSQL, React",UST,"Bengaluru, Karnataka, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481435588
+82,high_match,linkedin,Senior Full-Stack Engineer,BrightCHAMPS,"Bengaluru, Karnataka, India",2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4482676772
+82,high_match,lever,Senior Fullstack Engineer (Angular / Java),jobgether,India,2026-10-19T08:01:23.832000Z,stale,https://jobs.lever.co/jobgether/f0759285-8e2b-4b78-bdcf-68f4f829ca37
+81,high_match,linkedin,Full Stack Engineer,Fabric,"Bengaluru, Karnataka, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4477976407
+81,high_match,lever,Senior Fullstack Engineer,jobgether,India,2026-10-20T05:52:49.177000Z,stale,https://jobs.lever.co/jobgether/4ac4f64c-1c39-4050-994a-8e9299ef18ee
+81,high_match,greenhouse,"Software Engineer 3, AI Builder Experience ",MongoDB,Gurugram,2026-08-19T14:42:57Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8111979
+80,high_match,linkedin,Senior Front End Software Engineer,Qualys,"Pune Division, Maharashtra, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4455406921
+80,high_match,lever,Senior Fullstack Developer (m/w/d) - Claude Code Expert,jobgether,India,2026-10-21T10:18:32.510000Z,stale,https://jobs.lever.co/jobgether/3a67306a-af73-4ec5-8d92-59940ee3ad3b
+80,high_match,greenhouse,"Software Engineer 3, AI Framework Integrations",MongoDB,Gurugram,2026-09-11T11:31:43Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8127772
+80,high_match,greenhouse,SDE - 3 - Frontend,CloudSEK,"Bengaluru, Karnataka, India",2026-08-10T09:28:15Z,stale,https://job-boards.greenhouse.io/cloudsek/jobs/6139513004
+79,medium_match,lever,Senior Full Stack Software Developer | German & French (C1+),jobgether,India,2026-10-23T12:16:51.312000Z,stale,https://jobs.lever.co/jobgether/8aed1805-1ec6-484c-bb15-8fc566cf74f6
+79,medium_match,lever,SDE I,hevodata,"Bangalore, India",2026-07-27T06:58:22.493000Z,stale,https://jobs.lever.co/hevodata/6cbbe304-e065-4711-bf3e-756795d2bc2a
+78,medium_match,lever,Full-Stack Engineer with WMS and MES,jobgether,India,2026-10-20T07:06:17.323000Z,stale,https://jobs.lever.co/jobgether/c8e05616-f49e-47f2-80f3-db76718c9efe
+78,medium_match,lever,Senior Software Engineer – Backend (Travel),paytm,"Bangalore, Karnataka",2026-10-12T12:38:38.803000Z,stale,https://jobs.lever.co/paytm/105a0d9e-94e9-4026-9105-5bea558ab3d9
+78,medium_match,lever,"Software Engineer, Business Systems",mindtickle,"Pune, Maharashtra",2026-09-09T10:54:49.990000Z,stale,https://jobs.lever.co/mindtickle/b6e024c2-42c2-463c-8bc8-ca0aa0826845
+78,medium_match,greenhouse,Software Engineer 3,MongoDB,Gurugram,2026-08-03T09:19:20Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8083366
+78,medium_match,lever,Backend - Senior Software Engineer,paytm,"Noida, Uttar Pradesh",2025-07-22T10:00:37.212000Z,stale,https://jobs.lever.co/paytm/23534d2b-3e2e-4759-b498-0bb15b2fb995
+77,medium_match,linkedin,Frontend Developer,Headout,"Bengaluru, Karnataka, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4474684900
+76,medium_match,lever,Software Engineer - (Sr. Spark),jobgether,India,2026-10-22T01:34:00.680000Z,stale,https://jobs.lever.co/jobgether/1e611a1b-a830-45cd-8416-b42368fc4dea
+76,medium_match,greenhouse,Senior Software Engineer in Test,Okta,"Bengaluru, India",2026-10-12T04:09:15Z,stale,https://www.okta.com/company/careers/opportunity/7840417?gh_jid=7840417
+76,medium_match,greenhouse,Software Engineer 3,MongoDB,Gurugram,2026-09-24T14:05:23Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8208074
+76,medium_match,lever,SDE II,hevodata,"Bangalore, India",2026-02-18T12:30:41.013000Z,stale,https://jobs.lever.co/hevodata/53987105-3d28-42b1-9132-3672abcef2aa
+75,medium_match,linkedin,Software Engineer – Full Stack (.NET 8 / C# / Golang / ReactJS),IT Consulting LLP,"Navi Mumbai, Maharashtra, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4482930826
+75,medium_match,linkedin,Graduate Software Engineer,Hewlett Packard Enterprise,Greater Kolkata Area,2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483546807
+75,medium_match,greenhouse,Senior Software Engineer – Tooling & Platform (Terraform),Okta,"Bengaluru, India",2026-03-30T12:29:40Z,stale,https://www.okta.com/company/careers/opportunity/7765038?gh_jid=7765038
+75,medium_match,greenhouse,"Software Engineer 3, Atlas Agent Engine",MongoDB,Gurugram,2026-02-09T12:11:55Z,stale,https://www.mongodb.com/careers/job/?gh_jid=7597723
+74,medium_match,linkedin,"Full Stack Engineer(.NET, React, JavaScript, and Python 3 to 4 year exp)",Cognior,"Ernakulam, Kerala, India",2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4482680675
+74,medium_match,linkedin,Frontend Engineer,Flexiple,India,2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4483391821
+74,medium_match,lever,Frontend Engineer,jobgether,India,2026-10-20T06:06:29.934000Z,stale,https://jobs.lever.co/jobgether/72232b05-a36e-4334-bd2b-3aedda8adbb6
+74,medium_match,lever,Senior Software Engineer,jobgether,India,2026-10-20T05:02:57.403000Z,stale,https://jobs.lever.co/jobgether/8fdcb19f-2d1f-413d-881a-0ea6fbbf7866
+74,medium_match,lever,SDE 2 Infra,fampay,Bengaluru,2026-10-01T06:54:56.766000Z,stale,https://jobs.lever.co/fampay/9b8d4eaa-cd29-4aec-8dcc-a33fd78d5657
+74,medium_match,greenhouse,"Software Engineer, Security Platform",Coinbase,Remote - India,2026-08-28T23:26:26Z,stale,https://www.coinbase.com/careers/positions/8165441?gh_jid=8165441
+74,medium_match,greenhouse,Senior Backend Engineer,HackerRank Careers,"Hybrid in Bangalore, India",2026-03-20T09:33:35Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/7693789
+73,medium_match,greenhouse,Software Engineer - Cloud: Azure,Rubrik Job Board,Bangalore ,2026-10-07T05:44:10Z,stale,https://www.rubrik.com/company/careers/departments/job.8258200?gh_jid=8258200
+73,medium_match,greenhouse,"Software Engineer, Infrastructure",Databricks,"Bengaluru, India",2026-09-30T05:02:39Z,stale,https://databricks.com/company/careers/open-positions/job?gh_jid=8829029002
+73,medium_match,ashby,Senior Software Engineer - Frontend,signoz,India,2026-07-21T12:02:23.088000Z,stale,https://jobs.ashbyhq.com/signoz/bb540719-7344-4e98-88b9-92446d58f437
+72,medium_match,greenhouse,Senior Software Engineer (Core Frontier),Okta,"Bengaluru, India",2026-10-21T12:10:26Z,stale,https://www.okta.com/company/careers/opportunity/8305423?gh_jid=8305423
+71,medium_match,greenhouse,Senior Applied AI Engineer,Rubrik Job Board,Bangalore,2026-10-21T12:34:00Z,stale,https://www.rubrik.com/company/careers/departments/job.8273717?gh_jid=8273717
+71,medium_match,ashby,Software Engineer - Model API Platform,sarvam,Bengaluru,2026-10-13T07:12:53.480000Z,stale,https://jobs.ashbyhq.com/sarvam/0371342b-5cb8-487b-9310-4d0eb5b37f47
+71,medium_match,ashby,"Forward Deployed Engineer, India",notion,"Hyderabad, India",2026-09-15T09:05:25.781000Z,stale,https://jobs.ashbyhq.com/notion/79c18580-c927-456c-9d5f-72efbc6c43cb
+71,medium_match,greenhouse,"Senior Software Engineer, Customer Dev Tools (Auth0)",Okta,"Bengaluru, India",2026-08-12T06:04:26Z,stale,https://www.okta.com/company/careers/opportunity/8113501?gh_jid=8113501
+71,medium_match,greenhouse,Senior Software Engineer,Okta,"Bengaluru, India",2026-08-04T12:41:16Z,stale,https://www.okta.com/company/careers/opportunity/8039085?gh_jid=8039085
+71,medium_match,ashby,"Frontend Engineer, Chanakya",sarvam,Bengaluru,2026-04-17T20:10:41.942000Z,stale,https://jobs.ashbyhq.com/sarvam/10a352d0-a65b-4599-8998-e09deef34349
+71,medium_match,greenhouse,Software Engineer (Backend - SDE 2),Databricks,"Bengaluru, India",2025-04-12T07:23:52Z,stale,https://databricks.com/company/careers/open-positions/job?gh_jid=7955594002
+71,medium_match,greenhouse,"Senior Software Engineer, Workflows (Fullstack Javascript Engineer)",Okta,"Bengaluru, India",2024-03-01T12:57:59Z,stale,https://www.okta.com/company/careers/opportunity/5772061?gh_jid=5772061
+70,medium_match,lever,Lead Software Engineer,jobgether,India,2026-10-22T03:16:49.320000Z,stale,https://jobs.lever.co/jobgether/bed8339a-b923-4475-b54a-590c2236d864
+70,medium_match,greenhouse,SDE II - Gen AI,Glance,Bangalore,2026-10-07T09:26:21Z,stale,https://job-boards.greenhouse.io/glance/jobs/7846609
+70,medium_match,greenhouse,Senior Software Engineer - Fullstack,Okta,"Bengaluru, India",2026-09-15T12:41:46Z,stale,https://www.okta.com/company/careers/opportunity/8203481?gh_jid=8203481
+69,medium_match,lever,"Backend Engineer, Solving",jobgether,India,2026-10-22T03:49:35.382000Z,stale,https://jobs.lever.co/jobgether/2b33832f-1468-4d25-8657-a1f4cbd3ca94
+69,medium_match,lever,Java Developer Associate,jobgether,India,2026-10-22T01:47:44.747000Z,stale,https://jobs.lever.co/jobgether/4c3cda04-e02f-4900-abdb-8cdbc75bad40
+69,medium_match,lever,Backend Systems Engineer,jobgether,India,2026-10-22T01:32:26.952000Z,stale,https://jobs.lever.co/jobgether/b1c16360-b99f-410a-a502-841c68d89aff
+69,medium_match,greenhouse,Senior Frontend Engineer,GitLab,"Bangalore, India",2026-09-24T05:24:21Z,stale,https://job-boards.greenhouse.io/gitlab/jobs/8826920002
+67,medium_match,lever,AI Tooling Engineer,jobgether,India,2026-10-21T08:19:29.125000Z,stale,https://jobs.lever.co/jobgether/be5998fa-55e5-4a16-a459-f942e1c67676
+67,medium_match,lever,Java Developer - GIO,jobgether,India,2026-10-21T04:12:07.914000Z,stale,https://jobs.lever.co/jobgether/022f8406-889d-4fb7-a8af-dcabb02b1aa4
+67,medium_match,lever,"Senior Engineer, Fullstack - Growth",jobgether,India,2026-10-20T07:22:37.895000Z,stale,https://jobs.lever.co/jobgether/1ddf2343-fc1f-4ea5-95de-f955cb3b20ee
+67,medium_match,greenhouse,Senior Software Engineer - Fullstack ,Okta,"Bengaluru, India",2026-09-15T12:41:23Z,stale,https://www.okta.com/company/careers/opportunity/8128435?gh_jid=8128435
+67,medium_match,lever,SDE III,hevodata,"Bangalore, India",2025-09-02T08:15:04.530000Z,stale,https://jobs.lever.co/hevodata/3d8a647b-44f5-4615-8623-2f9142b34602
+66,medium_match,linkedin,Senior Full Stack Engineer (.Net),Info Services,"Chennai, Tamil Nadu, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481418982
+65,medium_match,greenhouse,Senior Software Engineer,New Relic,"Hyderabad, India",2026-10-26T05:58:46Z,confirmed_fresh,https://job-boards.greenhouse.io/newrelic/jobs/5459398008
+65,medium_match,linkedin,"Sr Software Engineer - ReactJS, TypeScript & SQL/NoSQL",Blue Yonder,"Hyderabad, Telangana, India",2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4470254217
+65,medium_match,lever,WordPress Web Developer,jobgether,India,2026-10-22T05:19:56.090000Z,stale,https://jobs.lever.co/jobgether/40216764-ca76-4ede-9a44-a619fe7c3d9a
+65,medium_match,greenhouse,Senior Software Engineer (NetSuite Developer),Okta,"Bengaluru, India",2026-10-12T12:50:30Z,stale,https://www.okta.com/company/careers/opportunity/8154916?gh_jid=8154916
+65,medium_match,greenhouse,Senior Software engineer - Advanced Threat Protection,Okta,"Bengaluru, India",2026-10-05T02:58:50Z,stale,https://www.okta.com/company/careers/opportunity/8242557?gh_jid=8242557
+65,medium_match,greenhouse,Software Engineer - IAM,Rubrik Job Board,Pune,2026-08-31T06:21:26Z,stale,https://www.rubrik.com/company/careers/departments/job.7956918?gh_jid=7956918
+65,medium_match,greenhouse,Sr Software Engineer - Agentic Applications (Full Stack),Databricks,"Bengaluru, India",2026-08-21T02:36:37Z,stale,https://databricks.com/company/careers/open-positions/job?gh_jid=8679982002
+64,medium_match,greenhouse,SDE IV (ML Engineering),InMobi ,Lucknow,2026-09-16T12:49:00Z,stale,https://job-boards.greenhouse.io/inmobi/jobs/8073655
+63,medium_match,linkedin,TTT - .NET Gen AI Full Stack Developer - Senior,EY,"Kolkata, West Bengal, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481426979
+63,medium_match,lever,Senior Customer Experience Engineer,hevodata,"Pune, Maharashtra",2026-09-25T08:22:07.057000Z,stale,https://jobs.lever.co/hevodata/bfdebed3-3762-4854-a1e9-01bda6bebe09
+63,medium_match,lever,Associate Customer Experience Engineer,hevodata,"Pune, Maharashtra",2026-09-25T08:16:49.362000Z,stale,https://jobs.lever.co/hevodata/96993ebc-609a-4733-84cd-e1a0c3e69fda
+63,medium_match,greenhouse,Senior Software Engineer,Okta,"Bengaluru, India",2026-02-09T17:02:45Z,stale,https://www.okta.com/company/careers/opportunity/7599312?gh_jid=7599312
+63,medium_match,lever,Senior Frontend Developer (Marketing),hevodata,"Bengaluru, India",2025-11-13T11:51:14.155000Z,stale,https://jobs.lever.co/hevodata/9e8b22dd-245b-4e8d-a2a4-3b905a3ff1f5
+62,medium_match,zoho_recruit,Senior React Engineer,prescienceds,"Bangalore, India",,date_unverified,https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324157
+62,medium_match,lever,Senior Backend Engineer (Go/PostgreSQL),jobgether,India,2026-10-21T00:12:10.057000Z,stale,https://jobs.lever.co/jobgether/e46a2296-115d-4e97-8e6d-921072b77ea8
+62,medium_match,greenhouse,"Senior Software Engineer, SSCS : Authentication",GitLab,"Bangalore, India",2026-10-15T05:04:24Z,stale,https://job-boards.greenhouse.io/gitlab/jobs/8878486002
+62,medium_match,greenhouse,Software Development Engineer in Test II,HackerRank Careers,"Hybrid in Bangalore, India",2026-09-01T08:18:36Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/8155938
+61,medium_match,lever,Senior Software Engineer,jobgether,India,2026-10-26T05:33:32.265000Z,confirmed_fresh,https://jobs.lever.co/jobgether/d7c9f343-8f44-4507-a22e-2b777773b4fb
+61,medium_match,lever,Solutions Engineer,hevodata,"Bangalore, India",2026-05-18T07:25:05.274000Z,stale,https://jobs.lever.co/hevodata/ee02ca24-94ec-415b-ab36-7dec4d62099b
+61,medium_match,lever,Customer Success Engineer - II,mindtickle,"Pune, Maharashtra",2025-12-04T15:18:30.906000Z,stale,https://jobs.lever.co/mindtickle/166a3fea-6a19-48da-9a7d-bbff7d3c2f95
+61,medium_match,lever,Software Development Engineer III Data,meesho,"Bangalore, Karnataka",2025-08-04T08:11:47.866000Z,stale,https://jobs.lever.co/meesho/7bb1de7e-8756-412b-8c71-0ba40863edc8
+60,medium_match,lever,Partner IAM - Security Platform Engineer,jobgether,India,2026-10-23T00:13:32.141000Z,stale,https://jobs.lever.co/jobgether/465478bc-97cb-44db-9d2f-a0c709556d81
+60,medium_match,greenhouse,SDE III - Engineering,InMobi ,Lucknow,2026-10-12T12:48:22Z,stale,https://job-boards.greenhouse.io/inmobi/jobs/8159407
+60,medium_match,greenhouse,Senior Software Engineer,MongoDB,Bengaluru,2026-09-29T13:09:56Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8178900
+60,medium_match,greenhouse,"Senior Software Engineer, Atlas Agent Engine",MongoDB,Gurugram,2026-02-05T08:49:52Z,stale,https://www.mongodb.com/careers/job/?gh_jid=7590644
+60,medium_match,lever,Backend - TL/STL,paytm,"Bangalore, Karnataka, Noida, Uttar Pradesh",2025-06-04T11:55:06.653000Z,stale,https://jobs.lever.co/paytm/fffdcfb1-fd6e-4401-b059-500838a6db0e
+59,low_match,lever,Product Solution Engineer,jobgether,India,2026-10-26T05:44:10.668000Z,confirmed_fresh,https://jobs.lever.co/jobgether/d70106b4-821d-47d0-8425-31b41b0f9ff0
+59,low_match,linkedin,Senior Frontend Developer,GoodSpace AI,"Bengaluru, Karnataka, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481437211
+59,low_match,lever,Lead Consultant (Fusion Service VBCS / Redwood Developer),jobgether,India,2026-10-21T12:16:37.890000Z,stale,https://jobs.lever.co/jobgether/410b2627-96c1-4285-af44-8758be27a79b
+59,low_match,lever,Senior Dynamics Engineer,jobgether,India,2026-10-20T06:11:49.951000Z,stale,https://jobs.lever.co/jobgether/61f716aa-b514-4efd-aeb1-c99848a8cff5
+59,low_match,greenhouse,"Intermediate Backend Engineer, India",GitLab,"Bangalore, India",2026-09-02T18:50:52Z,stale,https://job-boards.greenhouse.io/gitlab/jobs/8775507002
+59,low_match,greenhouse,Senior Software Engineer - Partner Ecosystem,Databricks,"Bengaluru, India",2025-04-03T07:22:28Z,stale,https://databricks.com/company/careers/open-positions/job?gh_jid=7938410002
+59,low_match,greenhouse,Senior Software Engineer - Ingestion,Databricks,"Bengaluru, India",2025-03-31T18:03:25Z,stale,https://databricks.com/company/careers/open-positions/job?gh_jid=7934782002
+58,low_match,lever,Data Platform Engineer,jobgether,India,2026-10-21T10:28:42.021000Z,stale,https://jobs.lever.co/jobgether/ffae8bf2-91c2-438e-b80b-94e8217caf95
+58,low_match,greenhouse,"Customer Experience Engineer, L1",HackerRank Careers,"Hybrid in Bangalore, India",2026-08-27T14:16:44Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/8127535
+58,low_match,lever,Cloud Network Engineer II,zeta,Hyderabad,2026-08-26T08:13:46.874000Z,stale,https://jobs.lever.co/zeta/dad16204-8051-4517-9e50-966f329045b5
+58,low_match,greenhouse,Applications Engineer 2,Twilio,Remote - India,2026-06-30T05:16:56Z,stale,https://job-boards.greenhouse.io/twilio/jobs/7781659
+58,low_match,lever,SDE-  IV  / Lead Engineer,hevodata,"Bangalore, India",2025-08-25T16:46:07.478000Z,stale,https://jobs.lever.co/hevodata/c396cf1e-6a73-475d-b84b-aa90f916c8a2
+58,low_match,lever,Backend- Technical Lead,paytm,"Noida, Uttar Pradesh",2025-07-03T05:15:06.067000Z,stale,https://jobs.lever.co/paytm/46c10c59-437c-4a31-ae4c-c4e41f31d9f7
+57,low_match,lever,"Senior ServiceNow Developer (ITAM, HAM, CMDB)",jobgether,India,2026-10-20T05:47:18.295000Z,stale,https://jobs.lever.co/jobgether/eb508127-cde6-4d85-a601-cb933f915efa
+57,low_match,lever,"Senior Engineer, Backend - Orchestration",jobgether,India,2026-10-20T05:44:50.235000Z,stale,https://jobs.lever.co/jobgether/a4cab5ba-f973-4cb0-bd97-631aa3c98241
+57,low_match,greenhouse,Developer Support Engineer,Okta,"Bengaluru, India",2026-04-02T08:09:56Z,stale,https://www.okta.com/company/careers/opportunity/7770733?gh_jid=7770733
+56,low_match,lever,Security Engineer (AppSec / GRC / AI Security),jobgether,India,2026-10-22T03:41:03.015000Z,stale,https://jobs.lever.co/jobgether/92ad38f7-90f1-47d1-ac4e-061266e15dc9
+56,low_match,lever,Senior Mobile Developer for Dart Flutter,jobgether,India,2026-10-21T04:45:34.903000Z,stale,https://jobs.lever.co/jobgether/c4003a7d-bbd8-4c7d-89e3-127949e2992d
+56,low_match,lever,Data Automation Engineer,jobgether,India,2026-10-19T00:26:03.884000Z,stale,https://jobs.lever.co/jobgether/fdb3c67c-a18e-4c5b-af0a-af4656e13847
+56,low_match,greenhouse,People Systems Engineer,GitLab,"Bangalore, India; Remote, Poland",2026-10-09T20:55:56Z,stale,https://job-boards.greenhouse.io/gitlab/jobs/8861748002
+56,low_match,greenhouse,"Senior Software Engineer - Python, Data Engineering, AI",Zenoti,"Hyderabad, Telangana, India",2026-09-29T05:40:24Z,stale,https://job-boards.greenhouse.io/zenoti/jobs/8004516003
+56,low_match,greenhouse,"Senior Software Engineer, Lifecycle Management",Okta,"Bengaluru, India",2026-09-22T11:06:30Z,stale,https://www.okta.com/company/careers/opportunity/8222464?gh_jid=8222464
+56,low_match,lever,Business System Engineer,hevodata,"Bangalore, India",2026-09-17T10:29:13.314000Z,stale,https://jobs.lever.co/hevodata/95ab9f01-3671-4073-9990-4418aecb24e7
+56,low_match,greenhouse,Application Engineer,MongoDB,Bengaluru,2026-09-11T15:58:27Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8143980
+56,low_match,ashby, AI GTM Engineer,signoz,India,2026-07-20T06:14:10.999000Z,stale,https://jobs.ashbyhq.com/signoz/f4273207-6f44-40cc-81b0-b1d8b288dc45
+56,low_match,greenhouse,DevRel Engineer II ,HackerRank Careers,"Hybrid in Bangalore, India",2026-06-17T05:52:10Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/8009429
+55,low_match,ashby,Infrastructure Engineer,sarvam,Bengaluru,2026-10-26T06:29:28.519000Z,confirmed_fresh,https://jobs.ashbyhq.com/sarvam/f09b6a35-e2d1-4833-8bc5-2b495991d882
+55,low_match,lever,Cloud Platform Engineer,jobgether,India,2026-10-20T04:59:07.270000Z,stale,https://jobs.lever.co/jobgether/ffdfe242-5307-4ed6-b81a-c700bb14d31a
+55,low_match,greenhouse,"Senior Backend Engineer, India",GitLab,"Bangalore, India",2026-08-14T18:14:15Z,stale,https://job-boards.greenhouse.io/gitlab/jobs/8716143002
+55,low_match,ashby,"Strategic Deployment Engineer, Chanakya",sarvam,Delhi,2026-04-17T20:02:28.261000Z,stale,https://jobs.ashbyhq.com/sarvam/87d5a5af-ea7d-4b94-a0fa-81dc64e54907
+55,low_match,greenhouse,ServiceNow Developer SAM,Okta,"Bengaluru, India",2026-04-01T08:13:15Z,stale,https://www.okta.com/company/careers/opportunity/7727730?gh_jid=7727730
+55,low_match,greenhouse,SDE IV - GPU Engineer,Glance,Bangalore,2025-10-09T05:36:44Z,stale,https://job-boards.greenhouse.io/glance/jobs/7213752
+54,low_match,greenhouse,UX Engineer,Elastic,"Bangalore, India",2026-09-29T08:39:57Z,stale,https://jobs.elastic.co/jobs?gh_jid=8237463&gh_jid=8237463
+54,low_match,lever,Security and Automation Engineer,mindtickle,"Pune, Maharashtra",2026-08-21T13:36:26.910000Z,stale,https://jobs.lever.co/mindtickle/d62b36db-b088-48c7-a606-4ed458e30208
+54,low_match,ashby,Technical Support Engineer,signoz,India,2026-02-23T05:17:26.809000Z,stale,https://jobs.ashbyhq.com/signoz/c479d148-691d-4dc2-9201-bbeb21540a6a
+54,low_match,greenhouse,"Customer Experience Engineer, L2",HackerRank Careers,"Hybrid in Bangalore, India",2025-07-09T04:46:52Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/6993983
+54,low_match,lever,Security Engineer 2,fampay,Bengaluru,2024-08-29T19:56:06.350000Z,stale,https://jobs.lever.co/fampay/df8548ac-a0e4-4cd6-a97c-427231b4b3e9
+53,low_match,lever,Data Platform Engineer (Mid-level),jobgether,India,2026-10-23T13:11:06.739000Z,stale,https://jobs.lever.co/jobgether/5f64dfd0-6e2a-4b87-a480-f3794700a591
+53,low_match,ashby,Software Development Engineer - Tejas,sarvam,Bengaluru,2026-10-23T10:19:22.101000Z,stale,https://jobs.ashbyhq.com/sarvam/db89b576-2456-4cc4-ab0b-c45f8c6c27f0
+53,low_match,lever,Siebel Developer/Support,jobgether,India,2026-10-23T00:09:36.439000Z,stale,https://jobs.lever.co/jobgether/f4554454-e5a6-4fb9-bf5f-aff32124aa0c
+53,low_match,lever,Solana Program Engineer,jobgether,India,2026-10-20T07:13:07.671000Z,stale,https://jobs.lever.co/jobgether/ba072e01-d142-4487-9194-d2084e36cff3
+53,low_match,lever,AI Product Engineer,mindtickle,"Pune, Maharashtra, Bengaluru, Karnataka",2026-09-09T08:59:48.738000Z,stale,https://jobs.lever.co/mindtickle/864ac315-d7c5-4cd5-ab44-0e33d08f48f1
+53,low_match,lever,Product Security Engineer II,zeta,Hyderabad,2026-07-21T11:10:26.543000Z,stale,https://jobs.lever.co/zeta/e21ca17d-7bf2-4781-94bb-bcfc8943aae0
+53,low_match,lever,cloud security engineer,cred,bengaluru,2026-01-29T08:46:20.859000Z,stale,https://jobs.lever.co/cred/9a746e68-0858-4190-9144-54b19a2cbf2c
+52,low_match,greenhouse,Machine Learning Engineer,Coinbase,Remote - India,2026-06-22T19:16:53Z,stale,https://www.coinbase.com/careers/positions/7985187?gh_jid=7985187
+52,low_match,ashby,"ML Ops Engineer, Chanakya",sarvam,Delhi,2026-04-17T20:08:16.547000Z,stale,https://jobs.ashbyhq.com/sarvam/e7f783e8-6378-4158-97d5-48a397a91698
+52,low_match,ashby,"Embedded Infrastructure Engineer, Chanakya",sarvam,Delhi,2026-04-17T12:01:22.644000Z,stale,https://jobs.ashbyhq.com/sarvam/b2201b5e-1e96-497a-962c-bca1768f75fd
+51,low_match,lever,Senior ML Engineer - Malware Detection,jobgether,India,2026-10-26T11:29:55.740000Z,confirmed_fresh,https://jobs.lever.co/jobgether/5334f744-6852-42e6-aac6-352677e4af5a
+51,low_match,lever,Senior Privacy Engineer,jobgether,India,2026-10-26T00:14:07.114000Z,confirmed_fresh,https://jobs.lever.co/jobgether/0c5c498e-656c-4382-a268-f37261ce0e53
+51,low_match,lever,Security Engineer,jobgether,India,2026-10-22T04:59:02.879000Z,stale,https://jobs.lever.co/jobgether/06a40e78-59a7-42f1-8b30-29b5abae7cdd
+51,low_match,lever,Senior Cloud Security Validation Engineer,jobgether,India,2026-10-21T00:14:05.618000Z,stale,https://jobs.lever.co/jobgether/61140c4a-f550-40c6-b096-551cb6a01f74
+51,low_match,lever,Magneto Developer,jobgether,India,2026-10-20T04:57:17.440000Z,stale,https://jobs.lever.co/jobgether/de3657c0-b0b5-4b65-a17f-1a40768a6769
+51,low_match,greenhouse,"Solutions Engineer, Okta",Okta,"Bengaluru, India",2026-09-01T07:49:43Z,stale,https://www.okta.com/company/careers/opportunity/8168822?gh_jid=8168822
+51,low_match,ashby,Sr Backend Engineer - AI,signoz,India,2026-06-30T05:30:56.907000Z,stale,https://jobs.ashbyhq.com/signoz/d8fd6b52-8499-4dad-9903-f231e39c996d
+51,low_match,lever,threat detection engineer,cred,bengaluru,2026-01-29T08:51:47.323000Z,stale,https://jobs.lever.co/cred/b3da0ae4-d0a8-45ce-a1e5-73be12b4bfe3
+50,low_match,lever,SMTS (Backend Engineer),jobgether,India,2026-10-21T04:10:34.489000Z,stale,https://jobs.lever.co/jobgether/7d438257-c516-4b17-a3cb-4a9aabc1d8f8
+50,low_match,lever,ServiceNow Developer - ITSM,jobgether,India,2026-10-20T05:45:57.688000Z,stale,https://jobs.lever.co/jobgether/c58b0ab3-1ef7-4abf-bf0e-1ea6aae8e58e
+50,low_match,lever,ERP Core Developer (4D),jobgether,India,2026-10-19T07:39:14.488000Z,stale,https://jobs.lever.co/jobgether/dfb3489c-f45a-4164-816f-4b41a0485fc8
+50,low_match,ashby,"ML Engineer (Training Infra), Foundational Models",sarvam,Bengaluru,2026-10-07T10:30:03.130000Z,stale,https://jobs.ashbyhq.com/sarvam/e9fb1269-fc4b-4879-aa35-0b75a8c83611
+50,low_match,greenhouse,Senior Software Engineer - .NET + AI,Zenoti,"Hyderabad, Telangana, India",2026-09-29T05:40:22Z,stale,https://job-boards.greenhouse.io/zenoti/jobs/8004504003
+50,low_match,greenhouse,Senior Software Engineer - .NET + AI,Zenoti,"Hyderabad, Telangana, India",2026-09-29T05:40:19Z,stale,https://job-boards.greenhouse.io/zenoti/jobs/8004499003
+50,low_match,greenhouse,Senior Software Engineer - .NET + AI,Zenoti,"Hyderabad, Telangana, India",2026-09-29T05:39:51Z,stale,https://job-boards.greenhouse.io/zenoti/jobs/8004492003
+50,low_match,ashby,Agent Engineer,sarvam,Bengaluru,2026-08-20T06:30:48.859000Z,stale,https://jobs.ashbyhq.com/sarvam/36f89b00-2010-4d23-aae3-17a2f53d9eaa
+50,low_match,lever,SIEM & SecOps Engineer II,zeta,Hyderabad,2026-07-24T14:43:33.334000Z,stale,https://jobs.lever.co/zeta/f140e9d7-8d0c-4e24-bace-8568385b6f5c
+50,low_match,ashby,Exceptional Engineer,signoz,India,2026-06-21T10:04:35.655000Z,stale,https://jobs.ashbyhq.com/signoz/3b07b93a-aa97-4a4e-8b12-7c9c3273cf8c
+49,low_match,linkedin,Back End Developer,Simora.ai,"Bengaluru, Karnataka, India",2026-10-25,uncertain,https://www.linkedin.com/jobs/view/4482668901
+49,low_match,lever,Security Engineer (SOC),jobgether,India,2026-10-23T12:34:21.401000Z,stale,https://jobs.lever.co/jobgether/ce23aa17-5662-4a46-bf81-33743db944aa
+49,low_match,lever,AI Engineer-Cyber Security Transformation,jobgether,India,2026-10-20T05:01:24.444000Z,stale,https://jobs.lever.co/jobgether/e0d1563c-a279-45cb-a294-8e2d18bf7d8c
+49,low_match,lever,AWS Cloud Engineer – S3/DataSync,jobgether,India,2026-10-19T07:27:51.634000Z,stale,https://jobs.lever.co/jobgether/f1188e6f-cfbc-4213-a721-59cdfad32092
+49,low_match,greenhouse,Senior Site Reliability Engineer,Okta,"Bengaluru, India",2026-10-01T05:47:26Z,stale,https://www.okta.com/company/careers/opportunity/8242984?gh_jid=8242984
+49,low_match,greenhouse,Software Development Engineer II,Sigmoid,"Bengaluru, Karnataka, India",2020-07-29T06:36:47Z,stale,https://job-boards.greenhouse.io/sigmoid/jobs/4808098002
+48,low_match,lever,Citrix L3 Engineer - (DaaS+ AWS) _ Night Shift,jobgether,India,2026-10-23T01:00:18.617000Z,stale,https://jobs.lever.co/jobgether/4f9ec151-7af3-453e-b25b-0c7d6e1b5726
+48,low_match,lever,AI/ML Engineer,jobgether,India,2026-10-20T06:04:47.791000Z,stale,https://jobs.lever.co/jobgether/00ec3981-67bc-4dd4-94b7-7799879674fe
+48,low_match,lever,Security Engineer III - Security Operations,jobgether,India,2026-10-20T05:57:20.530000Z,stale,https://jobs.lever.co/jobgether/90637a1b-2646-40e3-b61f-0fd162c924ae
+48,low_match,greenhouse,Deep Learning Research Engineer,HackerRank Careers,"Hybrid in Bangalore, India",2026-10-14T11:32:28Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/8273522
+48,low_match,greenhouse,Senior Software Engineer Salesforce,Okta,"Bengaluru, India",2026-09-25T14:38:31Z,stale,https://www.okta.com/company/careers/opportunity/8223817?gh_jid=8223817
+48,low_match,greenhouse,Technical Services Engineer,MongoDB,Gurugram,2026-09-03T10:07:04Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8170628
+47,low_match,zoho_recruit,Senior Full Stack Engineer (Python + React),prescienceds,"Bangalore, India",,date_unverified,https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324121
+47,low_match,lever,Vulnerability Management Engineer,jobgether,India,2026-10-23T00:23:14.865000Z,stale,https://jobs.lever.co/jobgether/7090eb2d-0504-4f20-a3c5-43af3168e653
+47,low_match,lever,ServiceNow Developer,jobgether,India,2026-10-22T05:18:41.017000Z,stale,https://jobs.lever.co/jobgether/022d4a0c-b4b5-4d58-abff-3bb6f23a6468
+47,low_match,lever,Senior DevEx Engineer - Infrastructure,jobgether,India,2026-10-22T03:31:59.181000Z,stale,https://jobs.lever.co/jobgether/b2ff61f2-4ed4-4e84-9ef3-a26ca2c3de55
+47,low_match,lever,Senior Information Security Engineer,jobgether,India,2026-10-21T12:29:42.142000Z,stale,https://jobs.lever.co/jobgether/a2171286-00a2-4efd-b7cd-77c856fdc129
+47,low_match,lever,Technical Support Engineer,jobgether,India,2026-10-21T04:40:43.616000Z,stale,https://jobs.lever.co/jobgether/b2eb7488-5897-44da-b7f8-c951370fb2bd
+47,low_match,lever,CAD Engineer / 3D Design Engineer,jobgether,India,2026-10-21T04:28:33.887000Z,stale,https://jobs.lever.co/jobgether/6037603c-d721-4d7d-8fb2-334f9580ac14
+47,low_match,lever,Senior Machine Learning Engineer,jobgether,India,2026-10-20T07:21:31.829000Z,stale,https://jobs.lever.co/jobgether/9b8ac5b4-5912-46ff-88ab-bc762474a331
+47,low_match,lever,Senior ML Engineer,jobgether,India,2026-10-20T06:56:59.983000Z,stale,https://jobs.lever.co/jobgether/b1600968-97d9-4f99-b2c3-15caaae9ce29
+47,low_match,greenhouse,Salesforce Developer,CloudSEK,"Bengaluru, Karnataka, India",2026-09-29T12:07:15Z,stale,https://job-boards.greenhouse.io/cloudsek/jobs/6210527004
+46,low_match,lever,Senior Artificial Intelligence/Machine Learning Engineer,jobgether,India,2026-10-20T01:44:49.743000Z,stale,https://jobs.lever.co/jobgether/97cf8780-db6f-4fb4-899d-832d64505e4b
+46,low_match,greenhouse,Database Migration Engineer,Sigmoid,"Bengaluru, Karnataka, India",2026-09-22T06:55:37Z,stale,https://job-boards.greenhouse.io/sigmoid/jobs/8829803002
+46,low_match,greenhouse,"Forward Deployed Engineer, Industry Solutions",MongoDB,Gurugram,2026-09-15T12:35:45Z,stale,https://www.mongodb.com/careers/job/?gh_jid=8153125
+45,low_match,lever,Senior ML Engineer - Email Security,jobgether,India,2026-10-26T11:01:00.859000Z,confirmed_fresh,https://jobs.lever.co/jobgether/77b002da-fc9e-4962-bbe0-38bf76077593
+45,low_match,lever,(Senior) GTM-Engineer,jobgether,India,2026-10-23T12:26:42.175000Z,stale,https://jobs.lever.co/jobgether/16ab2a67-de9d-4af9-960f-79d9d536950e
+45,low_match,lever,Senior AI Research Scientist/Engineer - Governance Automation,jobgether,India,2026-10-21T00:27:27.671000Z,stale,https://jobs.lever.co/jobgether/a3b63a9d-6f06-4dbe-b82f-2eeb95bce8c2
+45,low_match,lever,Senior Internal IT and Project Engineer,jobgether,India,2026-10-21T00:07:51.222000Z,stale,https://jobs.lever.co/jobgether/4b85ec83-c369-4fa7-be2c-0063ed33daa2
+45,low_match,lever,Senior Solutions Engineer,jobgether,India,2026-10-20T07:00:38.970000Z,stale,https://jobs.lever.co/jobgether/e9b5b841-67a7-403e-8d18-da095dea782c
+45,low_match,lever,Senior Compliance Engineer,hevodata,"Bangalore, India",2026-10-14T11:50:07.667000Z,stale,https://jobs.lever.co/hevodata/d257fbd4-a19d-4960-859a-f872c61dfc86
+45,low_match,greenhouse,Marketing AI Engineer,Elastic,"Bangalore, India",2026-10-14T04:13:45Z,stale,https://jobs.elastic.co/jobs?gh_jid=8265123&gh_jid=8265123
+45,low_match,lever,Security Engineer III,meesho,"Bangalore, Karnataka",2026-10-07T06:09:14.247000Z,stale,https://jobs.lever.co/meesho/d2f50690-efbf-45c6-8985-1494901725e6
+45,low_match,greenhouse,Senior Site Reliability Engineer,Okta,"Bengaluru, India",2026-06-18T08:04:47Z,stale,https://www.okta.com/company/careers/opportunity/8015032?gh_jid=8015032
+44,low_match,lever,"Product Developer, Salesforce",jobgether,India,2026-10-21T00:25:03.076000Z,stale,https://jobs.lever.co/jobgether/ee242b6a-3399-4ecf-b436-d3230f479a5e
+44,low_match,lever,SME Engineer IT,mindtickle,"Pune, Maharashtra",2026-07-17T06:04:47.137000Z,stale,https://jobs.lever.co/mindtickle/3ce036e8-d4f9-4086-bec4-186676ea109e
+43,low_match,lever,Senior GTM Engineer,jobgether,India,2026-10-21T10:44:14.439000Z,stale,https://jobs.lever.co/jobgether/03f076d5-b17f-4e0e-91a5-001a25d54bb5
+43,low_match,greenhouse,Senior Solutions Engineer,Databricks,India,2026-08-29T07:32:10Z,stale,https://databricks.com/company/careers/open-positions/job?gh_jid=8747434002
+43,low_match,greenhouse,Senior Support Engineer,GitLab,"Bangalore, India",2026-08-18T09:16:27Z,stale,https://job-boards.greenhouse.io/gitlab/jobs/8692874002
+42,low_match,greenhouse,Forward Deployed Engineer,HackerRank Careers,"Hybrid in Bengaluru, India",2025-12-18T06:10:28Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/7461142
+41,low_match,lever,ServiceNow Lead Engineer - ITOM,jobgether,India,2026-10-20T00:28:32.837000Z,stale,https://jobs.lever.co/jobgether/ef843680-c0c5-41b2-bd0d-5bad090a873e
+41,low_match,ashby,"Performance Engineer, Inference",sarvam,"Bengaluru, Chennai",2026-08-10T06:33:05.030000Z,stale,https://jobs.ashbyhq.com/sarvam/7d2faba2-21a1-4a8a-aff5-f708a6959195
+41,low_match,ashby,"Performance Engineer, Kernels",sarvam,"Bengaluru, Chennai",2026-08-10T06:26:37.057000Z,stale,https://jobs.ashbyhq.com/sarvam/72783205-b637-4431-9a0e-676a8223b063
+41,low_match,greenhouse,Senior Engineer - Business Systems (Integrations),MongoDB,Gurugram,2026-04-20T07:00:37Z,stale,https://www.mongodb.com/careers/job/?gh_jid=7778978
+41,low_match,greenhouse,Solution Engineer,Okta,"Bengaluru, India",2025-05-07T10:57:42Z,stale,https://www.okta.com/company/careers/opportunity/6839581?gh_jid=6839581
+40,low_match,greenhouse,Senior IT Automation Engineer,Coinbase,Remote - India,2026-07-09T18:24:09Z,stale,https://www.coinbase.com/careers/positions/8054055?gh_jid=8054055
+40,low_match,greenhouse,Senior DevRel Engineer  ,HackerRank Careers,"Hybrid in Bangalore, India",2026-05-11T04:57:33Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/7907492
+39,low_match,lever,Senior Cloud System Engineer,jobgether,India,2026-10-26T05:10:03.385000Z,confirmed_fresh,https://jobs.lever.co/jobgether/2bcbbeac-f7fa-4d61-979b-0881edb494c4
+39,low_match,lever,Agentic AI / Python Engineer,jobgether,India,2026-10-19T07:50:14.421000Z,stale,https://jobs.lever.co/jobgether/6626eea5-f4df-48f1-9853-c24516e34954
+38,low_match,ashby,Platform Engineer - AI Infrastructure,sarvam,"Bengaluru, Chennai",2026-06-29T08:51:22.501000Z,stale,https://jobs.ashbyhq.com/sarvam/fcb15601-6440-41f7-aa79-b9992057a4b2
+38,low_match,lever,AI Solution Engineer,hevodata,"Bangalore, India",2025-09-05T09:26:26.743000Z,stale,https://jobs.lever.co/hevodata/a7f26742-f965-4a59-840d-f7afa0a28176
+37,low_match,ashby,"SDE3, Infrastructure Security Engineer (DevSecOps)",sarvam,Bengaluru,2026-10-26T06:33:29.694000Z,confirmed_fresh,https://jobs.ashbyhq.com/sarvam/1dd07b8b-0c0b-422a-8ff4-c99bdc5add68
+37,low_match,linkedin,"Engineer II, Software Dev.",Liquidity Services,"Chennai, Tamil Nadu, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483526623
+37,low_match,linkedin,Reactjs Developer,Tata Consultancy Services,"Bengaluru, Karnataka, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483526864
+37,low_match,linkedin,Packaged/SaaS Application Engineer,Accenture in India,Greater Kolkata Area,2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4483557021
+37,low_match,greenhouse,Machine Learning Engineer (L3),Twilio,Remote - India,2026-10-08T12:35:31Z,stale,https://job-boards.greenhouse.io/twilio/jobs/8258587
+37,low_match,greenhouse,"Senior Site Reliability Engineer (K8s, Terraform, Python)",Okta,"Bengaluru, India",2026-10-06T10:06:54Z,stale,https://www.okta.com/company/careers/opportunity/8255904?gh_jid=8255904
+37,low_match,greenhouse,Senior Machine Learning Engineer,Coinbase,Remote - India,2026-06-10T14:56:02Z,stale,https://www.coinbase.com/careers/positions/7739592?gh_jid=7739592
+35,low_match,linkedin,Engineer Software Senior I,IGT,"Chennai, Tamil Nadu, India",2026-10-26,uncertain,https://www.linkedin.com/jobs/view/4481452203
+34,low_match,zoho_recruit,Senior Backend Engineer (Python),prescienceds,"Bangalore, India",,date_unverified,https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324143
+33,low_match,greenhouse,Senior Machine Learning Engineer ,HackerRank Careers,"Hybrid in Bangalore, India",2026-05-08T16:34:43Z,stale,https://job-boards.greenhouse.io/hackerrank/jobs/7907962

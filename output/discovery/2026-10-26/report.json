@@ -1,0 +1,91 @@
+{
+ "collectedAt": "2026-10-26T12:10:28Z",
+ "durationSeconds": 147.2,
+ "freshnessWindowHours": 24,
+ "totalDiscovered": 9401,
+ "uniqueAfterDedup": 9401,
+ "duplicates": 0,
+ "confirmedFreshRelevant": 9,
+ "reviewUncertainOrUnverified": 32,
+ "confirmedFreshAll": 615,
+ "dateUnverifiedAll": 8,
+ "uncertainAll": 49,
+ "staleAll": 8729,
+ "excluded": 9172,
+ "closed": 0,
+ "matchCounts": {
+  "high_match": 29,
+  "medium_match": 74,
+  "low_match": 126
+ },
+ "malformed": [],
+ "platforms": [
+  {
+   "platform": "linkedin",
+   "method": "installed linkedin-search CLI (public guest job search)",
+   "units": 10,
+   "unitsOk": 10,
+   "rawListings": 76,
+   "errors": [],
+   "status": "partial",
+   "reason": "covers only the configured queries; cards carry a date, not a timestamp, so nothing is confirmed",
+   "normalized": 49
+  },
+  {
+   "platform": "greenhouse",
+   "method": "Greenhouse Job Board API (boards-api.greenhouse.io)",
+   "units": 21,
+   "unitsOk": 21,
+   "rawListings": 4361,
+   "errors": [],
+   "status": "supported",
+   "reason": "configured company boards only; no cross-company search API",
+   "normalized": 4361
+  },
+  {
+   "platform": "ashby",
+   "method": "Ashby public Job Board API (api.ashbyhq.com/posting-api)",
+   "units": 6,
+   "unitsOk": 6,
+   "rawListings": 222,
+   "errors": [],
+   "status": "supported",
+   "reason": "configured company boards only; no cross-company search API",
+   "normalized": 222
+  },
+  {
+   "platform": "zoho_recruit",
+   "method": "configured public Zoho Recruit careers pages (HTML, robots-gated)",
+   "units": 1,
+   "unitsOk": 1,
+   "rawListings": 8,
+   "errors": [],
+   "status": "partial",
+   "reason": "configured tenants only; public payload has no publication date",
+   "normalized": 8
+  },
+  {
+   "platform": "apna",
+   "method": "none",
+   "units": 0,
+   "unitsOk": 0,
+   "rawListings": 0,
+   "errors": [],
+   "status": "blocked",
+   "reason": "apna.co User Agreement sections 7.1(d)-(e) prohibit automated monitoring and systematic retrieval (recorded in .agents/skills/apna-search/SKILL.md); use that skill's manual browser workflow instead",
+   "normalized": 0
+  },
+  {
+   "platform": "lever",
+   "method": "Lever Postings API (api.lever.co/v0/postings)",
+   "units": 8,
+   "unitsOk": 8,
+   "rawListings": 4761,
+   "errors": [],
+   "status": "supported",
+   "reason": "configured company boards only; createdAt used as posting time",
+   "normalized": 4761
+  }
+ ],
+ "outputDir": "output/discovery/2026-10-26"
+}

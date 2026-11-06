@@ -1,0 +1,470 @@
+[
+ {
+  "sourcePlatform": "greenhouse",
+  "sourceJobId": "5459398008",
+  "jobTitle": "Senior Software Engineer",
+  "companyName": "New Relic",
+  "location": "Hyderabad, India",
+  "workMode": null,
+  "employmentType": null,
+  "experienceRequirements": "5+ years",
+  "description": "We are a global team of innovators and pioneers dedicated to shaping the future of observability. At New Relic, we build an intelligent platform that empowers companies to thrive in an AI-first world by giving them unparalleled insight into their complex systems. As we continue to expand our global footprint, we're looking for passionate people to join our mission. If you're ready to help the world's best companies optimize their digital applications, we invite you to explore a career with us!\n About the Team \n The NR Lens team builds New Relic's Federated Data Platform — a distributed SQL query engine that lets customers connect external data sources (Snowflake, PostgreSQL, Google Sheets, AWS CloudWatch) and query them directly from New Relic.\n You'll work on the distributed query execution layer, connector architecture, and API gateway that powers cross-source JOINs and unified analytics across customer data stores.\n   What You'll Do \n Design, build, and maintain cloud-native Java microservices in the NR Lens query path: SQL Gateway, Query Gateway, and data source connector plugins\n Develop and harden JDBC connector integrations — including connection lifecycle management, credential handling, query pushdown optimization, and security validation\n Improve query reliability and performance across a multi-tenant distributed SQL deployment serving 50+ customers\n Build and operate services on AWS (EKS, IAM/STS, S3) with infrastructure-as-code practices\n Implement security controls for user-supplied connection parameters (JDBC URL validation, SSRF prevention, hostname allowlisting)\n Build materialized view scheduling, execution, and lifecycle management features\n Design and implement deployment automation — canary deployments, progressive rollouts, observability integration\n Collaborate with the NRDB/Dirac team on the internal connector bridging federated queries to New Relic's native telemetry engine\n Participate in on-call rotation and incident response for production systems\n   What We're Looking For \n   Must Have: \n 5+ years of professional Java development .\n Strong experience building cloud-native applications on AWS.\n Experience designing and operating containerized microservices on Kubernetes\n Experience building and operating distributed systems at scale\n Familiarity with infrastructure-as-code (Terraform) and CI/CD pipelines\n Experience with AWS security patterns.\n Experience with observability tooling — defining SLOs/SLIs, dashboards, alerting\n Comfort debugging production issues across multi-service architectures\n Experience with gRPC or Thrift-based service communication\n Experience with GraphQL APIs\n   Nice to Have: \n Strong understanding of SQL query execution — parsing, planning, optimization, or execution engines\n Experience with JDBC drivers, connection pooling, and database connector development\n Experience with distributed query engines or SQL-on-anything platforms\n Experience developing plugins or connectors for distributed query engines (SPI-based architectures)\n Knowledge of RBAC/authorization systems in multi-tenant SaaS environments\n Please note that visa sponsorship is not available for this position.\n Fostering a diverse, welcoming and inclusive environment is important to us. We work hard to make everyone feel comfortable bringing their best, most authentic selves to work every day. We celebrate our talented Relics’ different backgrounds and abilities, and recognize the different paths they took to reach us – including nontraditional ones. Their experiences and perspectives inspire us to make our products and company the best they can be. We’re looking for people who feel connected to our mission and values, not just candidates who check off all the boxes. \n If you require a reasonable accommodation to complete any part of the application or recruiting process, please reach out to resume@newrelic.com .\n We believe in empowering all Relics to achieve professional and business success through a flexible workforce model. This model allows us to work in a variety of workplaces that best support our success, including fully office-based, fully remote, or hybrid.\n Our hiring process \nIn compliance with applicable law, all persons hired will be required to verify identity and eligibility to work and to complete employment eligibility verification. Note: Our stewardship of the data of thousands of customers means that a criminal background check is required to join New Relic.\nWe will consider qualified applicants with arrest and conviction records based on individual circumstances and in accordance with applicable law including, but not limited to, the  San Francisco Fair Chance Ordinance .\nHeadhunters and recruitment agencies may not submit resumes/CVs through this website or directly to managers. New Relic does not accept unsolicited headhunter and agency resumes, and will not pay fees to any third-party agency or company that does not have a signed agreement with New Relic.\n New Relic develops and distributes encryption software and technology that complies with U.S. export controls and licensing requirements. Certain New Relic roles require candidates to pass an export compliance assessment as a condition of employment in any global location. If relevant, we will provide more information later in the application process.\n Candidates are evaluated based on qualifications, regardless of race, religion, ethnicity, national origin, sex, sexual orientation, gender expression or identity, age, disability, neurodiversity, veteran or marital status, political viewpoint, or other legally protected characteristics. \n Review our Applicant Privacy Notice at  https://newrelic.com/termsandconditions/applicant-privacy-policy",
+  "postedAtRaw": "2026-10-26T01:58:46-04:00",
+  "status": "open",
+  "canonicalJobUrl": "https://job-boards.greenhouse.io/newrelic/jobs/5459398008",
+  "applicationUrl": "https://job-boards.greenhouse.io/newrelic/jobs/5459398008",
+  "updatedAt": "2026-10-26T06:18:33-04:00",
+  "postedAt": "2026-10-26T05:58:46Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "greenhouse:5459398008",
+  "deduplicationKey": "new relic|senior software engineer|hyderabad india",
+  "sources": [
+   {
+    "platform": "greenhouse",
+    "url": "https://job-boards.greenhouse.io/newrelic/jobs/5459398008",
+    "sourceJobId": "5459398008"
+   }
+  ],
+  "relevanceScore": 65,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 10,
+   "experience": 0,
+   "location": 12,
+   "employment": 3,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: sql, postgresql, java, aws, ci/cd, microservices",
+   "asks 5+ yrs (exceeds profile)",
+   "India location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "java",
+   "microservices",
+   "postgresql",
+   "sql"
+  ],
+  "firstSeenAt": "2026-10-26T12:10:28Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "lever",
+  "sourceJobId": "d7c9f343-8f44-4507-a22e-2b777773b4fb",
+  "jobTitle": "Senior Software Engineer",
+  "companyName": "jobgether",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "5+ years",
+  "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Senior Software Engineer based in India. \n Join a forward-thinking technology team building innovative digital solutions that help healthcare practices streamline communication, payments, and patient engagement.\nAs a Senior Software Engineer, you will play a key role in developing and maintaining high-performance mobile applications used by thousands of healthcare providers and millions of patients.\nYou will combine deep expertise in Flutter and Dart with native iOS development to shape scalable mobile architecture and deliver seamless user experiences.\nThe role offers end-to-end ownership across the mobile development lifecycle, including architecture, automated testing, CI/CD, deployment, monitoring, and production support.\nWorking closely with Product, Design, Backend, Platform, Security, and Support teams, you will drive technical improvements and ensure application reliability.\nYou will also mentor engineers, strengthen engineering standards, and improve developer productivity through modern tools, automation, and thoughtful adoption of AI.\nThis is an excellent opportunity to make a meaningful impact in healthcare technology while working remotely in India within a collaborative, engineering-driven environment.\nAccountabilities\nMobile Architecture and Development: Design, develop, and continuously improve scalable mobile applications using Flutter and Dart, integrating native iOS and Android capabilities where needed.\n CI/CD and Release Management: Build and maintain automated workflows using GitHub Actions and Fastlane to support testing, code signing, provisioning, and reliable deployments to the Apple App Store and Google Play.\n Testing and Quality Assurance: Develop and maintain comprehensive testing strategies covering unit, widget, integration, native UI, and end-to-end tests to improve application quality and release confidence.\n Performance and Reliability: Investigate and resolve memory issues, UI responsiveness problems, network latency, application crashes, and background execution challenges.\n Mobile Operations: Manage dependency updates, SDK upgrades, crash monitoring, release health, alerting, and incident follow-up to maintain stable production environments.\n Real-Time Communication: Implement and optimize WebSocket connections, push notifications, connection management, and error-handling mechanisms to support dependable communication experiences.\n Platform Compliance: Coordinate iOS and Android SDK target upgrades, address operating system deprecations, and ensure compliance with evolving application store policies and platform requirements.\n Cross-Functional Collaboration: Partner with product and engineering stakeholders to translate business requirements into robust technical solutions and deliver high-quality customer experiences.\n Technical Leadership and Mentoring: Guide fellow engineers, document architectural decisions, promote engineering best practices, and improve development workflows and team productivity.\n Continuous Improvement: Use observability tools, logs, metrics, traces, and crash reports to identify root causes, strengthen system resilience, and improve the overall mobile engineering lifecycle.\n Requirements\n Professional Experience: At least 5 years of professional mobile engineering experience, including hands-on development and maintenance of production applications.\n Flutter and Dart: Strong expertise in Flutter and Dart, with experience designing, building, and optimizing scalable mobile applications.\n Native Mobile Development: Solid native iOS development experience using Swift and iOS SDKs, along with working knowledge of Android SDK, Kotlin, Gradle, and Android release processes.\n CI/CD and Deployment: Practical experience designing and maintaining GitHub Actions and Fastlane pipelines, managing code signing and provisioning profiles, and deploying applications to mobile app stores.\n Testing Expertise: Strong understanding of unit, widget, BLoC, integration, and end-to-end testing approaches, with the ability to establish reliable automated testing practices.\n Mobile Architecture: Deep understanding of mobile application architecture, state management, persistence, networking, offline synchronization, and cross-platform integration.\n Real-Time Technologies: Experience implementing WebSocket-based communication, managing persistent connections, handling errors, and working with push notification services such as Firebase Cloud Messaging (FCM) and Apple Push Notification Service (APNs).\n Monitoring and Troubleshooting: Familiarity with tools such as Sentry, Firebase Crashlytics, Firebase Analytics, or equivalent platforms, along with strong production debugging and root-cause analysis skills.\n Platform Maintenance and Security: Knowledge of dependency management, SDK upgrades, security updates, operating system changes, and application compliance requirements.\n Technical Problem-Solving: Strong analytical skills and sound engineering judgment, with the ability to diagnose complex issues and improve performance, stability, and release safety.\n Communication and Leadership: Excellent written and verbal communication, documentation, mentoring, and remote collaboration skills, with the ability to work effectively across multidisciplinary teams.\n Continuous Learning: An interest in emerging technologies and the thoughtful use of AI tools to improve engineering productivity while maintaining strong code review and quality standards.\n Benefits\n Remote Work: Fully remote opportunity for candidates based in India.\n Meaningful Impact: Help build technology that supports healthcare practices and improves communication and payment experiences for patients and providers.\n Technical Ownership: Opportunities to influence mobile architecture, improve engineering infrastructure, and own critical aspects of the production lifecycle.\n Professional Development: Exposure to modern mobile technologies, automation, observability, and continuous engineering improvement.\n Collaborative Environment: Work closely with multidisciplinary teams in a technology-driven organization that values technical excellence and knowledge sharing.\n Career Growth: Opportunities to mentor engineers, strengthen technical leadership capabilities, and contribute to scalable engineering practices.\n Inclusive Workplace: An environment committed to equal opportunity, accessibility, and respect for diverse backgrounds and perspectives.\nHow Jobgether works:\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\nWe appreciate your interest and wish you the best!\n Why Apply Through Jobgether? \n \nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n \n \n#LI-CL1",
+  "postedAtRaw": 1792992812265,
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.lever.co/jobgether/d7c9f343-8f44-4507-a22e-2b777773b4fb",
+  "applicationUrl": "https://jobs.lever.co/jobgether/d7c9f343-8f44-4507-a22e-2b777773b4fb/apply",
+  "postedAt": "2026-10-26T05:33:32.265000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "lever:d7c9f343-8f44-4507-a22e-2b777773b4fb",
+  "deduplicationKey": "jobgether|senior software engineer|india",
+  "sources": [
+   {
+    "platform": "lever",
+    "url": "https://jobs.lever.co/jobgether/d7c9f343-8f44-4507-a22e-2b777773b4fb",
+    "sourceJobId": "d7c9f343-8f44-4507-a22e-2b777773b4fb"
+   }
+  ],
+  "relevanceScore": 61,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 1,
+   "experience": 0,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "core stack appears to be kotlin, swift",
+   "skills: ci/cd",
+   "asks 5+ yrs (exceeds profile)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "ci/cd",
+   "kotlin",
+   "swift"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "lever",
+  "sourceJobId": "d70106b4-821d-47d0-8425-31b41b0f9ff0",
+  "jobTitle": "Product Solution Engineer",
+  "companyName": "jobgether",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "2+ years",
+  "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Product Solution Engineer based in India. \n Join a fast-growing, AI-powered technology environment focused on helping businesses streamline operations, automate workflows, and deliver exceptional customer experiences. As a Product Solution Engineer, you will serve as a key technical link between customer support, engineering, and product teams, ensuring complex technical issues are investigated and resolved efficiently. You will take ownership of advanced support escalations, conduct root cause analysis, and translate technical findings into actionable product improvements. Through clear documentation, technical training, and knowledge sharing, you will empower internal teams to solve problems more effectively. You will also identify recurring issues, improve support processes, and explore automation opportunities that enhance operational efficiency. This remote opportunity is ideal for a technically skilled, customer-focused professional who enjoys problem-solving, cross-functional collaboration, and continuous product improvement.\nAccountabilities\nAdvanced Technical Support: Own and resolve complex Level 4 (L4) support escalations within assigned product areas, ensuring timely investigation and effective resolution in accordance with service-level agreements (SLAs).\n Troubleshooting and Root Cause Analysis: Investigate, reproduce, and diagnose customer-reported technical issues, identifying underlying causes and developing clear recommendations for resolution.\n Engineering and Product Collaboration: Work closely with engineering and product teams to investigate software defects, communicate technical findings, support corrective actions, and improve product reliability.\n Technical Documentation: Document investigation findings, reproduction steps, troubleshooting procedures, and resolutions accurately to support consistent issue handling and knowledge retention.\n Knowledge Base Development: Create, maintain, and improve support articles, standard operating procedures (SOPs), troubleshooting guides, and self-service resources.\n Support Trend Analysis: Analyse support tickets and recurring incidents to identify product gaps, common customer challenges, and opportunities to improve product functionality and customer satisfaction.\n Product Improvement Recommendations: Translate support data and technical investigations into actionable insights that help prioritise product fixes and improve the overall customer experience.\n Training and Knowledge Sharing: Deliver technical training sessions for Support and Customer Success teams, develop onboarding materials, and create walkthrough videos to strengthen internal technical capabilities.\n Customer Engagement: Work directly with customers to troubleshoot complex issues, explain technical concepts clearly, and provide practical guidance throughout the resolution process.\n Process Automation: Identify repetitive support activities that can be automated and recommend solutions to improve efficiency, consistency, and scalability.\n Operational Excellence: Drive continuous improvements in escalation workflows, documentation quality, troubleshooting practices, and support processes while maintaining established quality standards.\n Product Expertise: Continuously expand knowledge of assigned products, platform capabilities, and emerging technologies to provide effective technical support and informed recommendations.\n Requirements\n Education: Bachelor's degree in Computer Science, Information Technology, Engineering, or a related field, or equivalent practical experience.\n Professional Experience: 2–4 years of experience in technical support, product support, solutions engineering, or a comparable technical role.\n Troubleshooting Expertise: Strong analytical and problem-solving abilities, including experience investigating complex technical issues and conducting root cause analysis.\n API and Web Technologies: Practical understanding of APIs, REST services, web technologies, and HTTP protocols, with the ability to investigate application and integration issues.\n SQL and Database Knowledge: Working knowledge of SQL and databases to query information, investigate data-related issues, and support technical troubleshooting.\n Debugging Tools: Experience using browser developer tools, application logs, API testing platforms such as Postman, and other debugging utilities to reproduce and diagnose technical problems.\n Technical Communication: Excellent written and verbal communication skills, with the ability to explain complex technical concepts clearly to technical and non-technical audiences.\n Documentation Skills: Strong technical writing abilities, including the preparation of troubleshooting guides, support articles, standard procedures, and investigation reports.\n Cross-Functional Collaboration: Ability to work effectively with engineering, product, support, and customer success teams to resolve issues and drive improvements.\n Data Analysis: Experience reviewing support tickets, identifying recurring patterns, and translating operational data into practical recommendations.\n Time Management: Ability to manage multiple priorities, handle escalations efficiently, and meet service-level agreements without compromising quality.\n Customer-Centric Mindset: Strong sense of ownership, accountability, and commitment to delivering effective solutions and positive customer experiences.\n Additional Advantages: Familiarity with programming languages or development frameworks, customer support platforms, ticketing systems, and previous experience in customer-facing technical roles.\n Benefits\n Remote working opportunity within India.\n Opportunity to work with a modern, AI-powered business technology platform operating at significant scale.\n Exposure to complex technical challenges involving APIs, web technologies, distributed systems, and product troubleshooting.\n Cross-functional collaboration with engineering, product, support, and customer success professionals.\n Opportunities to develop expertise in technical problem-solving, product quality, automation, and solutions engineering.\n Ability to contribute directly to product improvements and customer experience initiatives.\n An environment that encourages ownership, initiative, continuous learning, and knowledge sharing.\n Equal employment opportunity and an inclusive workplace that values diverse backgrounds and perspectives.\nHow Jobgether works:\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\nWe appreciate your interest and wish you the best!\n Why Apply Through Jobgether? \n \nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n \n \n#LI-CL1",
+  "postedAtRaw": 1792993450668,
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.lever.co/jobgether/d70106b4-821d-47d0-8425-31b41b0f9ff0",
+  "applicationUrl": "https://jobs.lever.co/jobgether/d70106b4-821d-47d0-8425-31b41b0f9ff0/apply",
+  "postedAt": "2026-10-26T05:44:10.668000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "lever:d70106b4-821d-47d0-8425-31b41b0f9ff0",
+  "deduplicationKey": "jobgether|product solution engineer|india",
+  "sources": [
+   {
+    "platform": "lever",
+    "url": "https://jobs.lever.co/jobgether/d70106b4-821d-47d0-8425-31b41b0f9ff0",
+    "sourceJobId": "d70106b4-821d-47d0-8425-31b41b0f9ff0"
+   }
+  ],
+  "relevanceScore": 59,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 6,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "skills: rest, sql",
+   "asks 2+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "rest",
+   "sql"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "ashby",
+  "sourceJobId": "f09b6a35-e2d1-4833-8bc5-2b495991d882",
+  "jobTitle": "Infrastructure Engineer",
+  "companyName": "sarvam",
+  "location": "Bengaluru",
+  "workMode": "OnSite",
+  "employmentType": "FullTime",
+  "experienceRequirements": "2+ years",
+  "description": "About the team\n\nSarvam builds Indic-language AI used at population scale. The CPU Infrastructure team runs everything outside the GPU fleet: Kubernetes across Azure, AWS, GCP and Indian sovereign clouds, the network between them, Cloudflare, identity, secrets, observability, cost and the delivery pipeline every product ships through.\n\nThe team builds and runs what it builds. Engineers own real systems end to end, and every repeated piece of manual work is a candidate for automation. As an AI company, we are building AI agents into our own operations, to plan and review infrastructure changes, triage alerts and handle routine issues, with engineers setting the guardrails.\n\nAbout the role\n\nYou keep the infrastructure behind Sarvam’s products running. You handle day-to-day operations — deployments, provisioning, access, incidents and cost questions — and you are expected to automate that work away.\n\nWe hire for one instinct above everything else: you notice something done by hand every day, ask why it can’t run itself, and build the thing that removes it — a script, a pipeline step, a bot, a small Kubernetes operator, or an AI agent that does the work. Operations is a large part of this role, and it is where you find what is worth automating.\n\nAs you automate your own toil away, more of your time goes into platform and automation work.\n\nProducts you may work on\n\nSarvam builds across a broad range of AI products: voice agents, coding agents, coworker agents, dubbing, our API platform, and the real-time voice and WebRTC infrastructure underneath them, among many others. You will work on the infrastructure behind them.\n\nResponsibilities\n\n• Own infrastructure operations across Sarvam’s products: deployments, provisioning requests, access, environment issues, cost questions\n\n• Respond to incidents, write the runbook or postmortem afterwards, and fix the cause\n\n• Automate repeated work: turn manual steps into pipeline jobs, Terraform modules, templates or self-service for product teams\n\n• Build AI-assisted automations: agents that triage alerts, summarise incidents, review routine changes or answer product teams’ infrastructure questions, with a human approving anything risky\n\n• Security basics: keep images and dependencies patched, rotate credentials, keep secrets out of code, fix security findings\n\n• Reliability basics: keep dashboards and alerts accurate, track SLOs and cost, delete noisy alerts\n\n• Take part in on-call\n\nRequirements\n\n• 2–5 years in DevOps, SRE, infrastructure or backend engineering\n\n• Has built infrastructure outside a ticket: a homelab, an open-source contribution, a side project, or an internal tool nobody asked for — and can show the code (GitHub, a blog post or a demo)\n\n• Comfortable on the Linux command line: processes, networking basics, logs, systemd\n\n• Working knowledge of Docker and Kubernetes; has deployed and debugged something running on a cluster\n\n• Scripting in Python, Go or Bash\n\n• Basic Git and CI/CD experience\n\n• Has spotted a repeated manual task — a daily review, a recurring fix, a routine request — and built something that removed it: a script, a CI job, a bot or a Kubernetes operator. You can walk us through what you noticed, why it mattered, what you built and what it saved\n\n• Has used LLMs or AI agents to automate real work, not only for writing code\n\n• Fixes causes rather than the same symptom twice; asks “why is this manual?” before doing it again\n\n• Curious, takes ownership, wants to grow into platform engineering\n\n• Nice to have: Terraform, a public cloud (AWS, Azure or GCP), Prometheus / Grafana, exposure to SIP, WebRTC or real-time media, any cloud or Kubernetes certification",
+  "postedAtRaw": "2026-10-26T06:29:28.519+00:00",
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.ashbyhq.com/sarvam/f09b6a35-e2d1-4833-8bc5-2b495991d882",
+  "applicationUrl": "https://jobs.ashbyhq.com/sarvam/f09b6a35-e2d1-4833-8bc5-2b495991d882/application",
+  "postedAt": "2026-10-26T06:29:28.519000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "ashby:f09b6a35-e2d1-4833-8bc5-2b495991d882",
+  "deduplicationKey": "sarvam|infrastructure engineer|bengaluru",
+  "sources": [
+   {
+    "platform": "ashby",
+    "url": "https://jobs.ashbyhq.com/sarvam/f09b6a35-e2d1-4833-8bc5-2b495991d882",
+    "sourceJobId": "f09b6a35-e2d1-4833-8bc5-2b495991d882"
+   }
+  ],
+  "relevanceScore": 55,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 5,
+   "experience": 15,
+   "location": 12,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "core stack appears to be go, python",
+   "skills: git, docker, aws, ci/cd",
+   "asks 2+ yrs (fits ~3)",
+   "India location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "git",
+   "go",
+   "python"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "lever",
+  "sourceJobId": "5334f744-6852-42e6-aac6-352677e4af5a",
+  "jobTitle": "Senior ML Engineer - Malware Detection",
+  "companyName": "jobgether",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": null,
+  "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Senior ML Engineer - Malware Detection based remotely in India. \n The Senior ML Engineer will develop and deploy advanced machine learning solutions to detect web-based malware across large-scale Linux hosting environments. Working with an extensive dataset of real-world malware samples, analyst decisions, detection rules, and cleanup outcomes, you will transform production intelligence into more accurate and efficient security systems. Your work will span classical machine learning, transformer models, LLM-assisted triage, and automated signature generation. You will own the journey from raw data and experimentation to production deployment, with success measured by real detection improvements and controlled false-positive rates. Collaborating closely with malware analysts, infrastructure specialists, and fellow ML engineers, you will have access to dedicated GPU resources and modern AI-assisted development tools. This remote-first opportunity is ideal for an experienced ML practitioner who thrives on experimentation, rigorous evaluation, and delivering measurable cybersecurity impact.\nAccountabilities:\nYou will lead the development, evaluation, and deployment of machine learning systems that improve malware detection at scale while balancing accuracy, operational costs, and resource constraints. Your key responsibilities will include:\n Machine Learning Model Development: Design, train, fine-tune, and deploy ML models using production malware data to improve detection coverage and identify threats that traditional signatures and rules may miss.\n Malware Classification and Triage: Develop models that distinguish malicious files from benign content, prioritize suspicious files for deeper inspection, and route samples to the most appropriate detection engines.\n Automated Signature Generation: Build systems that generate detection signatures from emerging malware campaigns, helping security analysts respond faster to new and evolving threats.\n Context-Aware Threat Detection: Develop methods to identify malicious content that requires contextual analysis, including phishing pages, webshells, script injections, and compromised website components.\n Detection and Cleanup Optimization: Improve detection precision and cleanup effectiveness so that infected websites remain clean after remediation and recurring threats can be identified.\n Model Evaluation and Validation: Establish rigorous evaluation frameworks using time-based and campaign-based dataset splits, historical false-positive and false-negative cases, and regression testing to prevent data leakage and verify improvements before deployment.\n Inference and Resource Optimization: Optimize model throughput, latency, CPU usage, memory consumption, and cost per file to support reliable deployment across large hosting fleets.\n Production Deployment and Monitoring: Move models from experimentation into production, using shadow deployments and controlled releases to gather evidence before enabling live detection.\n Continuous Learning and Retraining: Incorporate fresh analyst feedback and newly identified false negatives into training datasets, establish regular retraining cycles, and monitor trends in detection rates and model performance.\n ML Infrastructure and Experimentation: Develop reusable training pipelines, maintain dataset tooling, make effective use of GPU resources, and enable multiple parallel research and development efforts.\n Cross-Functional Collaboration: Work closely with malware analysts, detection engineers, and infrastructure teams to investigate customer-reported detection failures, understand emerging threats, and translate operational findings into model improvements.\n Technical Documentation and Knowledge Sharing: Document architectural decisions, evaluation methods, model limitations, hardware requirements, and production results. Participate in asynchronous collaboration and blameless post-mortems to continuously improve engineering practices.\n Delivery Against Milestones: Train and evaluate an initial production-data model during the first month, bring multiple models into production or shadow testing by month three, and help establish ML as a major source of new detections within the first year.\n Requirements: \n The ideal candidate combines substantial production ML experience with hands-on transformer expertise, strong evaluation discipline, and the ability to engineer efficient models for adversarial security environments. You should be comfortable making evidence-based decisions, communicating asynchronously, and taking ownership of the full ML lifecycle. Key qualifications include:\n Production ML Experience: At least five years of experience building and deploying machine learning systems in production, including at least two years in an adversarial domain such as cybersecurity, fraud, spam, or abuse prevention.\n Transformer Model Expertise: Practical experience training and fine-tuning transformer models, including data preparation, code tokenization, LoRA/QLoRA or full fine-tuning, distillation, and quantization. Experience should extend beyond calling hosted model APIs.\n Classical Machine Learning: Strong understanding of gradient boosting, linear models with sparse features, probability calibration, class imbalance, and the ability to determine when traditional ML methods outperform LLM-based approaches.\n Rigorous Model Evaluation: Experience designing leakage-free splits by time and malware family, evaluating precision under fixed false-positive constraints, maintaining regression datasets, and understanding the limitations of offline evaluation when predicting production performance.\n Inference and Cost Optimization: Demonstrated ability to measure throughput and latency and optimize models for CPU, memory, and operational cost constraints. Familiarity with technologies such as ONNX, llama.cpp, vLLM, and int8/int4 quantization is valuable.\n Technical Stack: Strong Python, PyTorch, and Hugging Face skills, along with SQL expertise for analyzing large datasets using ClickHouse or comparable analytical databases.\n Web Technology Familiarity: Experience with PHP or JavaScript, or a willingness to learn these technologies while collaborating with malware analysts.\n AI-Assisted Engineering: Daily use of AI coding agents, with the ability to demonstrate how they support development, investigation, and engineering productivity.\n Written Communication: English proficiency at B2 level or higher, with particularly strong written communication skills for technical documentation and asynchronous collaboration.\n Analytical and Problem-Solving Skills: Ability to investigate complex detection problems, interpret model results, make sound technical trade-offs, and prioritize measurable improvements over experimental metrics alone.\n Ownership and Collaboration: Comfort taking responsibility from experimentation through production deployment while working effectively with analysts, engineers, and other stakeholders.\n The following experience would be a strong advantage:\n Web Malware Security: Experience with web malware, webshells, phishing kits, or WordPress security.\n Code-Based Machine Learning: Experience developing models over source code using abstract syntax trees (ASTs), token features, code-focused language models, or graph models of program structure.\n Malware Analysis: Knowledge of malware clustering, similarity analysis, and methods for identifying related samples or emerging campaigns.\n Training Infrastructure: Experience with multi-GPU training on bare-metal infrastructure, MLflow or Weights & Biases, and dataset versioning.\n Systems Programming: Familiarity with Go or Rust for efficient on-server inference.\n Security Research: Published work, technical presentations, or conference talks focused on machine learning for cybersecurity.\n Benefits: \n Fully Remote Work: Work remotely with flexibility to organize your schedule and work from different locations worldwide, subject to hiring arrangements.\n Flexible Working Hours: Autonomy to structure your working day in a remote-first, asynchronous environment.\n Paid Vacation: 24 days of paid vacation annually.\n Public Holidays: 10 days of national holidays.\n Sick Leave: Unlimited sick leave.\n Healthcare Support: Financial compensation toward private medical insurance.\n Wellness Benefits: Reimbursement for co-working spaces and gym or sports activities.\n Learning and Development: An education budget and a strong focus on professional growth.\n Innovation Rewards: The opportunity to receive a reward for developing an innovative idea that can be patented.\n Dedicated Technical Resources: Access to dedicated GPU resources and potential additional computing investment supported by evidence-based proposals.\n Challenging Technical Work: Opportunities to work with large-scale real-world malware datasets and develop production ML systems that address evolving cybersecurity threats.\n AI-Enabled Engineering Environment: Access to AI coding agents and integrated development tools to support experimentation, implementation, and collaboration.\nHow Jobgether works:\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\nWe appreciate your interest and wish you the best!\n Why Apply Through Jobgether? \n \nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n \n \n#LI-CL1",
+  "postedAtRaw": 1793014195740,
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.lever.co/jobgether/5334f744-6852-42e6-aac6-352677e4af5a",
+  "applicationUrl": "https://jobs.lever.co/jobgether/5334f744-6852-42e6-aac6-352677e4af5a/apply",
+  "postedAt": "2026-10-26T11:29:55.740000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "lever:5334f744-6852-42e6-aac6-352677e4af5a",
+  "deduplicationKey": "jobgether|senior ml engineer malware detection|india",
+  "sources": [
+   {
+    "platform": "lever",
+    "url": "https://jobs.lever.co/jobgether/5334f744-6852-42e6-aac6-352677e4af5a",
+    "sourceJobId": "5334f744-6852-42e6-aac6-352677e4af5a"
+   }
+  ],
+  "relevanceScore": 51,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 6,
+   "experience": 7,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "skills: javascript, sql",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "go",
+   "javascript",
+   "php",
+   "python",
+   "rust",
+   "sql"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "lever",
+  "sourceJobId": "0c5c498e-656c-4382-a268-f37261ce0e53",
+  "jobTitle": "Senior Privacy Engineer",
+  "companyName": "jobgether",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": null,
+  "description": "This position is listed on behalf of a partner company, which manages all applications and next steps. Our partner is looking for a Senior Privacy Engineer based in India. \n As a Senior Privacy Engineer, you will play a key role in designing and developing technology that protects users' privacy across digital products and services. You will lead complex engineering projects, build innovative privacy solutions, and help strengthen protections against online tracking and emerging threats. Working within a distributed, remote-first engineering team, you will take ownership of major technical components from initial planning through implementation and ongoing improvement. You will collaborate across teams to ensure new features and product developments uphold strong privacy standards. The role offers opportunities to contribute to privacy-focused search technologies, AI-powered experiences, and advanced tracking protection systems. You will also participate in privacy reviews, support engineering best practices, and mentor colleagues as the team grows.\nAccountabilities\nLead high-impact, complex engineering projects from initial proposal and technical planning through implementation, deployment, and post-project evaluation.\n Design, develop, and maintain privacy-preserving systems and features that protect users across search technologies, AI experiences, browsers, and related digital services.\n Build and improve systems that enhance search indexes and AI capabilities while maintaining robust user privacy protections.\n Develop and extend crawler-based technologies to identify, analyze, and address emerging online tracking methods and privacy threats.\n Implement, maintain, and optimize privacy features, including web tracking prevention and email protection capabilities.\n Write pragmatic, efficient, maintainable, and testable code using technologies such as Go, Node.js, Python, and, where appropriate, Perl.\n Take ownership of critical privacy technology components, ensuring their reliability, security, scalability, and continuous improvement.\n Participate in privacy reviews, technical audits, and product assessments to ensure engineering decisions and new developments align with established privacy principles.\n Navigate ambiguous technical challenges, identify practical solutions, and collaborate with relevant stakeholders to deliver effective outcomes.\n Communicate technical decisions, project progress, and privacy considerations clearly to technical and non-technical audiences.\n Mentor fellow engineers, share technical knowledge, and contribute to the professional development and long-term growth of the privacy engineering team.\n Requirements:\n Significant professional experience in software engineering, with demonstrated expertise in developing and maintaining privacy-focused technologies or solutions.\n Strong technical understanding of online privacy threats, tracking mechanisms, and the technologies and approaches used to mitigate them.\n Practical experience building privacy solutions in an engineering role, such as tracker blocking, differential privacy, or comparable privacy-enhancing technologies.\n Proficiency in at least one of the following programming languages: Go, Node.js, Python, or Perl.\n Proven ability to lead complex, high-impact technical projects from concept and planning through delivery, maintenance, and retrospective analysis.\n Strong problem-solving skills, including the ability to work through ambiguous requirements, evaluate trade-offs, propose innovative approaches, and execute solutions effectively.\n Experience designing reliable, performant, maintainable, and well-tested software systems.\n The ability to collaborate effectively across functions, involve stakeholders when needed, and communicate technical concepts and decisions to audiences with varying levels of technical expertise.\n A high degree of ownership, sound judgment, and initiative, with the ability to manage projects independently while contributing to shared team objectives.\n Interest in mentoring engineers, sharing expertise, and supporting the development of colleagues.\n Willingness to work remotely with an international team, participate in video meetings with cameras enabled, and travel approximately twice a year for company-wide gatherings and team retreats.\n Ability to commit to a full-time workload averaging 40 hours per week, with flexibility to coordinate across time zones and no fixed core working hours.\n Willingness to complete a background check as a condition of employment.\n Benefits:\n Annual compensation: €157,350 for Europe and the rest of the world, including India, according to the stated global compensation structure.\n Equity compensation: Stock options offered in addition to annual salary.\n Transparent compensation framework: Compensation is standardized by professional level rather than individual location or functional area.\n Remote-first work environment: Work remotely from India as part of a globally distributed team.\n Flexible working arrangements: No fixed core hours, offering flexibility in organizing your work around team commitments and project priorities.\n Wellbeing and family support: Access to support provisions that include paid parental leave.\n Home office support: Assistance with office setup and coworking allowances.\n Professional growth: Opportunities to lead complex projects, expand technical expertise, and take ownership of significant privacy engineering initiatives.\n Mentorship opportunities: Scope to guide other engineers and contribute to the development of the broader engineering team.\n Mission-driven work: The opportunity to build technology that advances online privacy and helps protect users from tracking and other digital privacy risks.\n Team connection and collaboration: Opportunities to participate in an annual all-hands gathering and a separate team retreat, typically involving approximately four to five days of travel each.\nHow Jobgether works:\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\nWe appreciate your interest and wish you the best!\n Why Apply Through Jobgether? \n \nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n \n \n#LI-CL1",
+  "postedAtRaw": 1792973647114,
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.lever.co/jobgether/0c5c498e-656c-4382-a268-f37261ce0e53",
+  "applicationUrl": "https://jobs.lever.co/jobgether/0c5c498e-656c-4382-a268-f37261ce0e53/apply",
+  "postedAt": "2026-10-26T00:14:07.114000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "lever:0c5c498e-656c-4382-a268-f37261ce0e53",
+  "deduplicationKey": "jobgether|senior privacy engineer|india",
+  "sources": [
+   {
+    "platform": "lever",
+    "url": "https://jobs.lever.co/jobgether/0c5c498e-656c-4382-a268-f37261ce0e53",
+    "sourceJobId": "0c5c498e-656c-4382-a268-f37261ce0e53"
+   }
+  ],
+  "relevanceScore": 51,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 6,
+   "experience": 7,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "skills: node, rest",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "node",
+   "python",
+   "rest"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "lever",
+  "sourceJobId": "77b002da-fc9e-4962-bbe0-38bf76077593",
+  "jobTitle": "Senior ML Engineer - Email Security",
+  "companyName": "jobgether",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": null,
+  "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Senior ML Engineer - Email Security based remotely in India. \n The Senior ML Engineer will help develop and deploy advanced machine learning technology to protect email infrastructure against spam, phishing, and other evolving cyber threats. You will work on a production-scale security solution that already filters email across approximately 5,000 hosting servers. The role combines hands-on transformer model training with systems engineering to build lightweight, efficient inference technology that runs on customer CPUs with minimal resource consumption. You will take ownership of the complete detection lifecycle, from dataset preparation and model evaluation to production releases and ongoing quality improvements. Working closely with an experienced engineering partner, you will help modernize the existing filtering pipeline and make releases more reliable and scalable. This remote-first opportunity is ideal for an engineer who enjoys solving challenging security problems and delivering measurable improvements in real-world environments.\nAccountabilities:\nYou will contribute across the machine learning lifecycle and production engineering stack, ensuring that email detection models are accurate, efficient, and reliable in real-world hosting environments. Your responsibilities will include:\n Model Training and Deployment: Train, evaluate, and release spam-detection models, including building and maintaining training corpora, selecting decision thresholds, analyzing precision and recall, and determining whether models are ready for production.\n Production ML Engineering: Develop the production components of a new email-filtering engine in Go, including the inference service, mail-filter integrations, tokenization, and streaming message parsing.\n Detection Quality Improvement: Investigate customer-reported spam and phishing incidents, trace detection failures, and implement appropriate fixes through rules, dataset improvements, or model retraining.\n Model Performance Optimization: Balance detection rates against false-positive risks, ensuring legitimate messages are not unnecessarily blocked while malicious content is effectively identified.\n Training Infrastructure and Data Tooling: Maintain the corpus management tools and training infrastructure required to support reliable experimentation and model releases.\n Code and Model Reviews: Review and approve classifier, rule, and model changes to improve quality, share technical knowledge, and ensure releases can proceed without depending on a single engineer.\n Technical Collaboration: Help partner engineers understand classification outcomes, explain model scoring behavior, and provide clear technical guidance when questions arise.\n Documentation and Knowledge Sharing: Write technical specifications, handbooks, merge-request descriptions, and post-mortems that make decisions understandable and support effective collaboration.\n Independent Delivery: Progress toward defined milestones, including independently shipping a rule-model release during the first month, delivering a component of the new engine to staging by month three, and supporting a model release independently by month six.\n Requirements: \n The ideal candidate is an experienced machine learning engineer with a strong background in production classification systems, practical transformer expertise, and the engineering skills to deliver reliable security technology. You should be comfortable owning technical decisions, investigating complex detection issues, and communicating your work clearly. Key qualifications include:\n Production Detection Experience: At least five years of experience delivering detection or classification systems where false positives have meaningful consequences, such as anti-spam, anti-phishing, anti-malware, fraud prevention, or abuse detection.\n End-to-End ML Ownership: Experience independently taking at least one machine learning classifier into production, including corpus construction, threshold selection, error analysis, and release decisions.\n Transformer Training Expertise: Hands-on experience training transformers with PyTorch, including tokenizers, masked-language pre-training, fine-tuning, ONNX export, and CPU inference performance measurement.\n Systems and Development Skills: Strong practical knowledge of Linux, shell scripting, and Python, including working with shared servers and GPU resources.\n AI-Assisted Development: Regular use of AI coding agents and development tools to support engineering productivity.\n Written Communication: English proficiency at B2 level or higher, with particularly strong written communication skills for technical documentation, specifications, and code reviews.\n Ownership and Judgment: The ability to analyze model performance, make evidence-based release decisions, investigate difficult problems, and balance detection effectiveness with the cost of false positives.\n Additional experience that would be valuable includes:\n Email Protocols and Infrastructure: Knowledge of SMTP, MIME, transfer encodings, SPF, DKIM, and DMARC, as well as how Exim, Postfix, and Dovecot integrate with email filters.\n Embedded Machine Learning: Experience building models designed to operate within constrained environments.\n Systems Programming: Familiarity with Go or Rust, particularly for parsers, streaming systems, concurrency, and memory-constrained applications.\n Spam Filtering Frameworks: Experience with rspamd or SpamAssassin internals, including rules, composite rules, Lua plugins, and mass-check scoring.\n Large-Scale Dataset Management: Experience working with multi-million-sample corpora, labeling pipelines, and annotation tools.\n Model Optimization: Knowledge of quantization, distillation, lightweight model architectures, and latency optimization for resource-constrained hardware.\n AI-Assisted Annotation: Experience using LLM-based labelers or validators to scale data annotation and quality assurance.\n Hosting Platforms: Familiarity with hosting control panels such as cPanel, Plesk, or DirectAdmin.\n Benefits: \n Fully Remote Work: Work remotely with the flexibility to organize your schedule and work from different locations worldwide, subject to role and hiring arrangements.\n Flexible Working Hours: Autonomy to structure your working day around your productivity and commitments.\n Paid Vacation: 24 days of paid vacation annually.\n Public Holidays: 10 days of national holidays.\n Sick Leave: Unlimited sick leave.\n Healthcare Support: Financial compensation toward private medical insurance.\n Wellness Benefits: Reimbursement for co-working spaces and gym or sports activities.\n Learning and Development: An education budget and a focus on ongoing professional growth.\n Innovation Rewards: The opportunity to receive a reward for developing an innovative idea that can be patented.\n Technical Challenges: Opportunities to work on demanding machine learning, cybersecurity, and production engineering projects with measurable real-world impact.\nHow Jobgether works:\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\nWe appreciate your interest and wish you the best!\n Why Apply Through Jobgether? \n \nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n \n \n#LI-CL1",
+  "postedAtRaw": 1793012460859,
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.lever.co/jobgether/77b002da-fc9e-4962-bbe0-38bf76077593",
+  "applicationUrl": "https://jobs.lever.co/jobgether/77b002da-fc9e-4962-bbe0-38bf76077593/apply",
+  "postedAt": "2026-10-26T11:01:00.859000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "lever:77b002da-fc9e-4962-bbe0-38bf76077593",
+  "deduplicationKey": "jobgether|senior ml engineer email security|india",
+  "sources": [
+   {
+    "platform": "lever",
+    "url": "https://jobs.lever.co/jobgether/77b002da-fc9e-4962-bbe0-38bf76077593",
+    "sourceJobId": "77b002da-fc9e-4962-bbe0-38bf76077593"
+   }
+  ],
+  "relevanceScore": 45,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 0,
+   "experience": 7,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "core stack appears to be go, python, rust",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "go",
+   "python",
+   "rust"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "lever",
+  "sourceJobId": "2bcbbeac-f7fa-4d61-979b-0881edb494c4",
+  "jobTitle": "Senior Cloud System Engineer",
+  "companyName": "jobgether",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "5+ years",
+  "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Senior Cloud System Engineer based in India (Remote). \n As a Senior Cloud System Engineer, you will design, deploy, and maintain secure, scalable, and high-performance cloud infrastructure supporting mission-critical healthcare workloads. You will lead complex cloud migrations, modernize legacy systems, and deliver reliable infrastructure solutions across AWS, Microsoft Azure, and Google Cloud Platform. Working within a professional services environment, you will take ownership of technical project milestones and ensure implementations meet architectural, performance, and security requirements. You will leverage Infrastructure as Code (IaC), scripting, and automation to build repeatable, efficient, and resilient cloud environments. A key part of your role will be ensuring that cloud deployments comply with healthcare regulations and internal security standards while maintaining operational excellence. You will collaborate with project managers and technical teams to deliver successful client engagements, provide clear technical guidance, and facilitate seamless operational handovers. This opportunity is ideal for an experienced cloud engineering professional who enjoys solving complex infrastructure challenges and making a meaningful contribution to reliable healthcare technology services.\nAccountabilities\nLead the onboarding, design, configuration, deployment, and optimization of secure, cost-efficient, highly available cloud infrastructure across AWS, Microsoft Azure, and Google Cloud Platform (GCP).\n Drive complex cloud migration projects, transitioning mission-critical healthcare workloads from legacy environments to modern, scalable, and resilient cloud architectures.\n Own technical milestones and delivery activities for Professional Services engagements, ensuring implementations align with approved architectural designs, project timelines, performance expectations, and quality standards.\n Design, develop, and implement Infrastructure as Code (IaC) solutions using Terraform and native cloud infrastructure templates to automate provisioning and establish consistent, repeatable environments.\n Build and maintain automation pipelines and scripting solutions that improve deployment efficiency, infrastructure reliability, scalability, and operational consistency.\n Troubleshoot complex cloud infrastructure issues involving networking, identity and access management, operating systems, connectivity, and cloud service configurations.\n Ensure all infrastructure deployments comply with applicable healthcare compliance frameworks, security requirements, and internal technical standards.\n Collaborate with project managers to establish realistic technical timelines, communicate project progress, identify delivery risks, and provide informed recommendations during client discussions.\n Produce comprehensive technical documentation covering infrastructure architecture, deployment procedures, configurations, troubleshooting guidance, and operational requirements.\n Facilitate smooth handovers to frontline support and managed services teams, ensuring they have the knowledge and documentation needed to maintain infrastructure effectively.\n Provide technical guidance and mentorship to colleagues, sharing cloud engineering best practices and supporting continuous improvement across infrastructure delivery.\n Evaluate opportunities to optimize cloud resource utilization, control infrastructure costs, improve performance, and strengthen availability and security.\n Contribute to the continuous improvement of cloud deployment methodologies, infrastructure tooling, and professional services delivery practices.\n Requirements\n At least 5 years of hands-on experience in cloud engineering, infrastructure engineering, or advanced systems administration, with a strong foundation in supporting and maintaining production environments.\n Deep practical expertise in at least one major public cloud platform: AWS, Microsoft Azure, or Google Cloud Platform, along with the ability and willingness to architect, troubleshoot, and support solutions across all three environments.\n Advanced knowledge of core IT infrastructure, including complex networking, routing, connectivity, identity and access management, and administration of both Linux and Windows operating systems.\n Demonstrated experience designing, deploying, and maintaining secure, scalable, highly available cloud environments and managing complex infrastructure implementations.\n Proven experience leading or executing cloud migrations, particularly for critical workloads requiring careful planning, risk management, performance validation, and operational continuity.\n Strong proficiency in Infrastructure as Code tools, particularly Terraform or native cloud templates, with the ability to develop reusable and maintainable infrastructure configurations.\n Advanced scripting and automation skills using languages such as Python, Bash, or PowerShell, including experience building automation workflows and infrastructure deployment pipelines.\n Strong understanding of cloud security principles, infrastructure hardening, access controls, and compliance requirements relevant to healthcare or other regulated environments.\n Ability to troubleshoot complex technical problems, analyze infrastructure performance, identify root causes, and implement reliable solutions.\n Experience working in a client-facing or professional services environment, with the ability to translate technical requirements into practical infrastructure solutions.\n Strong collaboration and communication skills, including the ability to work effectively with project managers, technical teams, and clients, provide clear progress updates, and communicate realistic delivery estimates.\n Excellent documentation and organizational skills, with a commitment to technical accuracy, quality assurance, and successful operational handovers.\n A proactive, detail-oriented mindset, with the ability to manage competing priorities, take ownership of technical deliverables, and work independently in a remote environment.\n Professional-level certifications in AWS, Azure, or GCP are strongly preferred.\n Benefits\n Remote work: Opportunity to work remotely from India.\n Full-time employment: A full-time position focused on cloud engineering and professional services delivery.\n Technical ownership: The opportunity to lead complex cloud deployments, infrastructure modernization initiatives, and mission-critical migration projects.\n Multi-cloud exposure: Hands-on work across AWS, Microsoft Azure, and Google Cloud Platform.\n Meaningful industry impact: Contribute to secure and reliable cloud infrastructure supporting critical healthcare workloads.\n Advanced technical challenges: Work with Infrastructure as Code, automation pipelines, cloud security, and high-availability architecture.\n Cross-functional collaboration: Partner with project managers, technical specialists, and frontline operations teams to deliver successful infrastructure projects.\n Professional development: Opportunities to deepen cloud architecture expertise, strengthen technical leadership, and apply industry best practices.\n Security and compliance experience: Develop expertise in infrastructure security and compliance requirements within a healthcare technology environment.\n Collaborative work culture: Join a diverse, international organization that emphasizes technical quality, operational excellence, and employee engagement.\nHow Jobgether works:\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\nWe appreciate your interest and wish you the best!\n Why Apply Through Jobgether? \n \nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n \n \n#LI-CL1",
+  "postedAtRaw": 1792991403385,
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.lever.co/jobgether/2bcbbeac-f7fa-4d61-979b-0881edb494c4",
+  "applicationUrl": "https://jobs.lever.co/jobgether/2bcbbeac-f7fa-4d61-979b-0881edb494c4/apply",
+  "postedAt": "2026-10-26T05:10:03.385000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "lever:2bcbbeac-f7fa-4d61-979b-0881edb494c4",
+  "deduplicationKey": "jobgether|senior cloud system engineer|india",
+  "sources": [
+   {
+    "platform": "lever",
+    "url": "https://jobs.lever.co/jobgether/2bcbbeac-f7fa-4d61-979b-0881edb494c4",
+    "sourceJobId": "2bcbbeac-f7fa-4d61-979b-0881edb494c4"
+   }
+  ],
+  "relevanceScore": 39,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 1,
+   "experience": 0,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "skills: aws",
+   "asks 5+ yrs (exceeds profile)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "python"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "ashby",
+  "sourceJobId": "1dd07b8b-0c0b-422a-8ff4-c99bdc5add68",
+  "jobTitle": "SDE3, Infrastructure Security Engineer (DevSecOps)",
+  "companyName": "sarvam",
+  "location": "Bengaluru",
+  "workMode": "OnSite",
+  "employmentType": "FullTime",
+  "experienceRequirements": "5+ years",
+  "description": "About the team\n\nSarvam builds Indic-language AI used at population scale. The CPU Infrastructure team runs everything outside the GPU fleet: Kubernetes across Azure, AWS, GCP and Indian sovereign clouds, the network between them, Cloudflare, identity, secrets, observability, cost and the delivery pipeline every product ships through.\n\nThe team builds and runs what it builds. Engineers own real systems end to end, and every repeated piece of manual work is a candidate for automation. As an AI company, we are building AI agents into our own operations, to plan and review infrastructure changes, triage alerts and handle routine issues, with engineers setting the guardrails.\n\nAbout the role\n\nYou are an infrastructure engineer whose first instinct is security, and who builds rather than only operates. You have worked on banking, fintech, payments or similarly regulated products, where a misconfiguration is an incident and an audit is routine. Here you set what “secure” means across Sarvam’s infrastructure and build the automation that enforces it, so security is a property of the pipeline rather than a review step. You work closely with the compliance team.\n\nThis is a hands-on role: most of your time goes into building, and you guide engineering teams across Sarvam on security — setting standards, reviewing security-relevant work and mentoring engineers.\n\nResponsibilities\n\n• Define and enforce security baselines for Kubernetes, cloud accounts, container images and CI/CD across all clouds\n\n• Write the policy gates in the delivery pipeline (OPA / Conftest, Kyverno or equivalent): network exposure, IAM, image provenance, secrets, data residency\n\n• Own secrets and workload identity: Vault or cloud-native equivalents, rotation, short-lived and scoped credentials, no long-lived keys\n\n• Build detection and response: runtime security (Falco / Tetragon or equivalent), log-based detections, alerting and playbooks\n\n• Run the finding-to-fix loop for security findings: triage, assign, fix, add a detection, retest\n\n• Use LLMs and AI agents in security work: triaging findings, reviewing infrastructure changes, tuning detections, drafting incident timelines — and secure the agents themselves with scoped, short-lived permissions and audit trails\n\n• Harden the supply chain: image signing and scanning, dependency policy, SBOMs\n\n• Automate compliance evidence (CERT-In, ISO 27001, SOC 2, DPDP) together with the compliance team\n\n• Set the security standards other engineers follow and review security-relevant changes\n\n• Take part in on-call and lead security incidents\n\nRequirements\n\n• 5–9 years in DevOps, platform or security engineering, with at least 2 in a bank, fintech, payments company or other regulated environment\n\n• Strong Kubernetes and Linux fundamentals; has run production clusters on at least one major cloud\n\n• Hands-on with Terraform / OpenTofu and GitOps (ArgoCD or Flux)\n\n• Has built security automation, not only operated tools: policy-as-code, secrets rotation, CI/CD security gates or detection pipelines\n\n• Working knowledge of IAM, network security, TLS and secrets management across clouds\n\n• Scripting and tooling in Python or Go\n\n• Has been through security audits and knows what evidence auditors need\n\n• Has built or used AI-based automation in infrastructure or security work, and understands the risks of AI agents: prompt injection, over-broad permissions, unreviewed actions\n\n• Nice to have: Vault, SPIFFE / SPIRE, Falco or Tetragon, Cloudflare WAF, incident response lead experience, multi-cloud experience",
+  "postedAtRaw": "2026-10-26T06:33:29.694+00:00",
+  "status": "open",
+  "canonicalJobUrl": "https://jobs.ashbyhq.com/sarvam/1dd07b8b-0c0b-422a-8ff4-c99bdc5add68",
+  "applicationUrl": "https://jobs.ashbyhq.com/sarvam/1dd07b8b-0c0b-422a-8ff4-c99bdc5add68/application",
+  "postedAt": "2026-10-26T06:33:29.694000Z",
+  "postedAtConfidence": "exact",
+  "freshness": "confirmed_fresh",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "ashby:1dd07b8b-0c0b-422a-8ff4-c99bdc5add68",
+  "deduplicationKey": "sarvam|sde3 infrastructure security engineer devsecops|bengaluru",
+  "sources": [
+   {
+    "platform": "ashby",
+    "url": "https://jobs.ashbyhq.com/sarvam/1dd07b8b-0c0b-422a-8ff4-c99bdc5add68",
+    "sourceJobId": "1dd07b8b-0c0b-422a-8ff4-c99bdc5add68"
+   }
+  ],
+  "relevanceScore": 37,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 2,
+   "experience": 0,
+   "location": 12,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "skills: aws, ci/cd",
+   "asks 5+ yrs (exceeds profile)",
+   "India location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "python"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ }
+]

@@ -1,0 +1,1794 @@
+[
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481426004",
+  "jobTitle": "Full Stack Developer (MERN)",
+  "companyName": "Alpha Male",
+  "location": "Mumbai, Maharashtra, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "3+ years",
+  "description": "MERN Full Stack Developer – Custom D2C E-commerce Platform\nMumbai | Full-time | 3–5 years\n\nAbout Alpha Male\nAlpha Male is one of India's first premium, science-backed men's wellness brands. We sell direct-to-consumer, and our brand is built on trust, discretion, education and a premium experience. We're a young, fast-growing team based in Mumbai.\n\nAbout the Role\nWe're building our own custom D2C e-commerce platform from scratch. You will design the architecture, build, launch and maintain the complete platform: website, order flow, payments, shipping, admin panel, CRM, automations and reporting. You will be the technical owner of our D2C stack and work directly with leadership.\n\nTech Stack\nMongoDB, Express.js, React / Next.js, Node.js (MongoDB Atlas, AWS / Vercel, GitHub)\n\nWHAT YOU WILL DO\n\n1. Planning & Architecture\n• Understand business requirements and convert them into a technical plan and timeline\n• Design the system architecture, database schema and API structure\n• Work with the UI/UX designer and build from approved Figma designs\n• Set up the GitHub repository, coding standards, and staging and production environments\n\n2. Storefront (Customer Website)\n• Build a fast, SEO-friendly, mobile-first website using Next.js (SSR / SSG)\n• Home, collection and product pages, combos and bundles, search, blog / education pages, FAQs, about and policy pages\n• SEO setup: meta tags, sitemap, schema markup, clean URLs and page speed (Core Web Vitals)\n• Customer reviews and ratings, trust badges and offer banners\n\n3. Cart, Checkout & Customer Accounts\n• Cart, coupons and discounts, OTP-based login and saved addresses\n• Pincode serviceability check, prepaid and COD options, order summary\n• Customer account: profile, order history, order tracking, reorder, returns and refunds\n\n4. Payment Gateway Integration\n• Integrate Razorpay / Cashfree (UPI, cards, net banking, wallets)\n• Server-side payment verification through webhooks and signature checks (never trusting the browser alone)\n• Failed-payment handling and retry, refunds through the gateway API\n• Daily payment-to-order reconciliation so every successful payment creates an order\n\n5. Orders, Invoicing & Inventory\n• Complete order lifecycle: placed, confirmed, packed, shipped, delivered, cancelled, returned\n• GST-compliant invoice generation (PDF)\n• Real-time inventory updates, with no overselling of the last unit\n\n6. Shipping & Logistics Integration\n• Integrate Shiprocket (or similar): order push, AWB generation, label printing\n• Live order tracking for customers, delivery status updates, NDR handling\n• COD remittance tracking\n\n7. Admin Panel\n• Secure admin with role-based access (admin, operations, marketing, support)\n• Manage products, variants, prices, inventory, orders, customers, coupons, banners and returns\n• Bulk actions, order exports and activity logs\n\n8. CRM\n• Customer profiles with full purchase history\n• Tags, segments, lifetime value and repeat-purchase tracking\n• Customer data available for marketing and retention campaigns\n\n9. Automations (WhatsApp, SMS & Email)\n• Order confirmation, shipping, delivery and refund updates\n• Abandoned-cart recovery, reorder reminders, review requests and COD-to-prepaid nudges\n• Integrate WhatsApp Business API, MSG91 (SMS / OTP) and an email service (AWS SES / Resend)\n\n10. Tracking, Analytics & Reports\n• Set up GA4, Meta Pixel + Conversions API and Google Ads conversion tracking\n• Product feed for Google Merchant Center and Meta catalogue\n• Reports dashboard: sales, orders, AOV, repeat rate, SKU performance, COD vs prepaid\n\n11. Hosting, Security & Performance\n• Deploy and manage hosting on AWS / Vercel / Render with SSL, domain and CDN\n• Secure authentication, input validation, rate limiting and secure handling of secrets\n• No card data stored, with customer data protected in line with India's DPDP Act\n• Automated database backups, error monitoring (Sentry) and uptime monitoring\n• Keep the site fast and stable during sales and high-traffic periods\n\n12. Day-to-Day Maintenance\n• Daily: check errors and uptime, reconcile payments with orders, fix urgent issues\n• Weekly: bug fixes, content and product updates, backup checks, speed review\n• Monthly: security and package updates, performance report, new features as planned\n• Test every change on staging before it goes live\n\n13. Documentation & Ownership\n• Maintain clear documentation: README, API docs, architecture and setup guides\n• Keep all code, servers and accounts in the company's name\n• Write clean, maintainable code so the platform can scale and be handed over easily\n\n14. Collaboration\n• Work with leadership on priorities and timelines, with regular progress updates\n• Work with the performance marketing team on tracking, landing pages and offers\n• Work with operations and customer support on order, shipping and return issues\n\nREQUIREMENTS\n• 3–5 years of hands-on experience with MongoDB, Express, React and Node.js\n• Has built and launched at least one live e-commerce or payment-enabled web application\n• Experience integrating payment gateways (Razorpay / Cashfree / PayU) with webhooks\n• Strong experience with Next.js for SEO-friendly, high-performance websites\n• Experience integrating third-party APIs (shipping, SMS, WhatsApp, email)\n• Experience deploying and maintaining production apps on AWS, Vercel or Render\n• Good understanding of security, performance and database design\n• Clean, documented code and a strong sense of ownership\n\nGOOD TO HAVE\n• TypeScript, Redis, Docker and CI/CD\n• WhatsApp Business API, Shiprocket or Shopify API experience\n• Experience at a D2C or e-commerce startup\n\nWHAT WE OFFER\n• Competitive CTC\n• Build a complete D2C platform from scratch and own its architecture\n• Direct work with leadership, with fast decisions\n• A fast-growing brand with room to grow into a tech lead role\n\nHOW TO APPLY\nApply through LinkedIn, or email your CV with your GitHub profile and live project links to info@alphamale.co.in with the subject line Application – MERN Full Stack Developer\n\n#Hiring #MERNStack #FullStackDeveloper #NextJS #MumbaiJobs",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481426004",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481426004",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Entry level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481426004",
+  "deduplicationKey": "alpha male|full stack developer mern|mumbai maharashtra india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481426004",
+    "sourceJobId": "4481426004"
+   }
+  ],
+  "relevanceScore": 99,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 24,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: typescript, react, node, express, mongodb, next.js, nextjs, redis, docker, aws, ci/cd",
+   "asks 3+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "express",
+   "mongodb",
+   "next.js",
+   "nextjs",
+   "node",
+   "react",
+   "redis",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483540303",
+  "jobTitle": "Backend developer- Node.Js",
+  "companyName": "Adsparkx",
+  "location": "Gurugram, Haryana, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "2+ years",
+  "description": "About Adsparkx\n\nAdsparkx is a leading Global Performance Marketing Agency headquartered in India. We have been empowering brands since 2014 helping them acquire high quality and engaging users globally via data-driven decisions. We are innovators, hustlers and ad-tech moguls/experts who function with the belief of catalyzing a disruptive change in the industry by providing empowered and customized digital experiences to consumers/brands.\n\nAdsparkx unlocks the full potential of your business with its diligent workforce, catering to worldwide clients at their time zones. We operate globally and have offices in Gurgaon, Chandigarh, Singapore and US. We value partnerships and have maintained sustainable relationships with reputed brands, shaping their success stories through services like Affiliate Marketing, Branding, E-commerce, Lead Generation, and Programmatic Media Buying. We have helped navigate over\n\n200 brands to success. Our clientele includes names like Assurance IQ, Inc, Booking.com, Groupon, etc. If you wish to change the game of your brand, visit us here- https://adsparkx.com/\n\nJob Title: Node.Js Developer\n\nLocation: Gurugram, Haryana\n\nEmployment Type: Full Time\n\nWork Setup: Monday to Friday- 1st & 3rd Saturdays are WFH\n\nShift Timing- 11 AM to 8 PM\n\nExperience Required: 2-5 Years\n\nBackend Skills\n\nObjective of the role:\n\nDesign, develop, and maintain scalable backend applications using Node.js.\nBuild and maintain RESTful APIs and microservices.\nDevelop, optimize, and maintain server-side network components.\nDeploy, monitor, and maintain Node.js applications on AWS infrastructure.\nWrite clean, reusable, and well-documented code following best practices.\nPerform code reviews and ensure high-quality engineering standards.\nCollaborate with frontend, DevOps, QA, and product teams to deliver scalable solutions.\nOptimize application performance, security, and scalability.\n\nAI Knowledge\n\nAI Orchestrator Architecture\nAgentic AI\nRetrieval-Augmented Generation (RAG)\n\nRequired Skills And Qualifications (Personality/Attributes/ Traits)\n\nStrong in Node.js, Rest API, JavaScript, Express.js.\nFamiliarity with database technology such as NoSQL, MySQL, Dynamo dB and MongoDB",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483540303",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483540303",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483540303",
+  "deduplicationKey": "adsparkx|backend developer node js|gurugram haryana india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483540303",
+    "sourceJobId": "4483540303"
+   }
+  ],
+  "relevanceScore": 95,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 20,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, node, express, rest, mysql, mongodb, aws, microservices",
+   "asks 2+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "express",
+   "javascript",
+   "microservices",
+   "mongodb",
+   "mysql",
+   "node",
+   "rest"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481434323",
+  "jobTitle": "Full Stack Developer (MERN Stack)",
+  "companyName": "Remotohire",
+  "location": "Pune District, Maharashtra, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "Senior Full Stack Developer (MERN Stack)\n\nRemote Opportunity | 4+ To 8 Years of Experience\nCompany: RemotoHire\nExperience Required: 2 TO 8 Years\nJob Type: Full-Time\nWork Mode: Remote / Hybrid\nNotice Period: Immediate to 30 Days Preferred\n\nAbout the Opportunity\nWe are hiring experienced Senior Full Stack Developers (MERN Stack) for exciting client projects with startups and IT companies.\n\nThe ideal candidate should have strong hands-on experience in modern web application development using React.js, Node.js, Express.js, and MongoDB, along with a good understanding of scalable application architecture and API development.\n\nRequired Skills\n\nFrontend\nReact.js\nJavaScript / TypeScript\nRedux / Context API\nHTML5 / CSS3\nResponsive UI Development\n\nBackend\nNode.js\nExpress.js\nREST APIs\nAuthentication & Authorization\n\nDatabase\nMongoDB\nDatabase Design & Optimization\n\nGood to Have\nNext.js\nAWS Basics\nDocker\nCI/CD Knowledge\nGit/GitHub\n\nRoles & Responsibilities\nDevelop scalable full-stack applications using the MERN stack\nBuild reusable frontend components and backend APIs\nCollaborate with development teams and clients\nOptimize application performance\nParticipate in code reviews and troubleshooting\nMaintain clean and efficient code standards\n\nCandidate Requirements\nMinimum 4+ To 8 years of relevant experience\nStrong communication skills\nExperience working on real-time projects\nAbility to work independently in remote environments\nImmediate to 30-day joiners preferred\n\nApplication Process\n\nInterested candidates are requested to apply through the application form below:\n👉 https://www.oxcytech.com/developer-application",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481434323",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481434323",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Entry level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481434323",
+  "deduplicationKey": "remotohire|full stack developer mern stack|pune district maharashtra india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481434323",
+    "sourceJobId": "4481434323"
+   }
+  ],
+  "relevanceScore": 92,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 23,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, typescript, react, node, express, rest, mongodb, git, docker, aws, ci/cd",
+   "asks 4+ yrs (stretch)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "express",
+   "git",
+   "javascript",
+   "mongodb",
+   "next.js",
+   "node",
+   "react",
+   "rest",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4473848990",
+  "jobTitle": "Senior Java Full Stack Developer",
+  "companyName": "Infosys",
+  "location": "Pune Division, Maharashtra, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": null,
+  "description": "Strong expertise in Java, Spring Boot, Hibernate, and JPA.\nProficiency in frontend technologies: HTML5, CSS3, JavaScript, and frameworks such as Angular, React, or Vue.js.\nExperience in designing and implementing RESTful APIs and microservices architecture.\nStrong knowledge of SQL and NoSQL databases (MySQL, PostgreSQL, MongoDB).\nHands-on experience with Red Hat OpenShift for deployment, scaling, monitoring, and troubleshooting.\nStrong understanding of Kubernetes concepts including pods, deployments, services, ingress/routes, config maps, secrets, and namespaces.\nExperience with Docker, container images, and container registries (e.g., Nexus).\nFamiliarity with CI/CD pipelines, Jenkins, Git, and version control systems.\nExposure to cloud platforms such as AWS, Azure, or GCP.\nDesign, develop, test, and deploy scalable and robust web applications using Java and related technologies.\nBuild responsive and user-friendly frontend applications using Angular or similar frameworks.\nDevelop backend services, REST APIs, and microservices using Java (Spring Boot, Hibernate, JPA).\nOptimize application performance, scalability, and security across the stack.\nCollaborate with Product Owners, Business Analysts, and QA teams to deliver high-quality solutions.\nIntegrate third-party services and APIs as required.\nParticipate in code reviews, mentor junior developers, and promote development best practices.\nWrite and maintain unit and integration tests to ensure code quality and reliability.\nTroubleshoot and resolve technical issues across frontend and backend systems.\nCreate and manage OpenShift resources such as pods, services, routes, deployments, build configurations, and namespaces.",
+  "postedAtRaw": "2026-10-25",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4473848990",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4473848990",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4473848990",
+  "deduplicationKey": "infosys|senior java full stack developer|pune division maharashtra india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4473848990",
+    "sourceJobId": "4473848990"
+   }
+  ],
+  "relevanceScore": 92,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 25,
+   "experience": 7,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, react, rest, mysql, mongodb, sql, git, postgresql, java, spring boot, docker, aws",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "git",
+   "java",
+   "javascript",
+   "microservices",
+   "mongodb",
+   "mysql",
+   "postgresql",
+   "react",
+   "rest",
+   "spring boot",
+   "sql"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483561129",
+  "jobTitle": "Senior Software Engineer I - Node & React [T500-30415]",
+  "companyName": "Marriott Tech Accelerator",
+  "location": "Hyderabad, Telangana, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "About Us:\nMarriott International Inc. , headquartered in Bethesda, Maryland, USA, was founded in May 1927 by J. Willard Marriott and Alice S. Marriott with a modest nine-seat A&W root beer stand. Guided by the family's leadership and core principles, Marriott International today has grown into a global hospitality giant, operating approximately 10,000 properties and over 30 leading brands in more than 140 countries and territories.\nFrom such humble beginnings to becoming the world’s largest hotel company, Marriott International has never stopped searching for inventive ways to serve its customers, provide opportunities for its associates, and grow their business. At Marriott Tech Accelerator center (MTA), Hyderabad, India, Marriott is exploring the world we live in and all its possibilities. At Marriott Tech Accelerator, we are a team of passionate engineering minds dedicated to creating and building cutting-edge solutions that streamline operations and elevate guest experiences.\nMarriott Tech Accelerator is an ANSR entity incorporated exclusively for providing services to Marriott International.\n\nRole Title: Senior Software Engineer I\nPosition Summary:\nWe are seeking an exceptional full stack engineering talent to lead the development of Marriott’s next-generation hospitality web portal for real time personalization squad. The successful candidate will design, build, and deliver scalable enterprise applications using a state-of-the-art React-based micro-frontend architecture. You will collaborate with product owners, UX designers, engineers, and QA teams to create innovative components and workflows, leveraging GenAI tools to enhance productivity and user experience.\nIn this role, you will contribute to both front-end and back-end development, ensuring the platform performs optimally across all modern browsers and devices. You will also participate in the design and implementation of modular, maintainable, and high-performance microservices that power our platform. The ideal candidate is product-focused, passionate about solving complex problems, and committed to driving Marriott value through cutting-edge technology solutions.\n\nJob Responsibilities:\nDesign, develop, and maintain scalable, high-performance web applications and reusable component libraries using React, TypeScript, and Next.js.\nArchitect and implement Micro-Frontend solutions, integrating seamlessly with Headless CMS platforms such as Adobe Experience Manager (AEM) to deliver modular and scalable digital experiences.\nDevelop and integrate GraphQL and RESTful APIs, ensuring secure, reliable, and efficient communication between frontend and backend services.\nOptimize frontend applications for performance, scalability, accessibility (WCAG), SEO, and Core Web Vitals, delivering exceptional user experiences across devices and browsers.\nCollaborate closely with Product Owners, UX/UI Designers, QA Engineers, Backend Engineers, Architects, and cross-functional teams to design, build, and deliver intuitive, responsive, and user-centric features across multiple form factors.\nEnsure the technical feasibility of UI/UX designs and proactively recommend alternative technical solutions that improve usability, maintainability, and overall system performance.\nChampion an AI-first engineering culture by leveraging GenAI-powered development tools such as GitHub Copilot, ChatGPT, Claude, or similar technologies to accelerate software development, improve code quality, automate testing, and optimize engineering workflows.\nEvaluate, integrate, and customize AI-powered solutions to enhance developer productivity, automate repetitive engineering tasks, and improve overall software delivery efficiency.\nIdentify opportunities to incorporate Generative AI across the software development lifecycle, including application development, testing, deployment, documentation, and operational workflows.\nParticipate in and lead code reviews, ensuring adherence to engineering best practices, coding standards, security guidelines, and maintainable software design principles.\nTroubleshoot, debug, and resolve complex production issues through structured root-cause analysis, while continuously improving application stability, reliability, and performance.\nMentor and coach junior engineers by promoting engineering best practices, modern frontend development techniques, effective use of AI-assisted development tools, and continuous learning.\nStay current with emerging frontend technologies, cloud-native architectures, AI innovations, and industry best practices, proactively recommending improvements that enhance engineering capabilities.\nFoster strong collaboration and maintain effective communication with engineering teams, product stakeholders, business partners, and leadership to successfully deliver high-quality software solutions.\n\nIT Governance:\nFollows all defined IT standards and processes (i.e. IT Governance, SM&G, Architecture, etc.), and provides input for improvements to the appropriate process owners as needed\nMaintains a proper balance between business and operational risk\nFollows the defined project management standards and processes\n\nSkill and Experience:\n4+ years of professional experience in software design and development, with strong expertise in modern web technologies including JavaScript, TypeScript, React.js, Next.js, and Node.js.\nProven experience designing and developing scalable, cloud-native microservices using micro-frontend and distributed architectures.\nHands-on experience leveraging GenAI-powered development tools such as GitHub Copilot, ChatGPT, Claude, or similar AI-assisted engineering platforms to improve developer productivity and code quality.\nStrong experience building and integrating GraphQL and RESTful APIs to develop robust, scalable, and secure enterprise applications.\nDeep understanding of React fundamentals, including Hooks, component lifecycle, state management (Redux, MobX, Zustand, React Context), Server-Side Rendering (SSR), asynchronous programming, and modern frontend architecture patterns.\nExperience with CI/CD pipelines, release management, containerization (Docker), Kubernetes/AWS EKS, and application lifecycle management using Git, including branching strategies, pull requests, code reviews, and merge conflict resolution.\nExperience building enterprise-scale web applications using Micro-Frontend architecture and integrating frontend applications with Headless CMS platforms such as Adobe Experience Manager (AEM) or similar CMS solutions.\nStrong hands-on experience developing responsive, reusable, and maintainable user interfaces using React and modern frontend frameworks.\nExperience configuring and optimizing Webpack, Vite, or other modern build tools, including custom bundling strategies and plugin development where applicable.\nStrong understanding of frontend and backend performance optimization, including Core Web Vitals, rendering performance, API optimization, bundle size reduction, lazy loading, caching, and scalability best practices.\nExperience writing and maintaining unit, integration, and end-to-end tests using frameworks such as Jest, Jasmine, Mocha, JUnit with Mockito, Cypress, or Playwright.\nSolid understanding of application performance bottlenecks, production troubleshooting, root cause analysis, and implementing sustainable performance improvements.\nExcellent analytical, debugging, problem-solving, communication, collaboration, and mentoring skills, with experience working in Agile/Scrum environments to deliver high-quality software solutions.\n\nEducation and Certifications:\nGraduate degree in Computer Science or Engineering\n\nWork location: Hyderabad, India.\nWork mode: Hybrid\nMarriott’s core values:\nAt Marriott, our core value make us who we are. We believe that success is never final. As we change and grow, the beliefs that are most important to us stay the same—putting people first, pursuing excellence, embracing change, acting with integrity, and serving our world. Being part of Marriott Tech Accelerator means being part of a proud history and a thriving culture.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483561129",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483561129",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483561129",
+  "deduplicationKey": "marriott tech accelerator|senior software engineer i node react t500 30415|hyderabad telangana india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483561129",
+    "sourceJobId": "4483561129"
+   }
+  ],
+  "relevanceScore": 91,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 22,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, typescript, react, node, git, next.js, docker, aws, ci/cd, microservices",
+   "asks 4+ yrs (stretch)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "git",
+   "javascript",
+   "microservices",
+   "next.js",
+   "node",
+   "react",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4380329378",
+  "jobTitle": "Software Engineer",
+  "companyName": "Copart",
+  "location": "Greater Hyderabad Area",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": null,
+  "description": "Copart, Inc. a technology leader and the premier online vehicle auction platform globally, with over 200 facilities located across the world, Copart links vehicle sellers to more than 750,000 buyers in over 190 countries. We believe in providing an unmatched experience, every day and everywhere, driven by our people, processes, and technology.\n\nResponsibilities\n\nCollaborate with senior engineers to build and enhance web applications based on\n\nprioritized business outcomes.\n\nWrite clean, efficient, and reusable code using React, Node.js, and related\n\nframeworks.\n\nLearn and apply best practices for version control (Git) and CI/CD pipelines (GitHub\n\nActions).\n\nParticipate in Scrum events and assist in achieving sprint goals.\n\nDevelop RESTful APIs using Node.js and Express, ensuring they follow best practices\n\nof performance, scalability, and maintainability.\n\nImplement SQL queries to interact with databases (MariaDB).\n\nGain an understanding of microservices architecture and learn to work within the\n\nteam’s existing codebase.\n\nProactively seek mentorship from both Senior engineers and Staff Engineers to\n\nsupport continuous improvement and growth.\n\nSupervisory Responsibilities\n\nNone\n\nQualifications\n\nFoundational proficiency in JavaScript/TypeScript, React, Node.js.\n\nBasic knowledge of SQL and database queries (MariaDB).\n\nFamiliarity with Git for version control and tools like GitHub Actions for CI/CD.\n\nWillingness to adapt to changes, demonstrating a growth mindset and a desire to\n\nlearn.\n\nStrong problem-solving skills, attention to detail, and a commitment to writing\n\nclean, maintainable code.\n\nExcellent communication skills and openness to constructive feedback.\n\nNA\n\nAt Copart, we are focused on harnessing the power of diversity, inclusion, and collaboration. By embracing diverse perspectives, we open doors to innovation and unleash the full potential of our team. We are dedicated to fostering a workplace where everyone feels appreciated, included, and inspired to grow and contribute meaningfully.\n\nE-Verify Program Participant: Copart participates in the Department of Homeland Security U.S. Citizenship and Immigration Services' E-Verify program (For U.S. applicants and employees only). Please click below to learn more about the E-Verify program:\n\nE-verify Participation\nRight to Work",
+  "postedAtRaw": "2026-10-25",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4380329378",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4380329378",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4380329378",
+  "deduplicationKey": "copart|software engineer|greater hyderabad area",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4380329378",
+    "sourceJobId": "4380329378"
+   }
+  ],
+  "relevanceScore": 91,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 22,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, typescript, react, node, express, sql, git, ci/cd, microservices",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "ci/cd",
+   "express",
+   "git",
+   "javascript",
+   "microservices",
+   "node",
+   "react",
+   "sql",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482919371",
+  "jobTitle": "Software Engineer- Frontend (React)",
+  "companyName": "Edstem Technologies",
+  "location": "Thiruvananthapuram, Kerala, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "3+ years",
+  "description": "About the role\n\nEdstem Technologies is looking for Frontend Software Engineers to build fast, accessible, high-quality web applications using React. You'll work closely with designers, backend engineers and product teams to turn ideas into polished user experiences. AI-assisted development with Claude is part of how we work every day, so you'll be expected to use it as a core part of your engineering workflow.\n\nKey responsibilities\n\nBuild new user-facing features using React and modern JavaScript/TypeScript\nTurn designs and wireframes (Figma or similar) into clean, pixel-accurate, responsive code\nBuild reusable components and front-end libraries for use across projects\nUse Claude (Claude Code or the Claude app) to speed up coding, refactoring, debugging, test writing and documentation, while staying responsible for the quality and correctness of the code\nIntegrate with RESTful APIs and WebSocket services\nOptimize components for performance across browsers and devices\nWrite unit and integration tests and help keep code quality high\nParticipate in code reviews, including reviews of AI-generated code, and give constructive feedback\nWork with team members and stakeholders to deliver the best user experience\nKeep up with emerging front-end technologies and AI-assisted development practices\n\nRequired skills and experience\n\n3–7 years of front-end development experience, with at least 3 years in React\nStrong proficiency in JavaScript (ES6+), including DOM manipulation and the JavaScript object model\nSolid experience with React hooks, component design and state management (Redux / Redux Toolkit or similar)\nWorking knowledge of TypeScript\nHands-on experience coding with Claude, such as generating and refactoring code, writing tests, debugging and reviewing output critically\nExperience with RESTful APIs and WebSocket services\nDeep understanding of HTML5, CSS3, responsive design and cross-browser compatibility\nFamiliarity with modern build tools and pipelines (Vite, Webpack, Babel, ESLint)\nExperience with Git and collaborative development workflows\nExperience with testing tools such as Jest and React Testing Library\nStrong analytical, problem-solving and communication skills\n\nGood to have\n\nExperience with Next.js or server-side rendering\nKnowledge of web accessibility (WCAG) and performance tooling (Lighthouse, Core Web Vitals)\nExperience with CSS frameworks or styling approaches (Tailwind, Styled Components, Material UI)\nExposure to CI/CD pipelines and cloud deployment\n\nLocation and language\n\nCandidates from Kerala are strongly preferred\nMust be able to work from Trivandrum\nStrong English communication skills along with fluency in Malayalam (spoken) is preferred.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482919371",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482919371",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Entry level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482919371",
+  "deduplicationKey": "edstem|software engineer frontend react|thiruvananthapuram kerala india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482919371",
+    "sourceJobId": "4482919371"
+   }
+  ],
+  "relevanceScore": 91,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 16,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, typescript, react, git, next.js, ci/cd",
+   "asks 3+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "ci/cd",
+   "git",
+   "javascript",
+   "next.js",
+   "react",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483552708",
+  "jobTitle": "Senior Node.JS Developer",
+  "companyName": "AIS Technolabs Pvt Ltd",
+  "location": "Ahmedabad, Gujarat, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "Company Name: AIS Technolabs – Acclaimed Web, Mobile App & Game Development Company\n\nJob Title: Senior Node.js Developer / Team Lead – AI Expertise ( Igaming/ gaming Industry)\nEmployment Type: Full-Time\nLocation: Ahmedabad – Onsite\nExperience Required: 4+ Years-8 Years\nIndustry Experience: Minimum 1+ Year of experience in the iGaming / Casino Industry is Mandatory\n\nRole Summary\n\nWe are looking for a highly skilled Senior Node.js Developer / Team Lead with strong backend development expertise and hands-on experience in AI-powered application development. The ideal candidate should have minimum 1 year of relevant iGaming / Casino Industry experience and be capable of leading a team while working on scalable backend and AI-integrated applications.\n\nKey Responsibilities\nLead and mentor a team of Node.js developers across multiple projects.\nDesign, develop, and maintain scalable backend applications and microservices.\nWork on iGaming / Casino Platform-based applications and backend systems.\nArchitect and integrate AI-powered solutions using OpenAI, Claude, Gemini, or similar AI platforms.\nReview code, enforce best practices, and maintain coding standards.\nOptimize application performance, scalability, and security.\nCollaborate with cross-functional teams including Frontend, DevOps, AI, and QA teams.\nHandle project planning, task allocation, and technical decision-making.\nBuild and maintain RESTful APIs and real-time systems.\nTroubleshoot critical production issues and provide technical solutions.\nResearch and implement modern backend and AI technologies.\nTechnical Skills Required\n\nMust-Have Skills\n\nStrong expertise in Node.js, Express.js, and Backend Architecture.\nMinimum 1+ Year of hands-on experience in the iGaming / Casino Industry – Mandatory.\nStrong understanding of iGaming / Casino platforms and their backend systems.\nHands-on experience with AI APIs and LLM integrations.\nExperience with MongoDB, PostgreSQL, MySQL, or similar databases.\nStrong understanding of microservices architecture and API security.\nExperience with cloud platforms such as AWS.\nKnowledge of Docker, CI/CD pipelines, and deployment processes.\nStrong leadership and team management experience.\nExperience with Git and Agile development methodologies.\n\nGood-to-Have Skills\n\nExperience with LangChain, vector databases, and AI orchestration tools.\nKnowledge of WebSockets and scalable real-time systems.\nExposure to Kubernetes and serverless architecture.\nUnderstanding of prompt engineering and AI workflow optimization.\nExperience working with gaming, casino, betting, or other iGaming-related platforms.\nLeadership Responsibilities\nMentor and guide junior and mid-level developers.\nConduct code reviews and technical evaluations.\nEnsure timely delivery of projects and sprint goals.\nManage team productivity and technical escalations.\nCoordinate with clients/stakeholders for technical discussions.\nProvide technical guidance and support to the development team.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483552708",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483552708",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483552708",
+  "deduplicationKey": "ais technolabs|senior node js developer|ahmedabad gujarat india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483552708",
+    "sourceJobId": "4483552708"
+   }
+  ],
+  "relevanceScore": 91,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 22,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: node, express, mysql, mongodb, git, postgresql, docker, aws, ci/cd, microservices",
+   "asks 4+ yrs (stretch)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "express",
+   "git",
+   "microservices",
+   "mongodb",
+   "mysql",
+   "node",
+   "postgresql"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482955166",
+  "jobTitle": "Software Engineer II",
+  "companyName": "Chegg India",
+  "location": "Delhi, Delhi, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "Job Description\n\nAbout the Engineering Team\n\nChegg’s engineering team is a community of passionate builders who partner closely with product managers, designers, and fellow engineers to shape the future of online learning. Grounded in Chegg’s core values— putting students first, acting with integrity, and holding a high bar for excellence —we build with care and accountability. As the world and our industry continue to evolve , we stay true to those principles: we invest in quality, design for scale and longevity, and avoid shortcuts (hello unit tests and documentation) so we can deliver reliable, high-impact experiences on time.\n\nAbout The Role\n\nWe're hiring a Software Engineer II, Frontend to own the design, quality, and delivery of features across our student-facing web applications. This role is focused on building React/Next.js product experiences, the GraphQL-powered data layers behind them, and increasingly, AI-powered study features (step-by-step solutions, Q&A, and personalized study assistance). You will also contribute across the stack as needed — this is a frontend-first role with full-stack reach, and you should be comfortable enough with backend concepts and AWS infrastructure to ramp into our Java or Python backend services when a task calls for it.\n\nWhat You'll Do\n\nOwn frontend features end-to-end — architecture, implementation, testing, staged rollout, and production monitoring — across student-facing web application.\nTranslate product requirements into component architecture, GraphQL query/schema boundaries, and client-state contracts (React Query, Redux Toolkit, or similar) that other engineers build on.\nDebug cross-system issues that surface in the UI — GraphQL supergraph errors, auth/session edge cases, server/client rendering mismatches — by tracing root cause across the stack.\nBuild AI-powered study features responsibly: validate model output (e.g., step-by-step solutions, Q&A answers) before it reaches the UI, design graceful fallbacks for unusable or low-confidence responses, and instrument these flows with telemetry.\nApply security and data-protection practices — input validation, secure auth/session handling, careful treatment of student data — as a default part of the code you ship, not a step someone else checks for.\nOptimize application performance (rendering strategy, bundle size, Core Web Vitals) as an ongoing part of feature work, particularly for high-traffic student study flows.\nOwn the quality of your changes through automated tests (unit, component, and end-to-end), CI stability, and production validation.\nPartner closely with Product, Design, and Backend to deliver and harden high-impact student workflows (search, Q&A, subscription/paywall flows, study tools).\nContribute to engineering quality through strong code reviews — including review of AI-generated code — reusable patterns, shared components, and clear documentation that keeps technical debt low.\nShip end-to-end changes across the web application and its supporting APIs/schema, as needed.\n\nRequired Qualifications\n\nMost qualified candidates will likely bring 4+ years of professional frontend engineering experience building production web applications, with demonstrated ownership of features from design through launch.\nStrong hands-on experience with React and Next.js, and comfort working in TypeScript.\nWorking knowledge of web fundamentals — common security pitfalls (XSS, CSRF, auth/session handling), performance (rendering strategy, bundle size, Core Web Vitals), and accessibility (WCAG/ARIA basics) — and the judgment to apply them without being told to.\nExperience designing and consuming APIs across common paradigms — GraphQL (schema design, codegen, querying), REST, and real-time protocols such as WebSockets — and working with at least one modern client-state approach (React Query, Redux Toolkit, or similar).\nStrong testing and release-validation discipline — unit/component testing (Vitest or Jest, React Testing Library) and end-to-end testing (Playwright or Cypress).\nComfort using AI-assisted development tools responsibly, with the ability to explain, validate, and safely ship the code you produce.\nSound understanding of data structures, algorithms, and general software design principles, applied pragmatically rather than academically.\n\nPreferred Qualifications\n\nWorking knowledge of AWS infrastructure concepts (compute, storage, networking, basic service architecture) and some Node.js backend exposure — enough of a foundation to ramp into our Java or Python backend services when needed.\nExperience with Auth0 or similar authentication providers in a Next.js application.\nExperience shipping AI-powered UI — streaming responses, structured output rendering, graceful handling of model failures. Experience contributing to shared component libraries or tooling used across multiple teams/repos.\nFamiliarity with frontend observability tooling (New Relic or similar).\nExperience in EdTech, e-commerce, or another high-traffic, subscription-based consumer product company.\n\nTech Stack\n\nFrontend: React (18/19), Next.js, TypeScript, GraphQL (Apollo tooling, codegen against a shared supergraph), React Query / Redux Toolkit / Zustand, styled-components, MUI\nBackend (foundational): Node.js, AWS (compute/storage/networking basics) — enough to ramp into Kotlin/Java (Spring) or Python (FastAPI/Django) services owned by backend engineering\nTesting: Vitest, React Testing Library, Playwright\nAuth / Delivery: Auth0, GitLab CI\nObservability: New Relic\nAI / ML: OpenAI, RAG, MCP, AWS Bedrock (via shared backend integrations)\n\nWhy do we exist?\n\nStudents are working harder than ever before to stabilize their future. Our recent research study called State of the Student shows that nearly 3 out of 4 students are working to support themselves through college and 1 in 3 students feel pressure to spend more than they can afford. We founded our business on provided affordable textbook rental options to address these issues. Since then, we’ve expanded our offerings to supplement many facets of higher educational learning through Chegg Study, Chegg Math, Chegg Writing, Chegg Internships, Chegg Skills, and more to support students beyond their college experience. These offerings lower financial concerns for students by modernizing their learning experience. We exist so students everywhere have a smarter, faster, more affordable way to student.\n\nVideo Shorts\n\nLife at Chegg: http://youtu.be/Fwf90zgaOLA\n\nChegg Corporate Career Page: https://jobs.chegg.com/\n\nChegg India: http://www.cheggindia.com/\n\nChegg Israel: http://www.chegg.com/about/working-at-chegg/israel/\n\nChegg Skills: https://www.chegg.com/skills\n\nChegg out our culture and benefits!\n\nhttp://www.chegg.com/about/working-at-chegg/benefits/\n\nChegg is an equal opportunity employer",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482955166",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482955166",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482955166",
+  "deduplicationKey": "chegg india|software engineer ii|delhi delhi india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482955166",
+    "sourceJobId": "4482955166"
+   }
+  ],
+  "relevanceScore": 86,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 17,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: typescript, react, node, rest, next.js, java, aws",
+   "asks 4+ yrs (stretch)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "java",
+   "kotlin",
+   "next.js",
+   "node",
+   "python",
+   "react",
+   "rest",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483534585",
+  "jobTitle": "Java Full-Stack Developer",
+  "companyName": "Tata Consultancy Services",
+  "location": "Thiruvananthapuram, Kerala, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "5+ years",
+  "description": "About the job\n\nJava Full-Stack Developer\n\nGreetings from TCS! ! !\n\nWalk in Drive planned on 31st October 2026 in TCS Trivandrum.\n\nTCS has been a great pioneer in feeding the fire of young Techies like you. We are a global leader in the technology arena and there’s nothing that can stop us from growing together. Your role is of key importance, as it lays down the foundation for the entire project.\nMake sure you have a valid EP number before interview.\nTo create an EP Number, please visit https://ibegin.tcs.com/iBegin/register\nKindly complete the registration if you have not done it yet.\n\nP osition: Java Full-Stack Developer\nExp erience: 5 to 12 years\nL ocation: Trivandrum\n\nJOB DESCRIPTION\n\nKey Responsibilities\n\nFrontend Development: Build responsive, pixel-perfect, and highly interactive user interfaces using React.js , Redux/Context API, HTML5, CSS3, and modern frontend build tools.\nBackend Development: Design and develop scalable microservices and robust RESTful APIs using Java (8 or higher) , Spring Boot , and Spring Cloud frameworks.\nDatabase Management: Write optimized queries, design schemas, and manage data integrity using relational (e.g., PostgreSQL, MySQL) and/or Non-Relational (e.g., MongoDB) databases.\nArchitecture & Design: Participate in architectural discussions, ensuring application designs align with enterprise standards for security, scalability, and performance.\nDevOps & Deployment: Collaborate on CI/CD pipeline setups using tools like Jenkins, Docker, Kubernetes, and cloud platforms (AWS/Azure/GCP).\nQuality Assurance: Write clean, maintainable, and testable code. Implement unit testing using JUnit/Mockito for the backend and Jest/Enzyme/RTL for the frontend.\nCollaboration: Work closely with UX/UI designers, product managers, and cross-functional teams in an Agile/Scrum environment to deliver high-quality features.\n\nRequired Skills & Qualifications\n\nBackend Technical Skills:\nStrong core Java proficiency (Java 8 / 11 / 17).\nHands-on experience with Spring Boot , Spring MVC, Spring Security, and Hibernate/JPA.\nDeep understanding of Microservices architecture and RESTful API design.\nExperience with messaging queues like Apache Kafka or RabbitMQ is a plus.\n\nFrontend Technical Skills:\nExtensive experience with React.js and its core principles (Hooks, Lifecycle, State Management).\nProficiency in state management libraries like Redux , Redux-Saga, or Context API.\nStrong command of modern JavaScript (ES6+), TypeScript, HTML5, and CSS3/SASS.\nExperience with UI frameworks like Material-UI, Tailwind CSS, or Bootstrap.\n\nDatabase & Tools:\nProficiency with SQL databases (MySQL, PostgreSQL, Oracle) and NoSQL (MongoDB, Redis).\nExperience with version control tools, specifically Git .\nFamiliarity with build tools like Maven, Gradle, Webpack, or Vite.\n\nSoft Skills & Education:\nBachelor’s/Master’s degree in Computer Science, Information Technology, or a related field.\nStrong problem-solving and analytical skills.\nExcellent communication and team collaboration abilities.\nAbility to thrive in a fast-paced, Agile environment.\n\nPreferred/Nice-to-Have Skills\nExperience with cloud services (AWS EC2, S3, RDS, Lambda or Azure equivalent).\nFamiliarity with containerization ( Docker , Kubernetes ).\nKnowledge of GraphQL.\nExperience with Next.js or modern micro-frontend architectures\n\nAlso please refer below link for downloading application form. If you don’t remember your password, please click forgot password. Fill application form and then download .\n\nTCS iBegin\n\nPlease bring all the mandatory documents below in hard copy for the interview:\n*Latest Copy of resume\n*TCS Application form\n*Original and Photocopy of Government ID proof (PAN or Adhaar)\n*Passport Size photographs - 2\n\nProfessional Skills : Strong analytical, problem‑solving, communication, and ownership mindset.TCS Eligibility Criteria: *BE/B.tech/MCA/M.Sc./MS with minimum 5 years of relevant IT-experience post\nQualification. *Only Full-Time courses would beconsidered.*Candidates who have attended TCS interview in the last 1 months need not apply.Referrals are always welcome!!!Kindly don't apply if already attended interview in last 1 months.\n\nThanks & Regards\nAthira p s",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483534585",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483534585",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483534585",
+  "deduplicationKey": "tata consultancy services|java full stack developer|thiruvananthapuram kerala india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483534585",
+    "sourceJobId": "4483534585"
+   }
+  ],
+  "relevanceScore": 85,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 25,
+   "experience": 0,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, typescript, react, mysql, mongodb, sql, git, next.js, java, spring boot, redis, kafka",
+   "asks 5+ yrs (exceeds profile)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "git",
+   "java",
+   "javascript",
+   "kafka",
+   "microservices",
+   "mongodb",
+   "mysql",
+   "next.js",
+   "postgresql",
+   "rabbitmq",
+   "react",
+   "redis",
+   "spring boot",
+   "sql",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482924634",
+  "jobTitle": "Full Stack Engineer",
+  "companyName": "Talentgigs",
+  "location": "Coimbatore, Tamil Nadu, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "5+ years",
+  "description": "Full Stack Developer\nExperience: 5+ Years\nLocation: Coimbatore, Tamil Nadu\nEmployment Type: Full-Time & On site\n\nAbout the Role\nWe are looking for a skilled Full Stack Developer with strong experience in React.js and\nNode.js to join our engineering team. The ideal candidate will be responsible for designing,\ndeveloping, and maintaining scalable web applications while collaborating closely with\ncross-functional teams. Experience with Vue.js will be an added advantage.\n\nKey Responsibilities\n• Design, develop, and maintain responsive and scalable web applications.\n• Build and enhance frontend applications using React.js.\n• Develop robust backend services and APIs using Node.js.\n• Design and integrate RESTful APIs and third-party services.\n• Write clean, maintainable, and efficient code following best practices.\n• Collaborate with product managers, designers, and other developers.\n• Optimize application performance, security, and scalability.\n• Participate in code reviews and technical discussions.\n• Troubleshoot and resolve production issues.\n\nRequired Skills & Qualifications\n• 5+ years of experience in Full Stack Development.\n• Strong proficiency in React.js and modern JavaScript (ES6+).\n• Solid experience in Node.js and backend development.\n• Strong understanding of HTML5, CSS3, and responsive web design.\n• Experience with REST APIs and microservices.\n• Knowledge of MySQL, PostgreSQL, MongoDB, or similar databases.\n• Familiarity with Git and Agile/Scrum methodologies.\n• Strong problem-solving and debugging skills.\nGood to Have\n• Experience with Vue.js.\n• Exposure to AWS, Azure, or GCP.\n• Experience with Docker, Kubernetes, or CI/CD pipelines.\n• Knowledge of TypeScrip",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482924634",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482924634",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482924634",
+  "deduplicationKey": "talentgigs|full stack engineer|coimbatore tamil nadu india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482924634",
+    "sourceJobId": "4482924634"
+   }
+  ],
+  "relevanceScore": 84,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 24,
+   "experience": 0,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, react, node, rest, mysql, mongodb, git, postgresql, docker, aws, ci/cd, microservices",
+   "asks 5+ yrs (exceeds profile)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "ci/cd",
+   "docker",
+   "git",
+   "javascript",
+   "microservices",
+   "mongodb",
+   "mysql",
+   "node",
+   "postgresql",
+   "react",
+   "rest"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481435588",
+  "jobTitle": "Fullstack - Node.js, PostgreSQL, React",
+  "companyName": "UST",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "Role Description\n\nWho we are:\n\nAt UST, we help the world’s best organizations grow and succeed through transformation. Bringing together the right talent, tools, and ideas, we work with our client to co-create lasting change. Together, with over 30,000 employees in 30+ countries, we build for boundless impact—touching billions of lives in the process. Visit us at .\n\nSummary\n\nExperience - 4+yrs\n\nLocation - Bangalore, Hyderabad, Chennai, Kochi, TVM,Noida, Gurgaon, Pune and Kolkata\n\nWorking Hours - UK\n\nReports To Archie Product Team Overview Archie is an internal web tool supporting Innovation and Architecture Review process. It serves as the central hub for application reviews and is used by teams across the business – from expert advisory teams to non-technical business users and citizen developers. This Lead Application Developer role is a step up from our existing developer position – owning code quality, steering architecture decisions, and driving engineering best practices – while still spending significant time hands-on in the codebase. You will work closely with the Product Team that defines requirements and priorities, but you will be the primary voice on how things get built.\n\nKey Responsibilities\n\nTechnical Direction & Decisions\n\nOwn implementation approach and architecture choices for the Archie platform; propose and drive refactors when warranted. Make day-to-day technical trade-off decisions – refactor vs. ship, sequencing within sprints, build vs. buy. Define and enforce coding standards, patterns, and best practices across the codebase. Evaluate and recommend technology or tooling changes that improve reliability, developer experience, or performance. Act as the go-to for infrastructure-level decisions (app-service config, database schema evolution, blob-storage strategy) without needing deep Azure networking knowledge. Execution & Engineering Oversight Conduct PR reviews on all code changes; provide direct, constructive feedback on quality, performance, and maintainability. Ensure tickets move to completion; surface blockers early and escalate when needed. Maintain sprint-board hygiene – tickets should accurately reflect reality (shipped / in-review / stuck). Drive knowledge sharing with any additional developers – codebase walkthroughs, feature documentation, onboarding. Hands-On Development Remain the primary developer implementing features, bug fixes, and potential refactoring of underlying logic. Stay close to the codebase at all times; handle complex tickets personally. Write appropriate tests to improve reliability and maintainability across the application. Tasks will range from smaller changes and bug fixes to large features and architectural refactors. CI/CD & DevOps Own the CI/CD pipeline end-to-end; propose and implement improvements to reduce or eliminate deployment downtime. Support and improve deployment processes across GitHub Actions and Azure App Service. Proactively identify reliability risks and build monitoring or ing where gaps exist. Collaboration with Product Team Partner with the Product Team on requirement gathering; push back constructively on scope, feasibility, and timelines. Provide technical input during sprint planning and sprint reviews to ensure business alignment. Communicate progress, risks, and solutions clearly to both technical and non-technical stakeholders.\n\nTech Stack\n\nReact | Node.js | Azure App Service | PostgreSQL (Drizzle ORM / migrations) | Azure Blob Storage | GitHub Actions Requirements\n\nMust-Have\n\n4+ years of strong Node.js + React application development experience.\n\nDemonstrated experience in application infrastructure and architecture – you should be comfortable designing system components, not just consuming APIs. Proven track record of owning code quality across a team or project – PR reviews, coding standards enforcement, technical debt management. Experience acting as a tech lead or senior IC steering technical direction on a product. Solid CI/CD experience (GitHub Actions / Azure App Service preferred); able to design and improve pipelines, not just use them. Working knowledge of PostgreSQL – schema design, query optimization, migrations, troubleshooting. Methodical approach to design, implementation, and testing; strong testing mindset. Ability to work independently – gather requirements, execute, and report progress/solutions clearly. Good-to-Have Experience with Azure ecosystem beyond App Service (Blob Storage, Key Vault, App Insights, etc.). Familiarity with Drizzle ORM or similar modern TypeScript ORMs. Experience working with AI-generated codebases (Archie has been primarily built using AI coding tools). Prior experience mentoring or onboarding junior developers. Exposure to security best practices for web applications.\n\nWhat Sets\n\nThis Role Apart from the Developer Role Developer (4–5 yrs) Developer (4-5 yrs) Implements changes defined by others Steers technical direction and architecture Follows coding standards Defines and enforces coding standards Uses CI/CD pipelines Owns and improves CI/CD pipelines Works on assigned tickets Sequences tickets; makes refactor-vs-ship calls Reports progress Drives knowledge sharing, PR reviews, and mentoring Executes within sprints Provides technical input into sprint planning.\n\nWhat We Believe\n\nWe’re proud to embrace the same values that have shaped UST since the beginning. Since day one, we’ve been building enduring relationships and a culture of integrity. And today, it's those same values that are inspiring us to encourage innovation from everyone, to champion diversity and inclusion and to place people at the centre of everything we do.\n\nHumility\n\nWe will listen, learn, be empathetic and help selflessly in our interactions with everyone.\n\nHumanity\n\nThrough business, we will better the lives of those less fortunate than ourselves.\n\nIntegrity\n\nWe honour our commitments and act with responsibility in all our relationships.\n\nEqual Employment Opportunity Statement\n\nUST is an Equal Opportunity Employer. We believe that no one should be discriminated against because of their differences, such as age, disability, ethnicity, gender, gender identity and expression, religion, or sexual orientation.\n\nAll employment decisions shall be made without regard to age, race, creed, colour, religion, sex, national origin, ancestry, disability status, veteran status, sexual orientation, gender identity or expression, genetic information, marital status, citizenship status or any other basis as protected by federal, state, or local law.\n\nUST reserves the right to periodically redefine your roles and responsibilities based on the requirements of the organization and/or your performance.\n\nTo support and promote the values of UST.\nComply with all Company policies and procedures\n\nSkills\n\nNode.js, PostgreSQL, React",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481435588",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481435588",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481435588",
+  "deduplicationKey": "ust|fullstack node js postgresql react|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481435588",
+    "sourceJobId": "4481435588"
+   }
+  ],
+  "relevanceScore": 82,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 13,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: typescript, react, node, postgresql, ci/cd",
+   "asks 4+ yrs (stretch)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "ci/cd",
+   "node",
+   "postgresql",
+   "react",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482676772",
+  "jobTitle": "Senior Full-Stack Engineer",
+  "companyName": "BrightCHAMPS",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "About BrightCHAMPS\n\nBrightChamps is a fast-growing EdTech company building learning experiences that help children develop real-world skills and confidence. We blend pedagogy, technology, and data to create scalable learning programs.\n\nAbout the Role\nWe're looking for a hands-on full-stack engineer who has built and operated real-time communication systems at scale. You'll work on WebRTC, video conferencing, and streaming infrastructure, and you'll own the health of those systems end to end. Building the system is only half the job. We expect you to know whether it is actually working, using telemetry, metrics, traces, browser waterfalls, WebRTC statistics, and network behavior. \"The deployment succeeded\" isn't proof that the system is fine. The data is. You will also work on agentic and AI-powered platforms, using AI as a force multiplier across engineering, debugging, and product problem-solving.\n\nWhat We're Looking For\n\nRequired\nStrong experience building full-stack applications. Minimum 4 years\nStrong experience with React.js, Next.js, Node.js, and MySQL.\nHands-on experience building or operating WebRTC/video conferencing systems, including\nWebRTC providers or platforms at meaningful scale.\nStrong understanding of WebRTC and real-time media: simulcast, adaptive bitrate, codecs,\nRTP/RTCP, ICE, STUN/TURN, and related concepts.\nStrong debugging and root-cause analysis skills.\nExperience with production telemetry, monitoring, and observability.\nAbility to analyze browser waterfalls and network behavior.\nExperience with distributed systems and production infrastructure.\nStrong understanding of AI development tools and workflows.\n\nStrong Plus\n\nExperience building agentic platforms or AI-powered products.\nExperience with large-scale conferencing platforms or thousands of concurrent real-time\nconnections.\nExperience with Amazon IVS, LiveKit, Agora, Twilio, Daily, Vonage, or similar platforms.\nExperience with OpenTelemetry or similar observability tooling.\nExperience building real-time dashboards and monitoring systems.\nExperience with media quality analytics and WebRTC QoS.\nExperience with Kubernetes and AWS.\n\nWhat You'll Do\n1. Work on agentic and AI platforms\n\nBuild applications where AI agents interact with users, tools, APIs, and business systems.\nUnderstand agent workflows, tool calling, state management, and orchestration.\nBuild reliable systems around LLMs and agents, with attention to latency, reliability,\nobservability, and cost.\nEvaluate and monitor AI-powered workflows.\nUse AI aggressively as a development multiplier. You should ask \"Can AI do this for me?\" before\nspending hours on repetitive work by hand.\n\n2. Full-stack engineering\n\nFrontend: Build with React.js and Next.js, with a solid grasp of browser performance, state\nmanagement, API integration, and modern web architecture. Debug issues at the frontend,\nbrowser, and network levels.\nBackend: Design and build APIs and backend services in Node.js. Work with asynchronous and\ndistributed systems, MySQL and database design, caching, queues, and event-driven\narchitecture.\nInfrastructure: Understand cloud infrastructure, containers, deployment, scaling, and\nobservability, and debug across application, infrastructure, and network layers.",
+  "postedAtRaw": "2026-10-25",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482676772",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482676772",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482676772",
+  "deduplicationKey": "brightchamps|senior full stack engineer|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482676772",
+    "sourceJobId": "4482676772"
+   }
+  ],
+  "relevanceScore": 82,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 13,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: react, node, mysql, next.js, aws",
+   "asks 4+ yrs (stretch)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "aws",
+   "mysql",
+   "next.js",
+   "node",
+   "react"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4477976407",
+  "jobTitle": "Full Stack Engineer",
+  "companyName": "Fabric",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "3+ years",
+  "description": "About Fabric\nFabric is an AI hiring platform. Companies use our AI interviews, sourcing agents, and cheating detection to screen and hire at scale. We've run over 100,000 interviews for customers including Meesho, CRED, and Kearney.\nWe're four founders who've known each other since college, building since early 2025. Before Fabric, we ran a staffing business to $2M in annual revenue.\n\nAbout the Role\nFabric is looking for a Full Stack Engineer who can own product features end-to-end, from design through delivery. This role is ideal for an engineer who enjoys building reliable backend systems, shipping thoughtful frontend experiences, and working in a fast-moving product environment.\nYou will work across the stack, with a strong focus on Python and Django , while also contributing to frontend development using React and Node.js . We are looking for someone who has demonstrated ownership of independently delivered modules, complete product features, or startup-style generalist engineering work.\n\nKey Responsibilities\nOwn full product features from design through delivery.\nBuild backend services using Python, Django, and Celery .\nWork on distributed systems and asynchronous processing workflows.\nDevelop frontend experiences using React and Node.js .\nCollaborate with product and engineering stakeholders to ship reliable features.\nContribute to architecture, implementation, testing, and production readiness of product modules.\nTake ownership of engineering decisions and deliver features with minimal handholding.\n\nMust-Have Skills\nStrong hands-on experience with Python .\nStrong hands-on experience with Django .\nAbility to independently own and ship complete features or modules.\nExperience working in early- to mid-stage product companies.\nSolid understanding of backend engineering and API development.\n\nGood-to-Have Skills\nExperience with Celery .\nExperience with asynchronous job processing or background workers.\nExperience with distributed systems.\nFrontend development experience with React .\nExperience with Node.js .\nExperience working in startup or product engineering environments.\n\nDesired Experience\n3+ years of relevant software engineering experience.\nExperience working in early- to mid-stage product companies.\nDemonstrated ownership of full features, independently delivered modules, or startup-style generalist product engineering work.\nExperience building scalable backend services and contributing across the stack.\n\nWhat We're Looking For\nWe are looking for a product-minded, ownership-driven engineer who is comfortable working across backend and frontend systems.\nThe ideal candidate should be able to:\nMove quickly in a fast-paced environment.\nMake pragmatic engineering decisions.\nWork independently with minimal handholding.\nCollaborate closely with product and engineering teams.\nBuild and ship reliable, user-facing features end-to-end.\n\nIdeal Candidate Profile\nThe ideal candidate is a full-stack or backend-leaning product engineer who has worked in a product company, preferably at an early- to mid-stage startup.\n\nThey should have:\nStrong hands-on experience with Python and Django .\nExperience owning and delivering features end-to-end.\nA solid understanding of backend systems and API development.\nExposure to React and/or Node.js .\nThe ability to work independently and make sound engineering decisions.\nA strong product mindset and a bias toward execution.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4477976407",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4477976407",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Associate",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4477976407",
+  "deduplicationKey": "fabric|full stack engineer|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4477976407",
+    "sourceJobId": "4477976407"
+   }
+  ],
+  "relevanceScore": 81,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 6,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: react, node",
+   "asks 3+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "node",
+   "python",
+   "react"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4455406921",
+  "jobTitle": "Senior Front End Software Engineer",
+  "companyName": "Qualys",
+  "location": "Pune Division, Maharashtra, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "5+ years",
+  "description": "Come work at a place where innovation and teamwork come together to support the most exciting missions in the world!\n\nAbout The Role\n\nWe are looking for a passionate, highly motivated Senior Frontend Engineer to design, build, and scale high-performance web applications for enterprise customers, with strong React/JavaScript skills and curiosity about AI-assisted engineering.\n\nKey Responsibilities\n\nDesign and maintain scalable, performant UIs using React and modern JavaScript.\nBuild and maintain reusable component libraries and design systems.\nContribute to frontend architecture, state management, and performance optimization.\nParticipate in code reviews, uphold best practices, and mentor junior engineers.\nOwn CI/CD workflows (Jenkins) and manage source control (Bitbucket/Git).\nTrack work in Jira with clear technical scoping.\nEvaluate and integrate AI-assisted development tools to improve velocity and quality.\nChampion accessibility, cross-browser compatibility, and responsive design.\nTranslate Figma designs into pixel-perfect, production-ready UI.\n\nRequired Skills And Experience\n\nJavaScript (ES6+) — strong fundamentals and asynchronous patterns.\nReact (5+ years hands-on) — hooks, component composition, performance optimization, state management (Redux Toolkit or equivalent).\nNode.js — building/maintaining backend services, REST APIs, or BFF layers.\nHTML5 and CSS3 — semantic markup, responsive layouts, CSS-in-JS or utility-first frameworks.\nJira, Jenkins, Bitbucket/Git — sprint tracking, CI/CD, and version control.\nVite and/or Webpack — bundling, build configuration, and performance tuning.\nPractical exposure to AI-assisted development — LLM coding assistants (e.g., Claude, Copilot, Devin), prompt engineering, agentic workflows, and MCP or similar tool-use patterns.\nMicro-frontend architectures and Module Federation.\nWriting unit test cases using Vitest, React Testing Library, Mocha, or Chai.\nStrong grasp of software design patterns and their application in frontend architecture.\n\nGood to Have\n\nExposure to SSE (Server-Sent Events) or real-time streaming patterns.\nPrior mentoring or feature-team leadership experience.\nTypeScript.\nDocker and Kubernetes.\n\nExperience Level\n\n5 to 9 years of professional frontend engineering experience, including at least 2-4 years on production React applications at scale.\n\nWhat We Offer\n\nOwnership of high-impact, customer-facing products.\nA collaborative culture balancing technical depth with pragmatic delivery.\nOpportunity to work at the forefront of AI-assisted software development.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4455406921",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4455406921",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4455406921",
+  "deduplicationKey": "qualys|senior front end software engineer|pune division maharashtra india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4455406921",
+    "sourceJobId": "4455406921"
+   }
+  ],
+  "relevanceScore": 80,
+  "relevanceCategory": "high_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 20,
+   "experience": 0,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "skills: javascript, typescript, react, node, rest, git, docker, ci/cd",
+   "asks 5+ yrs (exceeds profile)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "ci/cd",
+   "docker",
+   "git",
+   "javascript",
+   "node",
+   "react",
+   "rest",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4474684900",
+  "jobTitle": "Frontend Developer",
+  "companyName": "Headout",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "1+ years",
+  "description": "👩 💻The role:\nAs a Frontend Engineer/Software Engineer, Web (Frontend) at Headout, you’ll be part of a pod building products and features that directly impact our users. You’ll design and develop high-performance web applications, work closely with product and design teams, and ensure smooth operations by addressing gaps in the development process. This is a chance to learn, grow, and contribute to building reliable and scalable systems used by a global audience.\n\n🤩What makes this role special:\nBuild projects end-to-end, starting from scratch and seeing them through to launch.\nTake ownership of features and bring innovative solutions to life.\nCollaborate with experienced developers on diverse projects, from simple improvements to complex systems.\nBe part of a team where your ideas are valued and your contributions directly shape the product.\nGain real-world experience in web development while growing your skills in a fast-paced environment.\n\n💝What skills & experience do you need:\nStrong proficiency in React (must-have), along with JavaScript and TypeScript.\nSolid understanding of HTML, CSS, responsive design, and cross-browser compatibility.\nExperience with Git and basic performance optimization.\n1-3 years of frontend development experience, preferably in a startup environment.\nCuriosity, problem-solving ability, and eagerness to learn and grow.\n\n➕ Bonus:\nContributions to open-source projects or personal side projects.\nExposure to mobile or backend technologies.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4474684900",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4474684900",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Associate",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4474684900",
+  "deduplicationKey": "headout|frontend developer|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4474684900",
+    "sourceJobId": "4474684900"
+   }
+  ],
+  "relevanceScore": 77,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 20,
+   "skills": 12,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title is adjacent to target roles",
+   "skills: javascript, typescript, react, git",
+   "asks 1+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "git",
+   "javascript",
+   "react",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482930826",
+  "jobTitle": "Software Engineer – Full Stack (.NET 8 / C# / Golang / ReactJS)",
+  "companyName": "IT Consulting LLP",
+  "location": "Navi Mumbai, Maharashtra, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "1+ years",
+  "description": "We’re Hiring | Software Engineer – Full Stack Development (.NET 8, C#, Golang & ReactJS)\n\n📍 Location: Vashi, Navi Mumbai\n\n💼 Experience: 1–2 Years\n\n💰 CTC: Up to ₹8 LPA\n\n🕒 Employment Type: Full-time\n\nAre you a passionate software developer looking to build enterprise applications, backend services and modern web solutions? Join our team and gain hands-on exposure to application development, API integrations and business process automation.\n\n🔹 What You’ll Work On\n\nDevelop backend applications and REST APIs using C#, .NET 8 / ASP.NET Core and Golang.\nBuild responsive web interfaces using ReactJS, JavaScript, HTML5 and CSS3.\nWork with SQL databases, data integrations and third-party APIs.\nSupport Zoho CRM integrations, ERP connectivity and workflow automation.\nDebug applications, perform testing, support deployments and maintain technical documentation.\nCollaborate with senior developers and business teams to deliver reliable software solutions.\n\n🔹 What We’re Looking For\n\n1–2 years of hands-on software development experience.\nPractical knowledge of C#, .NET 8 / ASP.NET Core, Golang and ReactJS.\nUnderstanding of REST APIs, SQL, object-oriented programming and API integrations.\nFamiliarity with Git, Visual Studio / VS Code and Postman.\nGood analytical, problem-solving and communication skills.\nA willingness to learn, collaborate and take ownership of development tasks.\n\n⭐ Good to Have\n\nExposure to Zoho CRM, webhooks, ERP integrations, Docker, CI/CD or cloud platforms such as Azure or AWS.\n\nInterested in building practical business applications and growing your development skills?\n\n📩 Interested candidates can apply through LinkedIn or share their updated CV via direct message.\n\n#Hiring #SoftwareEngineer #FullStackDeveloper #DotNet #CSharp #Golang #ReactJS #SoftwareDevelopment #NaviMumbaiJobs\n\nSkills: golang,.net,sql,reactjs,ful stack developer,rest api,api,.net core",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482930826",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482930826",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Associate",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482930826",
+  "deduplicationKey": "it consulting|software engineer full stack net 8 c golang reactjs|navi mumbai maharashtra india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482930826",
+    "sourceJobId": "4482930826"
+   }
+  ],
+  "relevanceScore": 75,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 15,
+   "skills": 15,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "title requires .net, c#, golang",
+   "skills: javascript, rest, sql, git, docker, aws, ci/cd",
+   "asks 1+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   ".net",
+   "aws",
+   "c#",
+   "ci/cd",
+   "docker",
+   "git",
+   "golang",
+   "javascript",
+   "rest",
+   "sql"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483546807",
+  "jobTitle": "Graduate Software Engineer",
+  "companyName": "Hewlett Packard Enterprise",
+  "location": "Greater Kolkata Area",
+  "workMode": null,
+  "employmentType": "Full-time",
+  "experienceRequirements": "0+ years",
+  "description": "This role has been designated as ‘Remote/Teleworker’, which means you will primarily work from home.\n\nWho We Are\n\nHewlett Packard Enterprise is the global edge-to-cloud company advancing the way people live and work. We help companies connect, protect, analyze, and act on their data and applications wherever they live, from edge to cloud, so they can turn insights into outcomes at the speed required to thrive in today’s complex world. Our culture thrives on finding new and better ways to accelerate what’s next. We know varied backgrounds are valued and succeed here. We have the flexibility to manage our work and personal needs. We make bold moves, together, and are a force for good. If you are looking to stretch and grow your career our culture will embrace you. Open up opportunities with HPE.\n\nJob Description\n\nJob Family Definition:\n\nDesigns, develops, troubleshoots and debugs software programs for software enhancements and new products. Develops software including operating systems, compilers, routers, networks, utilities, databases and Internet-related tools. Determines hardware compatibility and/or influences hardware design.\n\nManagement Level Definition\n\nContributes to assignments of limited scope by applying technical concepts and theoretical knowledge acquired through specialized training, education, or previous experience. Acts as team member by providing information, analysis and recommendations in support of team efforts. Exercises independent judgment within defined parameters.\n\nResponsibilities\n\nCodes and programs enhancements, updates, and changes for portions and subsystems of systems software, including operating systems, compliers, networking, utilities, databases, and Internet-related tools\nExecutes established test plans and protocols for assigned portions of code; identifies, logs, and debugs assigned issues.\nDevelops understanding of and relationship with internal and outsourced development partners on software systems design and development.\nParticipates as a member of project team of other software systems engineers and internal and outsourced development partners to develop reliable, cost effective and high quality solutions for low to moderately- complex products.\n\nEducation And Experience Required\n\nBachelor's or Master's degree in Computer Science, Information Systems, or equivalent\nTypically 0-2 years experience\n\nKnowledge And Skills\n\nExperience or understanding of software systems design tools and languages.\nGood analytical and problem solving skills.\nUnderstanding of design for software systems running on multiple platform types\nUnderstanding of basic testing, coding, and debugging procedures\nGood written and verbal communication skills; mastery in English and local language.\n\nAccessibility\n\nHPE is committed to creating an inclusive and accessible workplace and encourages applications from all qualified individuals, including those with disabilities. If you believe you require accommodation during any stage of the application or interview process, please submit your request by completing our secure form linked here.\n\nNote: This option is reserved for applicants needing assistance/reasonable accommodation related to a disability.\n\nWhat We Can Offer You\n\nHealth & Wellbeing\n\nWe strive to provide our team members and their loved ones with a comprehensive suite of benefits that supports their physical, financial and emotional wellbeing.\n\nPersonal & Professional Development\n\nWe also invest in your career because the better you are, the better we all are. We have specific programs catered to helping you reach any career goals you have — whether you want to become a knowledge expert in your field or apply your skills to another division.\n\nUnconditional Inclusion\n\nWe are unconditionally inclusive in the way we work and celebrate individual uniqueness. We know varied backgrounds are valued and succeed here. We have the flexibility to manage our work and personal needs. We make bold moves, together, and are a force for good.\n\nLet's Stay Connected\n\nFollow @HPECareers on Instagram to see the latest on people, culture and tech at HPE.\n\nJob\n\nEngineering\n\nJob Level\n\nTCP_01\n\nHPE is an Equal Employment Opportunity/ Veterans/Disabled/LGBT employer. We do not discriminate on the basis of race, gender, or any other protected category, and all decisions we make are made on the basis of qualifications, merit, and business need. Our goal is to be one global team that is representative of our customers, in an inclusive environment where we can continue to innovate and grow together. Please click here: Equal Employment Opportunity.\n\nHewlett Packard Enterprise is EEO Protected Veteran/ Individual with Disabilities.\n\nHPE will comply with all applicable laws related to employer use of arrest and conviction records, including laws requiring employers to consider for employment qualified applicants with criminal histories.\n\nRecruitment Fraud Alert\n\nWe have become aware of an increase in fraudulent recruitment activities in which individuals impersonate our company or authorized recruitment agencies to offer fake employment opportunities. These scams may occur through false websites, emails, social media, or chat-based applications and often aim to obtain personal information or money. Please note that Hewlett Packard Enterprise (HPE), its direct and indirect subsidiaries and affiliated companies, and its authorized recruitment agencies/vendors will never charge a candidate a registration fee, hiring fee, or any other fee in connection with its recruitment and hiring process. We also never request personal information such as back account details, Social Security numbers, or national IDs via social media or chat applications.\n\nAll legitimate job opportunities will come through official company channels, and candidates are responsible for verifying the credentials of any third party claiming to represent the company. Any reliance on fraudulent communication is at the individual’s own risk, and HPE disclaims legal liability for any resulting damages. If you suspect recruitment fraud, do not share personal information or make any payments and report the incident to your local authorities immediately.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483546807",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483546807",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Not Applicable",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483546807",
+  "deduplicationKey": "hewlett packard enterprise|graduate software engineer|greater kolkata area",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483546807",
+    "sourceJobId": "4483546807"
+   }
+  ],
+  "relevanceScore": 75,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 0,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "asks 0+ yrs (fits ~3)",
+   "home location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482680675",
+  "jobTitle": "Full Stack Engineer(.NET, React, JavaScript, and Python 3 to 4 year exp)",
+  "companyName": "Cognior",
+  "location": "Ernakulam, Kerala, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "3+ years",
+  "description": "Company Description Cognior is an AI-first startup focused on transforming how businesses drive customer adoption of digital platforms. The company combines a modular orchestration layer with intelligent analytics to streamline user onboarding, engagement, and compliance. Its AI-powered Adoption Platform (DAP) captures real-time behavioral data and provides contextual insights with minimal engineering overhead. Cognior’s plug-and-play solutions scale across industries such as BFSI, healthcare, manufacturing, and education. The team is dedicated to turning complex digital workflows into intuitive, user-friendly experiences for enterprises.\nRole Description This is a full-time, on-site role based in Ernakulam for a Full Stack Engineer (3 to 4 year exp ) specializing in .NET, React, JavaScript, and Python. The engineer will design, develop, and maintain end-to-end web applications, including building robust backend services and APIs, and implementing responsive, user-centric interfaces. Daily responsibilities include writing clean, testable code, integrating frontend and backend components, optimizing performance, and collaborating with product, design, and data teams to deliver new features. The role also involves troubleshooting and debugging issues, contributing to architectural decisions, and participating in code reviews and continuous improvement of development practices. The engineer will work closely with the AI and analytics teams to integrate platform capabilities into scalable, secure solutions.\nQualifications\nStrong skills in Back-End Web Development and Software Development, including experience with .NET and Python.\nProficiency in Front-End Development using React, JavaScript, and Cascading Style Sheets (CSS).\nExperience in Full-Stack Development, integrating frontend and backend services into cohesive applications.\nSolid understanding of web application architecture, RESTful APIs, and database systems (SQL/NoSQL).\nFamiliarity with version control (e.g., Git) and collaborative development workflows.\nKnowledge of secure coding practices, performance optimization, and scalable system design.\nBachelor’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.\nAbility to work in a fast-paced startup environment, collaborate with cross-functional teams, and communicate clearly.\nExperience with cloud platforms (e.g., AWS, Azure, GCP) and CI/CD pipelines is an advantage.",
+  "postedAtRaw": "2026-10-25",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482680675",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482680675",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Entry level",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482680675",
+  "deduplicationKey": "cognior|full stack engineer net react javascript and python 3 to 4 year exp|ernakulam kerala india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482680675",
+    "sourceJobId": "4482680675"
+   }
+  ],
+  "relevanceScore": 74,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 15,
+   "skills": 14,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "title requires .net, python",
+   "skills: javascript, react, sql, git, aws, ci/cd",
+   "asks 3+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   ".net",
+   "aws",
+   "ci/cd",
+   "git",
+   "javascript",
+   "python",
+   "react",
+   "sql"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483391821",
+  "jobTitle": "Frontend Engineer",
+  "companyName": "Flexiple",
+  "location": "India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "3+ years",
+  "description": "Frontend Engineer\nA US-headquartered product company scaling its India hub\nLocation: Remote (India)\nAbout the Company\nA profitable, US-headquartered product company is scaling its India engineering hub and has partnered with Flexiple to hire frontend engineers for its core web application. The product already serves a large, established customer base, so the bar for polish and reliability is high. Flexiple is a managed marketplace that helps global companies build high-performing teams and GCCs in India.\nRole Overview\nAs a Frontend Engineer, you will maintain and extend a mature web application, balancing new feature delivery with the discipline a large existing user base demands.\nKey Responsibilities\nFeature Delivery\nBuild new features and workflows within an established React codebase\nWork with product managers to scope and estimate frontend work accurately\nRefactor legacy components as the product evolves, without regressions\n\nReliability & Craft\nMaintain test coverage and catch regressions before they reach customers\nMonitor frontend performance and error rates, fixing issues proactively\n\nIdeal Candidate Profile\n3 to 7 years building and maintaining production frontend applications\nStrong command of JavaScript or TypeScript, React, and state management\nExperience working within an established, larger codebase\nClear written and spoken English and a reliable remote-work setup\n\nPreferred Qualifications\nExperience with testing frameworks such as Jest, Cypress, or Playwright\nFamiliarity with performance profiling and web accessibility standards\nA degree in computer science or a related field\n\nWhat We Offer\nA frontend engineering seat at an established, US-headquartered product company\nRemote-friendly, pan-India hiring with long-term placement\nWork on a product used daily by a large, real customer base\nOne application considered for this and future matched roles\n\nHiring Process\nHR Screening → Technical Assignment → Engineering Round → Culture Fit",
+  "postedAtRaw": "2026-10-25",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483391821",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483391821",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Associate",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483391821",
+  "deduplicationKey": "flexiple|frontend engineer|india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483391821",
+    "sourceJobId": "4483391821"
+   }
+  ],
+  "relevanceScore": 74,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 20,
+   "skills": 9,
+   "experience": 15,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title is adjacent to target roles",
+   "skills: javascript, typescript, react",
+   "asks 3+ yrs (fits ~3)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "javascript",
+   "react",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481418982",
+  "jobTitle": "Senior Full Stack Engineer (.Net)",
+  "companyName": "Info Services",
+  "location": "Chennai, Tamil Nadu, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": null,
+  "description": "Senior Full Stack Engineer - .Net Technologies\nLocation: Chennai\nMode: Full Time\n\nRole Summary\nLooking for a hands-on Full Stack Engineer with strong .NET + AWS + Frontend (Web Components / Angular) experience. This is a build + maintain role that involves cloud-native development and ownership of a legacy application (training provided).\n\nMust-Have Skills:\n• hands-on development experience\n• Strong .NET (C# 8 / .NET 8)\n• AWS services – SNS, SQS, Lambda (real usage, not theory)\n• Frontend: Web Components, Stencil JS, TypeScript, AngularJS\n• Databases: SQL Server / MySQL + NoSQL\n• Microservices architecture\n• Git / Bitbucket for version control\n• Understanding of distributed systems & shift-left mindset\n• Ability to work on legacy applications\n• Strong debugging, performance tuning skills",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481418982",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481418982",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481418982",
+  "deduplicationKey": "info services|senior full stack engineer net|chennai tamil nadu india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481418982",
+    "sourceJobId": "4481418982"
+   }
+  ],
+  "relevanceScore": 66,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 15,
+   "skills": 14,
+   "experience": 7,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "title requires .net",
+   "skills: typescript, mysql, sql, git, aws, microservices",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   ".net",
+   "aws",
+   "c#",
+   "git",
+   "microservices",
+   "mysql",
+   "sql",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4470254217",
+  "jobTitle": "Sr Software Engineer - ReactJS, TypeScript & SQL/NoSQL",
+  "companyName": "Blue Yonder",
+  "location": "Hyderabad, Telangana, India",
+  "workMode": "remote",
+  "employmentType": null,
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": "2026-10-25",
+  "status": "unknown",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4470254217",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4470254217",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4470254217",
+  "deduplicationKey": "blue yonder|sr software engineer reactjs typescript sql nosql|hyderabad telangana india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4470254217",
+    "sourceJobId": "4470254217"
+   }
+  ],
+  "relevanceScore": 65,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 6,
+   "experience": 9,
+   "location": 15,
+   "employment": 3,
+   "quality": 2
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "no description; skills scored from title only",
+   "skills: typescript, sql",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "sql",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481426979",
+  "jobTitle": "TTT - .NET Gen AI Full Stack Developer - Senior",
+  "companyName": "EY",
+  "location": "Kolkata, West Bengal, India",
+  "workMode": null,
+  "employmentType": "Full-time",
+  "experienceRequirements": "4+ years",
+  "description": "At EY, you’ll have the chance to build a career as unique as you are, with the global scale, support, inclusive culture and technology to become the best version of you. And we’re counting on your unique voice and perspective to help EY become even better, too. Join us and build an exceptional experience for yourself, and a better working world for all.\n\nFull Stack .Net Developer – Tax Senior – TTT\n\nEY’s GDS Tax Technology team’s mission is to develop, implement and integrate technology solutions that better serve our clients and engagement teams. As a member of EY’s core Tax practice, you’ll develop a deep tax technical knowledge, outstanding database and programming skills to develop and maintains innovative solutions for our client-serving Tax professionals.\n\nThe Senior Developer role is in the Solution Delivery pillar. The main function of this pillar is to develop, and test solutions created to support the GDS Tax Practice.\n\nThe opportunity\n\nWe’re looking for a Tax Senior with expertise in Full Stack .Net Development to join the TTT team in Tax SL. This is a fantastic opportunity to be part of a pioneer firm whilst being instrumental in the growth of a new service offering.\n\nYour Key Responsibilities\n\nResponsible for technical design and development of solutions as established by Solution Development pioneer\nEstimate technical effort, work breakdown structure, risks, and solutions at a solution level\nMonitor adherence to methodologies, tools and KPIs.\nStakeholder management.\nAbility to maintain effective and consistent communication within the team, with peers and stakeholders across own and other teams.\nProvide input to application development/engineering methodologies, standards and leading practices.\nAnticipate problems before they occur; defines the problem; identifies possible causes; work with a team to find solutions; select and implement most appropriate solution. Ability to clearly articulate both problems and proposed solutions\nProactive approach to identifying issues and presenting solutions and options, and where appropriate, leading to resolution\n\nSkills And Attributes For Success\n\nFull Stack Web Developer (.Net, .Net Core).\nMVC, Single page application, Design Pattern, Typescript (Angular or Vue), Web API, Entity Framework / ADO.Net.\nSQL Commands, Stored Procedures, DB performance tuning.\nExposure to 3rd party controls like Telerik or Kendo UI,\nWorking Knowledge of Development Methodologies like Agile.\nWorking knowledge of Version Control Using GIT/ TFVC Exposure to CICD and Micro services, Azure Cloud platform is an added advantage.\nStrong technical skills designing, developing, and implementing applications through logical life cycles for their portfolio of projects.\nGood communication skill and awareness of new and emerging technologies.\nWorks with limited direction and oversight\nProvide supervision and direction to team members and staff\n\nTo qualify for the role, you must have\n\nBachelor's degree in Computer Science or related discipline or equivalent work experience.\nMaster’s degree preferred.\n4-8 years of relevant experience.\nManagement experience a plus\n\nIdeally, you’ll also have\n\nThorough knowledge Tax or Finance Domain.\nStrong analytical skills and attention to detail.\nThe ability to adapt your work style to work with both internal and client team members\n\nWhat We Look For\n\nFull Stack .Net Development experience.\nWorking collaboratively in a team environment\nExcellent oral and written communication skills\nStrong analytical and problem-solving skills\nBE, BTech, MCA degree required.\nTax or Finance Domain a plus.\n\nWhat We Offer\n\nEY Global Delivery Services (GDS) is a dynamic and truly global delivery network. We work across six locations – Argentina, China, India, the Philippines, Poland and the UK – and with teams from all EY service lines, geographies and sectors, playing a vital role in the delivery of the EY growth strategy. From accountants to coders to advisory consultants, we offer a wide variety of fulfilling career opportunities that span all business disciplines. In GDS, you will collaborate with EY teams on exciting projects and work with well-known brands from across the globe. We’ll introduce you to an ever-expanding ecosystem of people, learning, skills and insights that will stay with you throughout your career.\n\nContinuous learning: You’ll develop the mindset and skills to navigate whatever comes next.\nSuccess as defined by you: We’ll provide the tools and flexibility, so you can make a meaningful impact, your way.\nTransformative leadership: We’ll give you the insights, coaching and confidence to be the leader the world needs.\nDiverse and inclusive culture: You’ll be embraced for who you are and empowered to use your voice to help others find theirs.\n\nEY | Building a better working world\n\nEY exists to build a better working world, helping to create long-term value for clients, people and society and build trust in the capital markets.\n\nEnabled by data and technology, diverse EY teams in over 150 countries provide trust through assurance and help clients grow, transform and operate.\n\nWorking across assurance, consulting, law, strategy, tax and transactions, EY teams ask better questions to find new answers for the complex issues facing our world today.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481426979",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481426979",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481426979",
+  "deduplicationKey": "ey|ttt net gen ai full stack developer senior|kolkata west bengal india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481426979",
+    "sourceJobId": "4481426979"
+   }
+  ],
+  "relevanceScore": 63,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 15,
+   "skills": 9,
+   "experience": 9,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "title requires .net",
+   "skills: typescript, sql, git",
+   "asks 4+ yrs (stretch)",
+   "home location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   ".net",
+   "git",
+   "sql",
+   "typescript"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481437211",
+  "jobTitle": "Senior Frontend Developer",
+  "companyName": "GoodSpace AI",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": "Full-time",
+  "experienceRequirements": "5+ years",
+  "description": "About the Role\nYou will own experiences used by thousands of merchants every day, from merchant dashboards and analytics to customer portals and product widgets. You will:\nDevelop, optimize, and maintain high-performance UI components across Recurpay product and Shopify widgets.\nCollaborate with product managers and designers to translate ideas and wireframes into smooth, production-ready features.\nChallenge requirements instead of blindly implementing them.\nIntegrate with backend APIs and ensure efficient data flows.\nPartner closely with Product, Design, and Backend teams.\nCreate reusable systems, not one-off solutions. Obsess over performance, edge cases, and delightful UX.\nPush the team forward through better engineering practices and thoughtful reviews.\n\nKey Responsibilities\nDevelop, optimize, and maintain high-performance UI components across Recurpay product and Shopify widgets.\nCollaborate with product managers and designers to translate ideas and wireframes into smooth, production-ready features.\nChallenge requirements instead of blindly implementing them.\nIntegrate with backend APIs and ensure efficient data flows.\nPartner closely with Product, Design, and Backend teams.\nCreate reusable systems, not one-off solutions. Obsess over performance, edge cases, and delightful UX.\nPush the team forward through better engineering practices and thoughtful reviews.\n\nRequirements\nStrong understanding of JavaScript, jQuery, React, HTML and CSS is a must.\n5 years of experience in SaaS, building modern frontend applications.\nAbility to consume and work with APIs efficiently.\nStrong debugging and problem-solving skills.\nFamiliarity with Shopify Liquid templates and Storefront APIs.\nUnderstanding of browser performance and responsive design.\nFamiliarity with Git and modern development workflows.\n\nPreferred Qualifications\nOwnership and Curiosity > Experience\nYou naturally take responsibility without waiting to be asked.\nYou care about outcomes, not just tickets.\nYou enjoy figuring things out independently.\nYou ask \"Why are we building this?\" before \"How should I build it?\"\nYou sweat details and care about user experience.\nYou continuously learn and experiment.\nYou value speed but never compromise craftsmanship.\nYou enjoy solving problems that nobody has documented yet.\nYou are comfortable with ambiguity and thrive in startup environments.\nYou don't need hand-holding.",
+  "postedAtRaw": "2026-10-26",
+  "status": "open",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481437211",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481437211",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "seniority": "Mid-Senior level",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481437211",
+  "deduplicationKey": "goodspace ai|senior frontend developer|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481437211",
+    "sourceJobId": "4481437211"
+   }
+  ],
+  "relevanceScore": 59,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 20,
+   "skills": 9,
+   "experience": 0,
+   "location": 15,
+   "employment": 5,
+   "quality": 10
+  },
+  "matchReasons": [
+   "title is adjacent to target roles",
+   "skills: javascript, react, git",
+   "asks 5+ yrs (exceeds profile)",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "git",
+   "javascript",
+   "react"
+  ],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4482668901",
+  "jobTitle": "Back End Developer",
+  "companyName": "Simora.ai",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": null,
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": "2026-10-25",
+  "status": "unknown",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4482668901",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4482668901",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "postedAt": "2026-10-25",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4482668901",
+  "deduplicationKey": "simora ai|back end developer|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4482668901",
+    "sourceJobId": "4482668901"
+   }
+  ],
+  "relevanceScore": 49,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 20,
+   "skills": 0,
+   "experience": 9,
+   "location": 15,
+   "employment": 3,
+   "quality": 2
+  },
+  "matchReasons": [
+   "title is adjacent to target roles",
+   "no description; skills scored from title only",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483526623",
+  "jobTitle": "Engineer II, Software Dev.",
+  "companyName": "Liquidity Services",
+  "location": "Chennai, Tamil Nadu, India",
+  "workMode": "remote",
+  "employmentType": null,
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": "2026-10-26",
+  "status": "unknown",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483526623",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483526623",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483526623",
+  "deduplicationKey": "liquidity services|engineer ii software dev|chennai tamil nadu india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483526623",
+    "sourceJobId": "4483526623"
+   }
+  ],
+  "relevanceScore": 37,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 0,
+   "experience": 9,
+   "location": 15,
+   "employment": 3,
+   "quality": 2
+  },
+  "matchReasons": [
+   "no description; skills scored from title only",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483526864",
+  "jobTitle": "Reactjs Developer",
+  "companyName": "Tata Consultancy Services",
+  "location": "Bengaluru, Karnataka, India",
+  "workMode": "remote",
+  "employmentType": null,
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": "2026-10-26",
+  "status": "unknown",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483526864",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483526864",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483526864",
+  "deduplicationKey": "tata consultancy services|reactjs developer|bengaluru karnataka india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483526864",
+    "sourceJobId": "4483526864"
+   }
+  ],
+  "relevanceScore": 37,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 0,
+   "experience": 9,
+   "location": 15,
+   "employment": 3,
+   "quality": 2
+  },
+  "matchReasons": [
+   "no description; skills scored from title only",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4483557021",
+  "jobTitle": "Packaged/SaaS Application Engineer",
+  "companyName": "Accenture in India",
+  "location": "Greater Kolkata Area",
+  "workMode": null,
+  "employmentType": null,
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": "2026-10-26",
+  "status": "unknown",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4483557021",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4483557021",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4483557021",
+  "deduplicationKey": "accenture in india|packaged saas application engineer|greater kolkata area",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4483557021",
+    "sourceJobId": "4483557021"
+   }
+  ],
+  "relevanceScore": 37,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 0,
+   "experience": 9,
+   "location": 15,
+   "employment": 3,
+   "quality": 2
+  },
+  "matchReasons": [
+   "no description; skills scored from title only",
+   "home location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "linkedin",
+  "sourceJobId": "4481452203",
+  "jobTitle": "Engineer Software Senior I",
+  "companyName": "IGT",
+  "location": "Chennai, Tamil Nadu, India",
+  "workMode": "remote",
+  "employmentType": null,
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": "2026-10-26",
+  "status": "unknown",
+  "canonicalJobUrl": "https://www.linkedin.com/jobs/view/4481452203",
+  "applicationUrl": "https://www.linkedin.com/jobs/view/4481452203",
+  "platformFilter": "posted within 24h (LinkedIn filter)",
+  "postedAt": "2026-10-26",
+  "postedAtConfidence": "date_only",
+  "freshness": "uncertain",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "linkedin:4481452203",
+  "deduplicationKey": "igt|engineer software senior i|chennai tamil nadu india",
+  "sources": [
+   {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/jobs/view/4481452203",
+    "sourceJobId": "4481452203"
+   }
+  ],
+  "relevanceScore": 35,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 8,
+   "skills": 0,
+   "experience": 7,
+   "location": 15,
+   "employment": 3,
+   "quality": 2
+  },
+  "matchReasons": [
+   "no description; skills scored from title only",
+   "India remote"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [],
+  "firstSeenAt": "2026-10-26T12:02:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "zoho_recruit",
+  "sourceJobId": "91154000013324157",
+  "jobTitle": "Senior React Engineer",
+  "companyName": "prescienceds",
+  "location": "Bangalore, India",
+  "workMode": null,
+  "employmentType": "Full time",
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": null,
+  "status": "open",
+  "canonicalJobUrl": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324157",
+  "applicationUrl": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324157",
+  "postedAt": null,
+  "postedAtConfidence": "none",
+  "freshness": "date_unverified",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "zoho_recruit:91154000013324157",
+  "deduplicationKey": "prescienceds|senior react engineer|bangalore india",
+  "sources": [
+   {
+    "platform": "zoho_recruit",
+    "url": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324157",
+    "sourceJobId": "91154000013324157"
+   }
+  ],
+  "relevanceScore": 62,
+  "relevanceCategory": "medium_match",
+  "scoreBreakdown": {
+   "title": 30,
+   "skills": 3,
+   "experience": 7,
+   "location": 12,
+   "employment": 5,
+   "quality": 5
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "no description; skills scored from title only",
+   "skills: react",
+   "India location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "react"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "zoho_recruit",
+  "sourceJobId": "91154000013324121",
+  "jobTitle": "Senior Full Stack Engineer (Python + React)",
+  "companyName": "prescienceds",
+  "location": "Bangalore, India",
+  "workMode": null,
+  "employmentType": "Permanent",
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": null,
+  "status": "open",
+  "canonicalJobUrl": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324121",
+  "applicationUrl": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324121",
+  "postedAt": null,
+  "postedAtConfidence": "none",
+  "freshness": "date_unverified",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "zoho_recruit:91154000013324121",
+  "deduplicationKey": "prescienceds|senior full stack engineer python react|bangalore india",
+  "sources": [
+   {
+    "platform": "zoho_recruit",
+    "url": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324121",
+    "sourceJobId": "91154000013324121"
+   }
+  ],
+  "relevanceScore": 47,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 15,
+   "skills": 3,
+   "experience": 7,
+   "location": 12,
+   "employment": 5,
+   "quality": 5
+  },
+  "matchReasons": [
+   "title matches a core target role",
+   "title requires python",
+   "no description; skills scored from title only",
+   "skills: react",
+   "India location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "python",
+   "react"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ },
+ {
+  "sourcePlatform": "zoho_recruit",
+  "sourceJobId": "91154000013324143",
+  "jobTitle": "Senior Backend Engineer (Python)",
+  "companyName": "prescienceds",
+  "location": "Bangalore, India",
+  "workMode": null,
+  "employmentType": "Full time",
+  "experienceRequirements": null,
+  "description": "",
+  "postedAtRaw": null,
+  "status": "open",
+  "canonicalJobUrl": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324143",
+  "applicationUrl": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324143",
+  "postedAt": null,
+  "postedAtConfidence": "none",
+  "freshness": "date_unverified",
+  "collectedAt": "2026-10-26T12:10:28Z",
+  "id": "zoho_recruit:91154000013324143",
+  "deduplicationKey": "prescienceds|senior backend engineer python|bangalore india",
+  "sources": [
+   {
+    "platform": "zoho_recruit",
+    "url": "https://prescienceds.zohorecruit.in/jobs/Careers/91154000013324143",
+    "sourceJobId": "91154000013324143"
+   }
+  ],
+  "relevanceScore": 34,
+  "relevanceCategory": "low_match",
+  "scoreBreakdown": {
+   "title": 5,
+   "skills": 0,
+   "experience": 7,
+   "location": 12,
+   "employment": 5,
+   "quality": 5
+  },
+  "matchReasons": [
+   "title is adjacent to target roles",
+   "title requires python",
+   "no description; skills scored from title only",
+   "India location"
+  ],
+  "exclusionReasons": [],
+  "requiredSkills": [
+   "python"
+  ],
+  "firstSeenAt": "2026-10-26T12:00:07Z",
+  "lastSeenAt": "2026-10-26T12:10:28Z"
+ }
+]
