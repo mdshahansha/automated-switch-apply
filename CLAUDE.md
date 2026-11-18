@@ -137,6 +137,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] No LaTeX syntax errors (balanced braces, correct commands)
 - [ ] No spelling or grammar errors
 - [ ] Agentic coding / AI tooling references mention **Claude Code** by name
+- [ ] Experience bullets follow action + what + measurable result + how (`python3 tools/bullet_lint.py <cv.tex>`); every number is recorded in `01-candidate-profile.md`, never invented to clear a flag
 - [ ] Cover letter is addressed to the correct person (or "Dear Hiring Manager" if unknown)
 - [ ] Cover letter fits approximately one page
 - [ ] CV section headings (`\section{...}`) and the References boilerplate line match the CV's language, not left as the English template defaults (see `05-cv-templates.md`)

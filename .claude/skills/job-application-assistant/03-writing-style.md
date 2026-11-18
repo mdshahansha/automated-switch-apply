@@ -85,6 +85,24 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - Be specific: numbers, tools, outcomes
 - Vary the structure (not every bullet starts the same way)
 
+### Resume bullet formula (CV experience bullets)
+Write each experience bullet as **action + what was built + measurable result + how**.
+- Good: "Cut report generation from 40 s to 6 s by moving it to background jobs with paginated queries."
+- Good: "Reduced authorization checks from 80 ms to under 1 ms by caching role lookups in Redis with TTL invalidation."
+- Weak: "Worked on reports and improved performance." (no action detail, no number, no method)
+
+Rules:
+- **Numbers must be real and defensible.** Use only metrics recorded in `01-candidate-profile.md`. Interviewers drill into every number, so never invent, round up or extrapolate one. When no metric exists, describe scope instead (users, endpoints, services, team size) and keep the "how".
+- Put the result early enough to survive a 6-second scan.
+- One bullet, one achievement. Split bullets that join two unrelated wins with "and".
+- Run `python3 tools/bullet_lint.py <cv.tex>` after drafting. It flags bullets missing an action verb, a number or a "how" clause. Fix the flags or confirm they are deliberate; never fix a flag by adding an unrecorded number.
+
+### Portfolio and GitHub links on the CV
+- Link 2-3 deep projects, not many tutorial clones. Each linked repo's README should state the problem, show an architecture diagram, explain trade-offs and link a live demo.
+- Hiring managers give GitHub a few seconds. Pinned repos and READMEs matter more than contribution history.
+- Where employer code is private, link an anonymized case study (problem, architecture, trade-offs, results) instead of the code.
+- Never link a repo or case study that does not exist yet. Record new ones in `01-candidate-profile.md` first.
+
 ## Language for Different Role Types
 
 ### Technical/ML roles
