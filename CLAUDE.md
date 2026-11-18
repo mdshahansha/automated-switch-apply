@@ -36,7 +36,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **CV language:** English (default) <!-- English unless your market expects otherwise; /setup asks -->
 
 - **Status:** Employed as a Full Stack Engineer at Osbee Solution Private Limited.
-- **Notice period:** 30 days.
+- **Notice period:** 15 days (candidate-confirmed 2026-11-03).
 - **Work authorization:** India. Other countries' work authorization is not declared.
 - **Work preferences:** Any Indian city; remote, hybrid, or onsite. International roles must permit remote work from India.
 - **Salary expectations:** Flexible; no minimum, current CTC, or numeric expectation supplied. Ask if a form requires a number.
@@ -95,7 +95,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
 - International roles must explicitly support working remotely from India; a generic "remote" label is insufficient.
-- Do not claim overseas work authorization or immediate availability. Notice period is 30 days.
+- Do not claim overseas work authorization or immediate availability. Notice period is 15 days.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

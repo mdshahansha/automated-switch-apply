@@ -17,8 +17,11 @@ framework_version: 1.1.3
 - **Portfolio:** https://mohammad-shahansha.web.app/
 - **Status:** Employed as a Full Stack Engineer at Osbee Solution Private Limited.
 - **Constraints:** Any Indian city; remote, hybrid, or onsite. International roles must allow remote work from India.
-- **Notice period:** 30 days.
+- **Notice period:** 15 days (candidate-confirmed 2026-11-03; supersedes the earlier 30-day entry). Can join within 2 weeks.
+- **Relocation:** Willing to relocate for on-site roles (candidate-confirmed 2026-11-03, e.g. South Delhi).
+- **WhatsApp:** same as phone, +91 8228820500.
 - **Work authorization:** India. Authorization in other countries and overseas relocation are not declared.
+- **Driver's license:** Holds a valid driver's license (candidate-confirmed 2026-11-16).
 - **Salary:** Flexible; no current CTC, minimum, or numeric expectation supplied. Do not invent a numeric screening answer.
 - **Target roles:** Full-stack, software, backend, Java/Spring Boot, React, and React Native engineering are suggested search directions based on confirmed stacks. No exclusive title or seniority requirement supplied.
 - **Resume naming:** Use `Mohammad_Shahansha_Resume.pdf` for shared and uploaded resumes. Never put the target employer's name in a resume filename, PDF title, or displayed heading. Keep tailored versions in separate application folders to avoid overwriting them.
@@ -51,7 +54,7 @@ a hard no, not a gap to smooth over. -->
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| B.Tech in Computer Science | Graduated 2023; start date not supplied | Heritage Institute of Technology, Kolkata, India | Coursework, grades, and thesis not supplied |
+| B.Tech in Computer Science | July 2019-June 2023 (candidate-supplied form answers, 2026-10-26); CGPA 7.43 | Heritage Institute of Technology, Kolkata, India | Coursework, grades, and thesis not supplied |
 
 ## Professional Experience
 
@@ -65,6 +68,7 @@ Kolkata, India
 - Integrated DocuSign and Zoho APIs; resumes report approximately five hours per week saved in operations effort.
 - Supported production troubleshooting, root cause analysis, and monitoring with CloudWatch, Datadog, Prometheus, and Grafana.
 - The full-stack variant also reports WebRTC audio/video, Socket.io messaging, PostgreSQL-backed message history, and Python operational scripts.
+- Candidate-confirmed 2026-11-03: has hands-on Kafka experience and chose Kafka over RabbitMQ for messaging. Candidate-confirmed 2026-11-03: this Kafka work was at Osbee. Phrase as Kafka messaging at Osbee without inventing throughput metrics or system details.
 - Backend-focused variants additionally report LLM API integrations, message queues, and Kubernetes. Confirm the specific system and personal contribution before detailed screening answers about these variant-specific claims.
 
 ### Software Engineer (Full Stack) - CodingNinjas (June 2023-April 2025)
@@ -86,7 +90,9 @@ Gurgaon, India
 - **Candidate-confirmed working stacks:** JavaScript/TypeScript with React.js, Next.js, Node.js/Express.js; Java with Spring Boot; React Native.
 - **Data and APIs:** SQL, MySQL, PostgreSQL, MongoDB, Redis, REST APIs, Hibernate/JPA, Spring Security, JWT, OAuth 2.0, RBAC.
 - **Testing:** Jest, React Testing Library, JUnit, Mockito, Postman; no per-tool proficiency level or years supplied.
-- **Additional resume-reported skills:** Python, WebRTC, Socket.io, WebSockets, LLM API integration and embeddings, Kafka/RabbitMQ/SQS, Kubernetes. These are not a claim of expert proficiency or a substitute for project-specific experience confirmation.
+- **Additional resume-reported skills:** Python, WebRTC, Socket.io, WebSockets, LLM API integration and embeddings, Kafka/RabbitMQ/SQS (Kafka hands-on use candidate-confirmed 2026-11-03, chosen over RabbitMQ), Kubernetes. These are not a claim of expert proficiency or a substitute for project-specific experience confirmation.
+
+- **AI-assisted development:** Candidate-confirmed: uses Claude Code daily for boilerplate, refactoring, tests and documentation; reviews and tests all generated code.
 
 ### Domain Expertise
 - Energy-sector CRM: lead, payment, and document workflows.
