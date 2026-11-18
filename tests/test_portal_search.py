@@ -240,6 +240,63 @@ class PortalSearchTests(unittest.TestCase):
             self.assertEqual(out.getvalue(), "")
             self.assertEqual(json.loads(err.getvalue())["code"], "PORTAL_SEARCH_ERROR")
 
+    def portals(self):
+        return portal.discover(self.root, self.registry)
+
+    def test_resolve_splits_portal_names_from_focus_words(self):
+        cases = {
+            "India remote": (["India", "remote"], ""),
+            "Hirist Instahyre Cutshort": (["Hirist", "Instahyre", "Cutshort"], ""),
+            "Himalayas RemoteOK": (["Himalayas", "RemoteOK"], ""),
+            "we work remotely react": (["we work remotely"], "react"),
+            "data science": ([], "data science"),
+            "himalayas senior backend": (["himalayas"], "senior backend"),
+        }
+        for words, expected in cases.items():
+            with self.subTest(words=words):
+                self.assertEqual(portal.resolve_words(self.portals(), words.split()), expected)
+
+    def test_resolve_cli_reports_automatic_and_manual_portals_without_running_anything(self):
+        out, portals = io.StringIO(), self.portals()
+        with patch.object(portal, "discover", lambda *_: portals), contextlib.redirect_stdout(out):
+            self.assertEqual(portal.main(["resolve", "Hirist", "RemoteOK", "react"]), 0)
+        result = json.loads(out.getvalue())
+        self.assertEqual(result["automatic"], ["remoteok-search"])
+        self.assertEqual(result["manual"], ["hirist-search"])
+        self.assertEqual(result["focus"], "react")
+        self.assertEqual(self.calls, [])
+
+    def test_every_portal_declares_hosts_and_a_known_apply_method(self):
+        doc = json.loads(self.registry.read_text(encoding="utf-8"))
+        for row in doc["portals"]:
+            with self.subTest(portal=row["id"]):
+                self.assertIsInstance(row.get("hosts"), list)
+                self.assertIn(row.get("apply_method"), doc["apply_methods"])
+                if row["id"] != "aijobs-search":
+                    self.assertTrue(row["hosts"], "only the ambiguous AIJobs entry may have no host")
+
+    def test_host_matches_registered_portals_including_browser_only_ones(self):
+        cases = {
+            "https://www.hirist.tech/j/backend-1": ("hirist-search", "portal_account"),
+            "https://in.indeed.com/viewjob?jk=1": ("indeed-india-search", "portal_account"),
+            "https://www.workatastartup.com/jobs/1": ("ycombinator-search", "portal_account"),
+            "https://remoteok.com/remote-jobs/1": ("remoteok-search", "employer_link"),
+        }
+        for url, (identity, method) in cases.items():
+            with self.subTest(url=url):
+                result = portal.classify_host(self.portals(), url)
+                self.assertEqual(result["classification"], "portal")
+                self.assertEqual((result["portal"]["id"], result["portal"]["apply_method"]), (identity, method))
+
+    def test_host_fails_closed_on_look_alikes_and_unknown_hosts(self):
+        for url in ("https://evilhirist.tech/j/1", "https://hirist.tech.evil.example/j/1",
+                    "https://hirist.tech@evil.example/j/1", "https://job-boards.greenhouse.io/acme/jobs/1"):
+            with self.subTest(url=url):
+                self.assertEqual(portal.classify_host(self.portals(), url)["classification"], "unverified")
+        for url in ("ftp://hirist.tech/x", "not a url"):
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                portal.classify_host(self.portals(), url)
+
 
 if __name__ == "__main__":
     unittest.main()

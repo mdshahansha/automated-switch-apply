@@ -242,6 +242,17 @@ def prepare(state: dict, job: dict, cv: Path, cover_letter: Path | None = None,
     if state.get("status") in {"applied", "submission_unverified"}:
         raise ValueError("already submitted or uncertain; reconcile the existing application before preparing again")
     job = validate_job(job)
+    # Idempotent re-run: the same job, destination and byte-identical documents
+    # keep a still-valid approval instead of forcing the user to approve again.
+    if state.get("status") == "approved" and state.get("approval") and status in (None, "manual_handoff"):
+        docs = {"cv": document(cv)}
+        if cover_letter is not None:
+            docs["cover_letter"] = document(cover_letter)
+        same = {"job_key": make_key(job["company"], job["title"], job["url"]), "company": job["company"],
+                "title": job["title"], "platform": job["portal"], "job_url": job["url"],
+                "official_destination": job["application_url"], "documents": docs}
+        if same == state["approval"]["binding"]:
+            return copy.deepcopy(state)
     status = status or (state.get("status") if state.get("status") in PREPARATION_STATUSES else "drafted")
     if status not in PREPARATION_STATUSES:
         raise ValueError("prepare status must be drafted, blocked or manual_handoff")
@@ -282,6 +293,12 @@ def unchanged_documents(state: dict) -> None:
 
 def approve(state: dict, reference: str, *, now: str | None = None) -> dict:
     validate_state(state)
+    if state.get("status") == "approved" and state.get("approval"):
+        # Same approval still valid: a repeat is a no-op, not a reason to re-ask.
+        unchanged_documents(state)
+        if state["approval"]["binding"] == binding(state):
+            return copy.deepcopy(state)
+        raise ValueError("job, destination or attachments changed since approval; prepare again")
     if state.get("status") not in {"drafted", "prepared", "manual_handoff"}:
         raise ValueError("only a prepared, unblocked application can be approved")
     unchanged_documents(state)
@@ -361,6 +378,42 @@ def unverified(state: dict, reason: str, *, now: str | None = None) -> dict:
     return result
 
 
+def next_step(state: dict) -> dict:
+    """Resume point after an interruption: the stage reached and the next permitted step.
+
+    Stages: preparation -> approval -> submission -> verification -> done. A step that
+    belongs to the user (sign-in, account, CAPTCHA, email code) is named as such.
+    """
+    validate_state(state)
+    status = state.get("status")
+    if not state or status is None:
+        return {"stage": "preparation", "next": "prepare", "actor": "agent",
+                "detail": "Record job, destination and document hashes with `prepare`."}
+    if status == "blocked":
+        return {"stage": "preparation", "next": "resolve_blocker", "actor": "user", "detail": state.get("blocker")}
+    if status in {"drafted", "prepared", "manual_handoff"}:
+        return {"stage": "approval", "next": "approve", "actor": "user",
+                "detail": "Ask once for explicit approval of these exact documents and destination, then record it."}
+    if status == "approved":
+        try:
+            unchanged_documents(state)
+            valid = state["approval"]["binding"] == binding(state)
+        except (ValueError, OSError):
+            valid = False
+        if not valid:
+            return {"stage": "approval", "next": "prepare", "actor": "agent",
+                    "detail": "Documents or destination changed since approval; prepare again and re-ask."}
+        return {"stage": "submission", "next": "fill_and_submit", "actor": "agent",
+                "detail": "Approval is valid: fill the form and submit in the user's signed-in browser session. "
+                          "Sign-in, account creation, passwords, CAPTCHA and email codes belong to the user.",
+                "official_destination": state.get("official_destination"),
+                "documents": {k: v["path"] for k, v in state["documents"].items()}}
+    if status == "submission_unverified":
+        return {"stage": "verification", "next": "check_receipt", "actor": "agent",
+                "detail": "Check portal history or a receipt; record `submitted` or keep unverified. Never retry blindly."}
+    return {"stage": "done", "next": None, "actor": None, "detail": "Confirmed submitted; record outcome with /outcome."}
+
+
 def cli_state_path(path: Path, *, root: Path = APPLICATIONS) -> Path:
     resolved = Path(path).resolve()
     try:
@@ -397,6 +450,7 @@ def main(argv=None) -> int:
     uncertain = commands.add_parser("unverified", parents=[common])
     uncertain.add_argument("--reason", required=True)
     commands.add_parser("status", parents=[common])
+    commands.add_parser("next", parents=[common], help="print the stage reached and the next permitted step")
     args = parser.parse_args(argv)
     try:
         job = None
@@ -420,9 +474,12 @@ def main(argv=None) -> int:
                                confirmation_text=args.confirmation_text, source=args.confirmation_source, now=args.now)
         elif args.command == "unverified":
             result = unverified(state, args.reason, now=args.now)
+        elif args.command == "next":
+            print(json.dumps({"state_path": str(path), **next_step(state)}, indent=2, ensure_ascii=False))
+            return 0
         else:
             result = state
-        if args.command != "status":
+        if args.command != "status" and result != state:
             path.parent.mkdir(parents=True, exist_ok=True)
             save_state(path, result)
         print(json.dumps({"state_path": str(path), "application": result}, indent=2, ensure_ascii=False))

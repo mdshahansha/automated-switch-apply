@@ -177,9 +177,41 @@ class ApplicationRecordTests(unittest.TestCase):
             with self.subTest(field=field), self.assertRaisesRegex(ValueError, "changed since approval"):
                 self.confirmed(state)
 
-    def test_reprepare_invalidates_approval_and_preserves_previous_events(self):
+    def test_unchanged_reprepare_keeps_valid_approval(self):
+        before = self.approved()
+        after = records.prepare(before, self.job, self.cv, self.letter, now=SENT)
+        self.assertEqual(after, before)
+        self.assertEqual(records.prepare(before, self.job, self.cv, self.letter, status="manual_handoff", now=SENT), before)
+
+    def test_repeat_approval_of_unchanged_application_is_a_no_op(self):
+        before = self.approved()
+        self.assertEqual(records.approve(before, "user said yes again", now=SENT), before)
+
+    def test_repeat_approval_after_document_change_is_rejected(self):
+        before = self.approved()
+        self.cv.write_bytes(b"edited CV")
+        with self.assertRaisesRegex(ValueError, "changed"):
+            records.approve(before, "user said yes again", now=SENT)
+
+    def test_next_step_walks_preparation_approval_submission_verification_done(self):
+        self.assertEqual(records.next_step({})["next"], "prepare")
+        self.assertEqual(records.next_step(self.prepared(status="manual_handoff"))["next"], "approve")
+        approved = self.approved()
+        step = records.next_step(approved)
+        self.assertEqual((step["stage"], step["next"], step["actor"]), ("submission", "fill_and_submit", "agent"))
+        self.assertIn("CAPTCHA", step["detail"])
+        self.assertEqual(records.next_step(records.unverified(approved, "page timed out", now=SENT))["next"], "check_receipt")
+        self.assertEqual(records.next_step(self.confirmed())["stage"], "done")
+
+    def test_next_step_sends_changed_documents_back_to_prepare(self):
+        approved = self.approved()
+        self.letter.write_bytes(b"edited letter")
+        self.assertEqual(records.next_step(approved)["next"], "prepare")
+
+    def test_reprepare_with_changed_documents_invalidates_approval_and_preserves_previous_events(self):
         before = self.approved()
         old_history = copy.deepcopy(before["events"])
+        self.cv.write_bytes(b"edited CV")
         after = records.prepare(before, self.job, self.cv, self.letter, now=SENT)
         self.assertEqual(after["events"][:2], old_history)
         self.assertEqual(before["events"], old_history, "pure function must not mutate its input")

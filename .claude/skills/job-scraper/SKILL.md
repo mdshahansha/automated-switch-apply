@@ -5,7 +5,7 @@ description: >
   (LinkedIn, local job boards, and any skills added with /add-portal). Deduplicates
   across runs. Triggers on: job scrape, find jobs, search jobs, new jobs, job search,
   scrape jobs, /scrape
-allowed-tools: Read, Write, Edit, Glob, Grep, Bash(bun --version), Bash(python tools/job_key.py:*), Bash(python3 tools/job_key.py:*), Bash(python tools/scrape_state.py:*), Bash(python3 tools/scrape_state.py:*), WebFetch, WebSearch, Agent, AskUserQuestion
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash(bun --version), Bash(python tools/job_key.py:*), Bash(python3 tools/job_key.py:*), Bash(python tools/scrape_state.py:*), Bash(python3 tools/scrape_state.py:*), Bash(python tools/portal_search.py:*), Bash(python3 tools/portal_search.py:*), WebFetch, WebSearch, Agent, AskUserQuestion
 ---
 
 # Job Scraper
@@ -31,6 +31,11 @@ Optional arguments:
 - A focus area, e.g. "/scrape data science" or "/scrape geophysics"
 - "broad" to run all search categories, e.g. "/scrape broad"
 - "health" to run the portal health check only (Step 4.75), without searching, deduplicating, or presenting jobs - e.g. "/scrape health", or "/scrape health jobnet" to probe one portal even if disabled
+- Portal or group names, e.g. "/scrape India remote", "/scrape Hirist Instahyre Cutshort", "/scrape Himalayas RemoteOK". Runs the registry path in Step 0.5 instead of Step 1. Names and groups come from `tools/portal_registry.json`; other words stay focus words, e.g. "/scrape himalayas react"
+- "status" to print the integration status report (Step 0.5) without searching, e.g. "/scrape status" or "/scrape status india"
+- "links" to list the official search pages for manual portals, e.g. "/scrape links india"
+
+`india`, `remote` and `all` are group names. "/scrape remote" therefore selects the remote boards; it is no longer a focus word. With no portal or group name, `/scrape` behaves exactly as before.
 
 ---
 
@@ -41,6 +46,29 @@ Optional arguments:
 Read `search-queries.md` (this directory) for the search strategy. `tools/scrape_state.py` reads `job_scraper/seen_jobs.json` and `job_search_tracker.csv` for deduplication; do not load either growing file into the conversation.
 
 > **Windows:** run these tools as `python`, not `python3`. A python.org install ships no `python3`, so that name reaches the Microsoft Store alias, which either exits 49 with no output (#669) or starts a separate Store Python without the packages `pip` installed (such as pypdf). `.claude/settings.json` allows both spellings.
+
+### Step 0.5: Portal selection (registry path)
+
+Resolve the arguments first. The helper only reads the registry and skill files:
+
+```bash
+python3 tools/portal_search.py resolve <the words after /scrape>
+```
+
+- `selectors` empty and first word not `status`/`links`: skip this step and run Steps 1-5 unchanged.
+- First word `status`: run `python3 tools/portal_search.py status <remaining selectors>` and present its `summary` (configured, automatic, operational, failed or blocked, jobs discovered, duplicates removed, shortlisted) and a per-portal table: name, mode, status, last successful search, jobs discovered, error. It makes no network request. Stop.
+- First word `links`: run `python3 tools/portal_search.py links <remaining selectors>` and list each portal's `url` and `reason`. Stop.
+- Otherwise run one registry search per query category from `search-queries.md` (top 3 by default, all on `broad`; `focus` replaces the query when present):
+
+  ```bash
+  python3 tools/portal_search.py search <selectors> --query "<query>" --jobage 14 --limit 20
+  ```
+
+  Add `--location IN` and `--remote remote` only when the profile or the user asks for them. The runner dispatches only the `automatic` portals (verified public API or feed, installed CLI, `enabled: true`). It normalizes, deduplicates by canonical URL and stable job ID against `job_scraper/seen_jobs.json` and the tracker, and writes history and `portal_status` itself. **Do not also pass these jobs to `scrape_state.py store`.** That would store them twice.
+
+  Report every portal's `status` honestly: `operational`, `failed`, `blocked`, `unavailable`, `unsupported_filters` (quote each `reason`), or `manual`. For `manual` portals, show the registry `url` and `reason` as a search link the user opens in a normal browser. Offer `python3 tools/portal_search.py import --portal <id> --file <jobs.json>` for jobs the user copies out themselves. Never fetch a manual portal from here.
+
+  Present `summary.added` jobs as in Step 5, with portal, source URL and `last_seen`. A remote label never establishes India eligibility; repeat the runner's `eligibility` note. Then suggest `/rank`. Skip Steps 1-4.75.
 
 ### Step 1: Search
 
