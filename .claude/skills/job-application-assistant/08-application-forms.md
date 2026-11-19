@@ -24,6 +24,8 @@ Trigger it whenever a posting or portal asks for any of:
 
 All accuracy rules from `05-cv-templates.md` and `03-writing-style.md` apply unchanged.
 
+**Years-of-experience fields.** Answer "total years of experience" with the verified figure computed from the employment dates in `01-candidate-profile.md` (`python -c "import sys; sys.path.insert(0,'tools'); from experience_fit import years_answer; print(years_answer())"`). Never raise it to match a posting's requirement. A posting asking for more years than this is still worth applying to (see `04-job-evaluation.md`, "Years-of-experience requirements"). The gap is bridged by presenting real, relevant work, not by changing the number.
+
 ## Field type: self-introduction paragraph
 
 Usually 100–200 words, one paragraph, no formatting.

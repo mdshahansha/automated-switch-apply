@@ -80,6 +80,13 @@ Does work history align with what they're looking for? Match on the function and
 
 **Experience dates:** Osbee June 2025-present; CodingNinjas June 2023-April 2025. Compute total experience at application time. Do not reuse the conflicting dates from older resume variants or count the May 2025 interval as employment.
 
+**Years-of-experience requirements (candidate advocacy).** Do not reject an opportunity prematurely. An experience-years mismatch is a signal to evaluate, not a verdict. When a posting asks for more years (4+, 5+, 8+, even 10+) than the candidate's verified total:
+1. Read the whole JD first. Weigh stack compatibility, relevant projects, actual production work, the role's responsibilities and complexity, and transferable skills.
+2. Decide whether the figure is a hard requirement ("minimum", "must have", "strictly") or a preference ("preferred", "ideally", "nice to have"). A bare "X+ years" is unclear, not mandatory.
+3. Lower the Experience Match score in proportion to the gap, but keep it no lower than the 40-59 band ("would need to make the case") when the stack and role align. Years alone never set a FAIL gate, never trigger `expired`, and never drop a job before scoring.
+4. Reject only on the overall mismatch, for example an unrelated role with weak stack overlap, an excluded stack, or a verified deal-breaker. Label strongly aligned roles that ask for more years as stretch opportunities and keep them in the application workflow.
+5. Address the gap honestly in the application (see `/apply`'s "every requirement gets addressed" rule). Never inflate total years, dates, employers, titles, degrees or certifications to close it. `tools/experience_fit.py` implements this rule for the automated scrape.
+
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
 

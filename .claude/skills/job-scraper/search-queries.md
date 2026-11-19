@@ -27,6 +27,10 @@ The candidate accepts any Indian city and any work mode, with a 30-day notice pe
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
 
+## Keyword cards (CLI searches)
+
+The CLI keyword searches come from **`tools/search_keywords.json`**: 50 keyword cards in 7 categories (General titles, Full stack, Backend, Java, Frontend, Mobile, Skill combinations). Each card is searched independently. Set its `enabled` flag to pause it. `Go Developer` ships disabled because Golang is on the excluded-stack list. To list the cards, run `python tools/search_keywords.py list --all`. `tools/scrape_24h.py` searches every enabled card by default; use `--card <id>` (repeatable) or `--category <id>` to narrow a run. A job found by several cards is kept once, and its `discovered_by` / `discovered_keywords` record every card that found it. Edit the JSON, not the scraper, to change keywords. The `site:` queries below remain the WebSearch fallback.
+
 ## Query Categories
 
 Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.

@@ -1,0 +1,70 @@
+{
+  "_note": "Job-search keyword cards. Each card is searched independently; set enabled=false to pause one. Categories group cards for reporting only. Loaded and validated by tools/search_keywords.py.",
+  "version": 1,
+  "categories": [
+    {"id": "general", "label": "General titles", "cards": [
+      {"id": "software-engineer", "keyword": "Software Engineer", "enabled": true},
+      {"id": "senior-software-engineer", "keyword": "Senior Software Engineer", "enabled": true},
+      {"id": "software-engineer-ii", "keyword": "Software Engineer II", "enabled": true},
+      {"id": "sde-1", "keyword": "SDE 1", "enabled": true},
+      {"id": "sde-2", "keyword": "SDE 2", "enabled": true},
+      {"id": "software-developer", "keyword": "Software Developer", "enabled": true},
+      {"id": "senior-software-developer", "keyword": "Senior Software Developer", "enabled": true},
+      {"id": "application-developer", "keyword": "Application Developer", "enabled": true},
+      {"id": "product-engineer", "keyword": "Product Engineer", "enabled": true},
+      {"id": "member-of-technical-staff", "keyword": "Member of Technical Staff", "enabled": true}
+    ]},
+    {"id": "full-stack", "label": "Full stack", "cards": [
+      {"id": "full-stack-engineer", "keyword": "Full Stack Engineer", "enabled": true},
+      {"id": "full-stack-developer", "keyword": "Full Stack Developer", "enabled": true},
+      {"id": "senior-full-stack-developer", "keyword": "Senior Full Stack Developer", "enabled": true},
+      {"id": "java-full-stack-developer", "keyword": "Java Full Stack Developer", "enabled": true},
+      {"id": "mern-stack-developer", "keyword": "MERN Stack Developer", "enabled": true},
+      {"id": "mean-stack-developer", "keyword": "MEAN Stack Developer", "enabled": true}
+    ]},
+    {"id": "backend", "label": "Backend", "cards": [
+      {"id": "backend-engineer", "keyword": "Backend Engineer", "enabled": true},
+      {"id": "backend-developer", "keyword": "Backend Developer", "enabled": true},
+      {"id": "senior-backend-engineer", "keyword": "Senior Backend Engineer", "enabled": true},
+      {"id": "nodejs-developer", "keyword": "Node.js Developer", "enabled": true},
+      {"id": "nestjs-developer", "keyword": "NestJS Developer", "enabled": true},
+      {"id": "rest-api-developer", "keyword": "REST API Developer", "enabled": true}
+    ]},
+    {"id": "java", "label": "Java", "cards": [
+      {"id": "java-developer", "keyword": "Java Developer", "enabled": true},
+      {"id": "senior-java-developer", "keyword": "Senior Java Developer", "enabled": true},
+      {"id": "java-spring-boot-developer", "keyword": "Java Spring Boot Developer", "enabled": true},
+      {"id": "java-microservices-developer", "keyword": "Java Microservices Developer", "enabled": true},
+      {"id": "java-backend-developer", "keyword": "Java Backend Developer", "enabled": true},
+      {"id": "spring-boot-engineer", "keyword": "Spring Boot Engineer", "enabled": true},
+      {"id": "j2ee-developer", "keyword": "J2EE Developer", "enabled": true}
+    ]},
+    {"id": "frontend", "label": "Frontend", "cards": [
+      {"id": "frontend-engineer", "keyword": "Frontend Engineer", "enabled": true},
+      {"id": "frontend-developer", "keyword": "Frontend Developer", "enabled": true},
+      {"id": "ui-developer", "keyword": "UI Developer", "enabled": true},
+      {"id": "react-developer", "keyword": "React Developer", "enabled": true},
+      {"id": "reactjs-developer", "keyword": "React.js Developer", "enabled": true},
+      {"id": "senior-react-developer", "keyword": "Senior React Developer", "enabled": true},
+      {"id": "nextjs-developer", "keyword": "Next.js Developer", "enabled": true},
+      {"id": "typescript-developer", "keyword": "TypeScript Developer", "enabled": true},
+      {"id": "javascript-developer", "keyword": "JavaScript Developer", "enabled": true},
+      {"id": "angular-developer", "keyword": "Angular Developer", "enabled": true}
+    ]},
+    {"id": "mobile", "label": "Mobile", "cards": [
+      {"id": "react-native-developer", "keyword": "React Native Developer", "enabled": true},
+      {"id": "react-native-engineer", "keyword": "React Native Engineer", "enabled": true},
+      {"id": "mobile-app-developer", "keyword": "Mobile App Developer", "enabled": true}
+    ]},
+    {"id": "skill-combos", "label": "Skill combinations", "cards": [
+      {"id": "react-nodejs", "keyword": "React Node.js", "enabled": true},
+      {"id": "react-spring-boot", "keyword": "React Spring Boot", "enabled": true},
+      {"id": "java-react", "keyword": "Java React", "enabled": true},
+      {"id": "nodejs-aws", "keyword": "Node.js AWS", "enabled": true},
+      {"id": "spring-boot-microservices", "keyword": "Spring Boot Microservices", "enabled": true},
+      {"id": "microservices-kafka", "keyword": "Microservices Kafka", "enabled": true},
+      {"id": "docker-kubernetes-java", "keyword": "Docker Kubernetes Java", "enabled": true},
+      {"id": "go-developer", "keyword": "Go Developer", "enabled": false, "disabled_reason": "Golang is on the candidate's excluded-stack list; enable only after the candidate lifts that exclusion."}
+    ]}
+  ]
+}

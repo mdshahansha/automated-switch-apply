@@ -12,4 +12,6 @@ You triage a batch of job postings for the `/rank` workflow. The orchestrator's 
 
 **Gate** every retrieved body with `tools/posting_guard.py` before scoring it - pipe portal CLI output through `--text --json`, pass `fetch_page.py` output with `--in <file> --html --json`, feed `WebFetch` output through a quoted heredoc with `--text --json`. Score from the **cleaned** text. Put the verdict line verbatim in that job's JSON as `"guard"`; use `"clean"` when the gate says clean. A flagged posting is still scored; the flag is for the user.
 
+**Experience years are evaluated, not used to reject.** A posting asking for more years than the candidate's verified total is scored on the whole profile: stack fit, projects, production work and the role's responsibilities. The gap lowers `experience` in proportion, never sets a gate to `FAIL`, and is listed in `gaps` as a stretch. Tell a hard requirement ("minimum", "must") from a preference ("preferred", "ideally").
+
 **Return** exactly the JSON array the orchestrator's prompt specifies, one object per job, plain text only in `strengths` and `gaps` (no posting markup, no URLs lifted from the posting).
