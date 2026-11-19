@@ -106,7 +106,10 @@ Also read the most recent existing CV and cover letter files for concrete struct
 *The master candidate profile (`01-candidate-profile.md`), the master CV (`cv/main_example.tex`), and CLAUDE.md's Candidate Profile section are the sole source of truth for facts; existing tailored CVs may be read for structure and phrasing only, never as a source of claims.*
 
 ### Requirement coverage (both documents)
-- **Every requirement the posting states gets addressed - matched or honestly gapped, never silently omitted.** A stated requirement the candidate lacks (a tool, a clearance, years of experience) is acknowledged with an honest bridge ("not in my daily toolkit yet; a natural extension of X"), because omission reads as hiding once an interviewer asks. Build the requirement list from Step 1 and check both drafts against it before Step 3.
+- **Every requirement the posting states is checked against both drafts, but written documents never announce a gap.** The cover letter, CV and free-text form answers never contain a negative self-statement: no "I have not worked on X", "X is not yet part of my work", "no experience with X", or "I would pick it up". For a requirement the candidate lacks (a tool, a cloud, a domain, years of experience), choose one of two options:
+  1. **Positive bridge:** tell a short story from real, adjacent work that shows the capability the requirement stands for, without claiming the missing item. Example, for Azure: "I build and ship Spring Boot services in Docker through CI/CD pipelines on AWS, and run them in production." Never "I have not worked on Azure".
+  2. **Leave it out:** if no honest bridge exists, write nothing about that requirement.
+  Never claim the missing skill, tool, cloud, certification or years. Gaps are prepared for the interview (`/interview`), not written into documents. Build the requirement list from Step 1 and check both drafts against it before Step 3.
 - **Engage nice-to-haves by name** where the profile supports honest adjacency (e.g. "conceptually aligned with <named tool>"), and use the posting's own term over a synonym wherever it is truthfully applicable - including in CV section headings (a posting hiring for "MLOps" should find a heading containing "MLOps", not only a paraphrase).
 - **Address stated logistics and prerequisites** in the cover letter where the posting raises them: security clearance willingness, start date or availability, commute or location fit, and the posting's reference/job ID where one exists. When the employer operates across several countries, a truthful language-capabilities sentence mapped to their footprint is high-value targeting.
 
@@ -232,7 +235,7 @@ Once the reviewer agent returns its feedback:
    - **Action-oriented reframing:** rewrite passive or generic phrasing (CV profile statement, cover letter opening, bullet leads). Structural weakness that the reviewer flagged without a clean JSON edit lives here.
    - **Tone and style issues:** apply the writing-style-guide fixes (no em-dashes, no cliches, no apologetic hedging, consistent first-person active voice).
    Use Edit for targeted changes; only re-read a file if an edit fails because the surrounding text has shifted.
-3. Do NOT incorporate any suggestion that would fabricate skills or experience. If a posting requirement is a genuine gap, acknowledge it honestly and frame adjacent experience instead.
+3. Do NOT incorporate any suggestion that would fabricate skills or experience. If a posting requirement is a genuine gap, write a positive bridge from real adjacent experience or leave the requirement out. Never write a sentence admitting the gap (see the Step 2 rule).
 
 After all edits are applied, the two files on disk are the final drafts.
 
@@ -341,7 +344,7 @@ Failures here are template-level problems: fix them in the `<CV_EXT>` source (e.
 - **covered** — the term appears (verbatim or trivial inflection).
 - **synonym-only** — the concept is present under a different term. If the posting's exact term is truthfully applicable per the profile, prefer the posting's term (ATS keyword matches are often literal).
 - **missing (have it)** — the profile shows the candidate genuinely has this skill but the CV never says it: add it where it fits naturally, preferring experience bullets (concrete evidence) over the profile statement, then re-run 5a–5c.
-- **missing (gap)** — a genuine gap: leave it missing. **Never stuff keywords.** This is the same honesty rule the reviewer follows — a gap gets acknowledged in the cover letter's framing, not hidden in the CV.
+- **missing (gap)** — a genuine gap: leave it missing. **Never stuff keywords.** This is the same honesty rule the reviewer follows. The cover letter may bridge to it from real adjacent work, but never states the gap and never claims the skill.
 
 
 > **Note:** A multi-word phrase reported missing may be a punctuation-spacing artifact between extractors (pypdf sometimes inserts spaces around punctuation that Poppler does not). Re-check against the other extractor before concluding the text is absent.

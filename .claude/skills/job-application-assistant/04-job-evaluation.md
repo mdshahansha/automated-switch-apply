@@ -85,7 +85,7 @@ Does work history align with what they're looking for? Match on the function and
 2. Decide whether the figure is a hard requirement ("minimum", "must have", "strictly") or a preference ("preferred", "ideally", "nice to have"). A bare "X+ years" is unclear, not mandatory.
 3. Lower the Experience Match score in proportion to the gap, but keep it no lower than the 40-59 band ("would need to make the case") when the stack and role align. Years alone never set a FAIL gate, never trigger `expired`, and never drop a job before scoring.
 4. Reject only on the overall mismatch, for example an unrelated role with weak stack overlap, an excluded stack, or a verified deal-breaker. Label strongly aligned roles that ask for more years as stretch opportunities and keep them in the application workflow.
-5. Address the gap honestly in the application (see `/apply`'s "every requirement gets addressed" rule). Never inflate total years, dates, employers, titles, degrees or certifications to close it. `tools/experience_fit.py` implements this rule for the automated scrape.
+5. In the application, never write the gap down. Bridge positively from real, relevant work, or leave it out (see `/apply` Step 2). Never inflate total years, dates, employers, titles, degrees or certifications to close it. `tools/experience_fit.py` implements this rule for the automated scrape.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
